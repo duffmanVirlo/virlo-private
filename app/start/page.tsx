@@ -69,8 +69,19 @@ export default function StartPage() {
       });
       const data = await extractRes.json();
       if (data.success && data.product) {
-        await proceedWithProduct(data.product, rawValue);
-        return;
+        try {
+          await proceedWithProduct(data.product, rawValue);
+          return;
+        } catch (classifyErr) {
+          // Classification failed after successful extraction.
+          // Route to manual fallback with the extracted data so the user
+          // can still proceed instead of hitting a dead end.
+          setPartialData(data.product);
+          setFallbackMessage("We extracted the product but classification timed out. You can confirm the details and continue.");
+          setPhase("fallback");
+          setLoading(false);
+          return;
+        }
       }
       setPartialData(data.partial || { url: data.resolvedUrl || cleanUrl });
       setFallbackMessage(data.error || "We couldn't fully read the product page.");

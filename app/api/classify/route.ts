@@ -3,6 +3,8 @@ import { runClassification } from "@/lib/convertiq/stages/classify";
 import type { ExtractedProduct } from "@/types/product";
 import { checkRateLimit, CLASSIFY_LIMIT } from "@/lib/rateLimit";
 
+export const maxDuration = 60;
+
 export async function POST(request: NextRequest) {
   const block = checkRateLimit(request, CLASSIFY_LIMIT);
   if (block) return block;

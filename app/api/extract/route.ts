@@ -3,6 +3,8 @@ import { runExtraction } from "@/lib/convertiq/stages/extract";
 import { isValidUrl, sanitizeUrl } from "@/lib/utils";
 import { checkRateLimit, EXTRACT_LIMIT } from "@/lib/rateLimit";
 
+export const maxDuration = 60;
+
 export async function POST(request: NextRequest) {
   const block = checkRateLimit(request, EXTRACT_LIMIT);
   if (block) return block;
