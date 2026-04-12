@@ -100,8 +100,36 @@ function extractOgInfoFromUrl(url: string): OgInfo | null {
  * Extract the numeric product ID from a TikTok product URL.
  */
 function extractProductId(url: string): string | null {
+  // Standard: /view/product/{id} or /@seller/product/{id}
   const match = url.match(/\/(?:view\/)?product\/(\d+)/);
-  return match ? match[1] : null;
+  if (match) return match[1];
+  // PDP pattern: /shop/pdp/{slug}-i{id}
+  const pdpMatch = url.match(/\/shop\/pdp\/.*-i(\d+)/);
+  return pdpMatch ? pdpMatch[1] : null;
+}
+
+/**
+ * Extract a human-readable product name from a TikTok PDP URL slug.
+ * e.g. /shop/pdp/fruit-storage-container-with-lid-i12345 → "Fruit Storage Container With Lid"
+ */
+function extractProductNameFromSlug(url: string): string | null {
+  // Match PDP slug: /shop/pdp/{slug}-i{id}
+  const pdpMatch = url.match(/\/shop\/pdp\/([a-z0-9-]+?)(?:-i\d+)/i);
+  if (pdpMatch) {
+    return pdpMatch[1]
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase())
+      .trim();
+  }
+  // Match @seller/product paths that sometimes include slugs
+  const sellerMatch = url.match(/\/@[^/]+\/product\/[^/]+\/([a-z0-9-]+)/i);
+  if (sellerMatch) {
+    return sellerMatch[1]
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase())
+      .trim();
+  }
+  return null;
 }
 
 // ---------------------------------------------------------------------------
@@ -367,6 +395,22 @@ function hasStrongMetadata(
 }
 
 /**
+ * Detect whether fetched HTML is a TikTok captcha/security challenge page.
+ * TikTok returns a ~5KB "Security Check" captcha page from data center IPs
+ * instead of real product content. This is the primary blocker for
+ * server-side extraction on hosted platforms (Vercel, AWS, etc.).
+ */
+function isCaptchaPage(html: string): boolean {
+  if (!html || html.length < 50) return false;
+  // TikTok captcha pages have <title>Security Check</title> and a captcha container
+  return (
+    html.includes("<title>Security Check</title>") ||
+    html.includes("captcha_container") ||
+    html.includes("oec-ttweb-captcha")
+  );
+}
+
+/**
  * Check whether cleaned HTML is actually product content vs. SPA boilerplate.
  * TikTok SPA shells return 500KB+ of HTML but the visible text is mostly
  * cookie banners, nav labels, and framework noise.
@@ -458,6 +502,7 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
   // ── Step 3: Fetch the page HTML ────────────────────────────────────────
   let rawHtml = "";
   let fetchSuccess = false;
+  let wasCaptchaBlocked = false;
 
   try {
     const result = await fetchPageHtml(resolvedUrl);
@@ -472,6 +517,25 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
         fetchSuccess = false;
         rawHtml = "";
       }
+    }
+
+    // Detect TikTok captcha/security challenge page
+    // Data center IPs (Vercel, AWS, etc.) get a ~5KB captcha wall instead of
+    // real product HTML. When detected, discard the HTML and fall through to
+    // URL-based extraction so we can still extract from the product ID.
+    if (fetchSuccess && isCaptchaPage(rawHtml)) {
+      fetchSuccess = false;
+      rawHtml = "";
+      wasCaptchaBlocked = true;
+    }
+
+    // Detect TikTok SPA shell with unresolved template placeholders.
+    // e.g. OG description = "Buy {product_name} on TikTok Shop" — SSR failed.
+    // The HTML is 30-50KB of framework boilerplate with no real product data.
+    if (fetchSuccess && isTikTokUrl(resolvedUrl) && rawHtml.includes("{product_name}")) {
+      fetchSuccess = false;
+      rawHtml = "";
+      wasCaptchaBlocked = true; // treat same as captcha — need URL-based fallback
     }
   } catch {
     fetchSuccess = false;
@@ -489,8 +553,15 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
     : resolvedUrl;
 
   // Merge all metadata sources: og_info (from redirect) > OG tags (from HTML) > structured data
-  const mergedTitle = ogInfo?.title || metadata.title || null;
-  const mergedDescription = metadata.description || null;
+  // Detect TikTok template placeholders — OG tags that contain unresolved {variable} tokens
+  // e.g. "Buy {product_name} on TikTok Shop" — these are SSR template failures
+  const isTemplateGarbage = (text: string | null): boolean => {
+    if (!text) return false;
+    return /\{[a-z_]+\}/.test(text);
+  };
+
+  const mergedTitle = ogInfo?.title || (isTemplateGarbage(metadata.title) ? null : metadata.title) || null;
+  const mergedDescription = isTemplateGarbage(metadata.description) ? null : metadata.description || null;
   const mergedPrice = metadata.price || null;
   const mergedImages: string[] = [];
   if (ogInfo?.image) mergedImages.push(ogInfo.image);
@@ -559,6 +630,23 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
     if (enrichedPrice) parts.push(`Price: $${enrichedPrice}`);
     parts.push(`URL: ${cleanProductUrl}`);
     extractionContext = parts.join("\n");
+  } else if (wasCaptchaBlocked && (productId || isTikTokUrl(resolvedUrl))) {
+    // TikTok captcha blocked the page, but we can extract from URL structure.
+    // Try to get a product name from the URL slug (common in /shop/pdp/ URLs).
+    const slugName = extractProductNameFromSlug(resolvedUrl);
+    const parts: string[] = [
+      `TikTok Shop Product (page was not accessible — extract from URL structure)`,
+    ];
+    if (slugName) {
+      parts.push(`Product Name (from URL): ${slugName}`);
+      // Also set as enrichedTitle so partial fallback has it
+      if (!enrichedTitle) enrichedTitle = slugName;
+    }
+    if (productId) parts.push(`Product ID: ${productId}`);
+    parts.push(`URL: ${cleanProductUrl}`);
+    parts.push(`Source: TikTok Shop`);
+    parts.push(`Note: The product page returned a security challenge. Use the product name from the URL slug and any other available signals to extract product details. Infer the likely product category, description, and key features from the product name.`);
+    extractionContext = parts.join("\n");
   } else {
     extractionContext = "";
   }
@@ -584,8 +672,12 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
         raw_text: truncateText(extractionContext, 2000),
       };
 
-      // Final quality gate: reject if Claude returned a generic/empty product
-      if (isExtractedProductUseful(product)) {
+      // Final quality gate: reject if Claude returned a generic/empty product.
+      // When captcha-blocked, relax the gate — a non-generic title from URL
+      // context is enough to proceed because the classification stage will
+      // validate independently. This avoids dumping users into manual entry
+      // when we have a perfectly good product name from the URL slug.
+      if (isExtractedProductUseful(product) || (wasCaptchaBlocked && product.title && !isGenericTitle(product.title))) {
         return { success: true, product, partial: null, resolvedUrl: cleanProductUrl };
       }
 
@@ -619,9 +711,11 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
     product: null,
     partial: { ...partial, url: cleanProductUrl },
     resolvedUrl: cleanProductUrl,
-    error: fetchSuccess
-      ? "The page loaded but didn't contain readable product data."
-      : "Could not reach the product page. The link may be expired or restricted.",
+    error: wasCaptchaBlocked
+      ? "TikTok blocked automatic reading of this product page. Please enter the product details manually."
+      : fetchSuccess
+        ? "The page loaded but didn't contain readable product data."
+        : "Could not reach the product page. The link may be expired or restricted.",
   };
 }
 
@@ -629,18 +723,22 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
 // Extraction quality gate
 // ---------------------------------------------------------------------------
 
+const GENERIC_TITLES = [
+  "tiktok", "tiktok - make your day", "tiktok shop", "product",
+  "unknown", "untitled", "n/a",
+];
+
+function isGenericTitle(title: string): boolean {
+  return GENERIC_TITLES.includes(title.toLowerCase().trim());
+}
+
 /**
  * Check whether a Claude-extracted product has real content
  * vs. generic/hallucinated filler.
  */
 function isExtractedProductUseful(product: ExtractedProduct): boolean {
   if (!product.title) return false;
-
-  const genericTitles = [
-    "tiktok", "tiktok - make your day", "tiktok shop", "product",
-    "unknown", "untitled", "n/a",
-  ];
-  if (genericTitles.includes(product.title.toLowerCase())) return false;
+  if (isGenericTitle(product.title)) return false;
 
   // Must have title + at least one other signal
   const hasDescription = !!product.description && product.description.length > 10;
