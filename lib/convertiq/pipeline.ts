@@ -21,7 +21,7 @@ import { runQAPass } from "./stages/qa";
 import { runCompliancePass } from "./stages/compliance";
 import { assembleOutputPackage } from "./assemble";
 
-const MAX_QA_RETRIES = 2;
+const MAX_QA_RETRIES = 1;
 const PIPELINE_TIMEOUT = 300000;
 
 export type StageUpdateCallback = (stage: PipelineStage) => void;
@@ -32,6 +32,10 @@ export type PipelineInput = {
   overrideCategory?: string;
   overrideProductType?: string;
   onStageUpdate?: StageUpdateCallback;
+  /** Pre-extracted product — skip extraction stage if provided */
+  preExtractedProduct?: ExtractedProduct;
+  /** Pre-computed classification — skip classification stage if provided */
+  preClassification?: ClassificationResult;
 };
 
 export type PipelineResult = {
@@ -42,7 +46,7 @@ export type PipelineResult = {
 };
 
 export async function runPipeline(input: PipelineInput): Promise<PipelineResult> {
-  const { url, sessionId, overrideCategory, overrideProductType, onStageUpdate } = input;
+  const { url, sessionId, overrideCategory, overrideProductType, onStageUpdate, preExtractedProduct, preClassification } = input;
 
   const notify = (stage: PipelineStage) => {
     if (onStageUpdate) onStageUpdate(stage);
@@ -55,7 +59,7 @@ export async function runPipeline(input: PipelineInput): Promise<PipelineResult>
 
   try {
     const result = await Promise.race([
-      executePipeline(url, sessionId, overrideCategory, overrideProductType, notify),
+      executePipeline(url, sessionId, overrideCategory, overrideProductType, notify, preExtractedProduct, preClassification),
       timeoutPromise,
     ]);
     return result;
@@ -74,6 +78,8 @@ async function executePipeline(
   overrideCategory: string | undefined,
   overrideProductType: string | undefined,
   notify: StageUpdateCallback,
+  preExtractedProduct?: ExtractedProduct,
+  preClassification?: ClassificationResult,
 ): Promise<PipelineResult> {
   let product: ExtractedProduct;
   let classification: ClassificationResult;
@@ -85,24 +91,28 @@ async function executePipeline(
   let qa: QAResult;
   let compliance: ComplianceResult;
 
-  // Stage 1: Extraction
-  try {
+  // Stage 1: Extraction (skip if pre-extracted product provided)
+  if (preExtractedProduct) {
     notify("extracting");
-    const extractionResult = await runExtraction(url);
-    if (!extractionResult.success || !extractionResult.product) {
-      return { success: false, error: extractionResult.error || "Extraction failed", failedStage: "extracting" };
+    product = preExtractedProduct;
+  } else {
+    try {
+      notify("extracting");
+      const extractionResult = await runExtraction(url);
+      if (!extractionResult.success || !extractionResult.product) {
+        return { success: false, error: extractionResult.error || "Extraction failed", failedStage: "extracting" };
+      }
+      product = extractionResult.product;
+    } catch (error) {
+      return { success: false, error: `Extraction failed: ${errorMessage(error)}`, failedStage: "extracting" };
     }
-    product = extractionResult.product;
-  } catch (error) {
-    return { success: false, error: `Extraction failed: ${errorMessage(error)}`, failedStage: "extracting" };
   }
 
-  // Stage 2: Classification
-  try {
+  // Stage 2: Classification (skip if pre-classification provided)
+  if (preClassification) {
     notify("classifying");
-    classification = await runClassification(product);
-
-    // Apply overrides if provided
+    classification = preClassification;
+    // Still apply overrides on top of pre-classification
     if (overrideCategory) {
       classification = {
         ...classification,
@@ -116,8 +126,28 @@ async function executePipeline(
     if (overrideProductType) {
       classification = { ...classification, product_type: overrideProductType };
     }
-  } catch (error) {
-    return { success: false, error: `Classification failed: ${errorMessage(error)}`, failedStage: "classifying" };
+  } else {
+    try {
+      notify("classifying");
+      classification = await runClassification(product);
+
+      // Apply overrides if provided
+      if (overrideCategory) {
+        classification = {
+          ...classification,
+          primary_category: overrideCategory as ClassificationResult["primary_category"],
+          confidence: 100,
+          confidence_label: "high",
+          requires_override_prompt: false,
+          reason: `Manually overridden to ${overrideCategory}`,
+        };
+      }
+      if (overrideProductType) {
+        classification = { ...classification, product_type: overrideProductType };
+      }
+    } catch (error) {
+      return { success: false, error: `Classification failed: ${errorMessage(error)}`, failedStage: "classifying" };
+    }
   }
 
   // Stage 3: Analysis

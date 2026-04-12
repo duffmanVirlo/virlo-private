@@ -266,29 +266,57 @@ CTA MASTER PRINCIPLE: The CTA is the natural continuation of the exact proof the
 
 CTA VARIETY RULE: Do NOT default to "After seeing [X]..." as the standard opener. That is ONE valid frame but must not be the automatic default. Vary the CTA structure. The proof echo can be the opener, the middle, or the justification at the end.
 
-NATURAL CTA FRAMES (use variety — these show different structures, not templates to copy):
-- "[Specific demo result] was all I needed" (proof-first belief)
-- "I'm never going back to [old way] after that [specific result]" (relief anchored to proof)
-- "That [proof beat] alone is why I keep this [in location] now" (ownership grounded in proof)
-- "Honestly, [specific result] is what sold me" (casual belief)
-- "Once I saw [result], I stopped looking for alternatives" (discovery close)
-- "If your [specific thing] looks like mine did, this is the one that fixed it" (conditional ownership)
+NATURAL CTA FRAMES — ORGANIZED BY CONVERSION LOGIC (choose the logic that fits the viewer state, then vary phrasing):
 
-CTA TAIL VARIETY: Do NOT default to "I linked the exact one" as the standard close. Vary the tail — sometimes omit the link reference, sometimes reference where you use the product, sometimes end on a belief statement.
+LOGIC 1: PROOF CONVICTION — viewer just saw undeniable evidence
+- "[Specific demo result] was all I needed"
+- "Honestly, [specific result] is what sold me"
+- "Once I saw [result], I stopped looking for alternatives"
+
+LOGIC 2: PROBLEM TIREDNESS — viewer identifies with ongoing frustration
+- "If you're tired of [specific problem from hook], this is worth a try"
+- "If [specific friction] has been your thing too, I'd grab it"
+- "I spent way too long dealing with [problem] before I found this"
+
+LOGIC 3: RELIEF / DISCOVERY — viewer feels the weight of the problem lifting
+- "I'm never going back to [old way] after that [specific result]"
+- "I wish I'd found this [timeframe] ago"
+- "If your [specific thing] looks like mine did, this is the one that fixed it"
+
+LOGIC 4: VALUE JUSTIFICATION — viewer is weighing whether it's worth it
+- "For the price, this is one of those things that just makes sense to try"
+- "Honestly, [price point] for something that actually [specific result]? Easy"
+- "It pays for itself after [specific use scenario]"
+
+LOGIC 5: OFFER / TIMING — genuine scarcity or deal exists
+- "If you've been thinking about it, I'd grab it while it's [on sale / at this price]"
+- "They've got a deal on it right now which is why I'm even mentioning it"
+
+LOGIC 6: PRACTICAL OWNERSHIP — viewer imagines product in their life
+- "That [proof beat] alone is why I keep this [in specific location] now"
+- "This just lives [in location] now and I don't think about [problem] anymore"
+- "It's one of those things you don't realize you needed until you have it"
+
+SELECTION RULE: Pick the CTA logic that matches the VIEWER STATE after watching the proof, not just the proof itself. A viewer who saw a dramatic demo needs CONVICTION logic. A viewer who related to a long frustration needs TIREDNESS logic. A viewer weighing a purchase needs VALUE logic. A viewer who saw an offer needs TIMING logic.
+
+CTA TAIL VARIETY: Do NOT default to "I linked the exact one" as the standard close. Vary the tail — sometimes omit the link reference, sometimes reference where you use the product, sometimes end on a belief statement, sometimes end on a practical scenario.
 
 CTA HARD RULES:
-- CTA must reference the SPECIFIC proof demonstrated in this video, not a generic problem callback.
-- NEVER output bare "it's in TikTok Shop" or "link in bio." If platform is mentioned, it must be subordinate to a proof callback.
-- NEVER default to price-first closes. Price may appear only if genuinely exceptional and subordinate to proof.
-- CTA should sound like the creator naturally finishing their thought after the demo — not a scripted sales line bolted onto the end.
+- CTA must connect to the SPECIFIC proof or problem demonstrated in this video, not a generic category callback.
+- NEVER output bare "it's in TikTok Shop" or "link in bio." If platform is mentioned, it must be subordinate to a proof or value callback.
+- NEVER default to price-first closes. Price may appear in VALUE JUSTIFICATION logic when genuinely relevant.
+- CTA should sound like the creator naturally finishing their thought — not a scripted sales line bolted onto the end.
 - If no strong CTA improves the output, use a soft natural close instead of forcing a hard sales line. A soft close is always better than a bad CTA.
 - Do NOT repeat the hook in weaker form as the CTA.
 - Do NOT use generic formulas like "grab yours", "don't walk run", "before it sells out."
+- Do NOT use the same CTA logic for every product. The logic should vary based on what the viewer just experienced.
 
 BAD CTAs (suppress):
 - "After seeing [X], I linked the exact one" (overused formula — this specific combo is too repetitive)
+- "That [X] alone is why I switched/changed to this" (overused conversion frame)
+- "That [test/result] alone is why I use this now" (same-shape repetition)
 - "It's in TikTok Shop" (bare platform mention)
-- "$X.XX to never [problem] again" (price-first)
+- "$X.XX to never [problem] again" (price-first without proof context)
 - "If you [broad category need], this is the one" (generic)
 
 SCRIPT RULES:

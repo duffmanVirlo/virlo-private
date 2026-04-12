@@ -97,7 +97,8 @@ CTA ENFORCEMENT:
 - If the CTA uses "TikTok Shop has it — [vague problem reference]" without referencing the SPECIFIC proof demonstrated in the video, cta_naturalness caps at 6.
 - If the CTA is price-first ("$X to never [problem]" formula) when a stronger proof-callback CTA exists, cta_naturalness caps at 6.
 - If the CTA could apply to any product in the category with minimal changes, cta_naturalness caps at 6 — the CTA must feel specific to THIS video's proof.
-- A CTA that directly echoes the specific demo moment (the upside-down bowl, the hair ball, the flex reach, the side-by-side) should score 8-10.
+- If the CTA follows the shape "that [test/result] alone is why I [switched/changed/use] this now" — this is an overused conversion frame. Flag as warning and cap cta_naturalness at 7 UNLESS it is genuinely the strongest possible close for this specific proof. The CTA logic should match the viewer state: proof conviction, problem tiredness, relief/discovery, value justification, offer/timing, or practical ownership.
+- A CTA that directly echoes the specific demo moment AND uses the conversion logic best suited to the viewer's emotional state should score 8-10.
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.

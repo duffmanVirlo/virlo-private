@@ -88,6 +88,11 @@ function AnalyzeContent() {
     setStageStatuses(initialStatuses);
 
     try {
+      // Send already-extracted product and classification to skip redundant
+      // extraction + classification in the pipeline (~15-25s savings).
+      const productData = sessionStorage.getItem(`virlo_product_${sessionId}`);
+      const classData = sessionStorage.getItem(`virlo_classification_${sessionId}`);
+
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -96,6 +101,8 @@ function AnalyzeContent() {
           sessionId,
           overrideCategory,
           overrideProductType,
+          product: productData ? JSON.parse(productData) : undefined,
+          classification: classData ? JSON.parse(classData) : undefined,
         }),
       });
 

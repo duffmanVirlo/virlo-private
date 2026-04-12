@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const { url, sessionId, overrideCategory, overrideProductType } = body;
+    const { url, sessionId, overrideCategory, overrideProductType, product, classification } = body;
 
     if (!url || !isValidUrl(sanitizeUrl(url))) {
       return NextResponse.json(
@@ -32,6 +32,8 @@ export async function POST(request: NextRequest) {
       sessionId: id,
       overrideCategory,
       overrideProductType,
+      preExtractedProduct: product,
+      preClassification: classification,
     });
 
     if (!result.success) {
