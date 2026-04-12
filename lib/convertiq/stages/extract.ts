@@ -696,14 +696,27 @@ export async function runExtraction(url: string): Promise<ExtractionResult> {
     images: mergedImages,
   };
 
-  if (enrichedTitle) {
-    return {
-      success: false,
-      product: null,
-      partial,
-      resolvedUrl: cleanProductUrl,
-      error: "We read the product name but couldn't extract full details.",
+  // ── Step 7b: Auto-promote partial to success ───────────────────────────
+  // When we have a real product title (and optionally description), we have
+  // enough to proceed through classification. Don't force manual entry when
+  // the data is already usable — the classifier will validate independently.
+  if (enrichedTitle && !isGenericTitle(enrichedTitle)) {
+    const promotedProduct: ExtractedProduct = {
+      url: cleanProductUrl,
+      title: enrichedTitle,
+      description: enrichedDescription,
+      price: enrichedPrice,
+      currency: enrichedPrice ? "USD" : null,
+      images: mergedImages,
+      category_tags: [],
+      ingredients_or_materials: null,
+      claims: [],
+      review_signals: { rating: null, review_count: null, recurring_phrases: [] },
+      badges: [],
+      sold_count: null,
+      raw_text: enrichedTitle + (enrichedDescription ? `\n${enrichedDescription}` : ""),
     };
+    return { success: true, product: promotedProduct, partial: null, resolvedUrl: cleanProductUrl };
   }
 
   return {
