@@ -1,0 +1,58 @@
+import type { ProductTypeDefinition } from "./auto";
+
+export const officeProductTypes: ProductTypeDefinition[] = [
+  {
+    category: "OFFICE",
+    type_name: "Desk tool",
+    primary_conversion_mechanism: "Productivity boost — showing a workflow friction eliminated by a single desk tool converts productivity-obsessed professionals through efficiency gains",
+    dominant_objection: "Do I really need another desk gadget or am I just buying productivity theater?",
+    required_proof: "Workflow comparison showing time saved or friction eliminated, daily use integration, and desk footprint impact",
+    content_style_affinity: ["desk setup tour", "productivity workflow", "tool comparison", "work from home upgrade", "day in the life"],
+    anti_patterns: ["Over-styled desk setups that feel aspirational rather than functional", "No workflow context for the tool", "Ignoring desk real estate trade-offs"],
+  },
+  {
+    category: "OFFICE",
+    type_name: "Ergonomic accessory",
+    primary_conversion_mechanism: "Pain prevention — showing posture analysis or wrist strain footage triggers preventive health purchases from desk workers experiencing discomfort",
+    dominant_objection: "Will this actually reduce my pain or is it just another ergonomic gimmick?",
+    required_proof: "Posture or strain comparison before and after use, comfort rating over a full workday, and physical therapist or ergonomist endorsement",
+    content_style_affinity: ["ergonomic assessment", "all-day comfort test", "desk worker pain solution", "PT endorsement", "WFH health setup"],
+    anti_patterns: ["Only showing the product without body mechanics context", "No full-day wear or use test", "Making medical claims without professional backing"],
+  },
+  {
+    category: "OFFICE",
+    type_name: "Organizer",
+    primary_conversion_mechanism: "Mental clarity through physical order — showing a chaotic desk transformed into organized productivity space converts through the visual calm effect",
+    dominant_objection: "Will I actually maintain this organization or will it become another cluttered surface in a week?",
+    required_proof: "Full desk transformation, items loaded at real capacity, and a follow-up showing maintained organization after daily use",
+    content_style_affinity: ["desk transformation", "organization ASMR", "minimalist setup", "back to school prep", "WFH office tour"],
+    anti_patterns: ["Empty organizer beauty shots", "Over-styled minimal desks that do not represent real work", "No follow-up on maintained organization"],
+  },
+  {
+    category: "OFFICE",
+    type_name: "Stationery",
+    primary_conversion_mechanism: "Tactile satisfaction — the feel of premium paper, smooth ink, and quality construction converts through the sensory experience that cannot be replicated digitally",
+    dominant_objection: "In a digital world, is premium stationery worth the cost or just a nostalgic indulgence?",
+    required_proof: "Writing sample close-ups showing ink quality, paper texture test, and real-world productivity use case (not just aesthetic journaling)",
+    content_style_affinity: ["pen test close-up", "journal setup", "stationery haul", "writing ASMR", "note-taking system"],
+    anti_patterns: ["Only aesthetic flat lays without writing demos", "Ignoring practical use cases", "Showing only calligraphy or art without everyday writing context"],
+  },
+  {
+    category: "OFFICE",
+    type_name: "Monitor accessory",
+    primary_conversion_mechanism: "Setup optimization — showing dramatic improvement in screen real estate, posture, or cable management converts remote workers investing in their workspace",
+    dominant_objection: "Is this compatible with my specific monitor size and weight, and will it damage my desk?",
+    required_proof: "Installation on multiple monitor sizes, weight capacity test, desk compatibility check, and posture improvement demonstration",
+    content_style_affinity: ["desk setup upgrade", "monitor arm installation", "before-after workspace", "ergonomic positioning", "multi-monitor setup"],
+    anti_patterns: ["Only showing one monitor size", "Skipping the installation process and desk compatibility", "No weight capacity evidence"],
+  },
+  {
+    category: "OFFICE",
+    type_name: "Cable management",
+    primary_conversion_mechanism: "Under-desk reveal shame — showing the hidden cable disaster under a desk creates immediate cleanup urgency and organizational purchase behavior",
+    dominant_objection: "Is this a permanent solution or will cables fall out and tangle again within days?",
+    required_proof: "Full under-desk transformation, cable routing for common setups (chargers, monitors, peripherals), and durability after plug and unplug cycles",
+    content_style_affinity: ["under desk reveal", "cable management timelapse", "WFH cleanup", "desk tour improvement", "organization ASMR"],
+    anti_patterns: ["Only managing 2-3 cables when real desks have 8+", "No follow-up after daily use", "Hiding the difficulty of routing thick power cables"],
+  },
+];

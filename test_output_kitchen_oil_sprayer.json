@@ -1,0 +1,463 @@
+{
+  "session_id": "test-1775371814379",
+  "generated_at": "2026-04-05T06:50:14.379Z",
+  "product": {
+    "url": "https://www.tiktok.com/shop/product/oil-sprayer",
+    "title": "Olive Oil Sprayer Mister for Cooking — 200ml Glass Bottle with Adjustable Nozzle",
+    "description": "Replace messy pouring with a fine, even mist. This 200ml glass oil sprayer lets you control exactly how much oil goes on your pan, salad, or air fryer basket. Adjustable nozzle from fine mist to stream. Works with olive oil, avocado oil, vinegar, and lemon juice.",
+    "price": 12.99,
+    "currency": "USD",
+    "images": [
+      "https://example.com/oil-sprayer.jpg"
+    ],
+    "category_tags": [
+      "kitchen",
+      "cooking",
+      "oil"
+    ],
+    "ingredients_or_materials": "Borosilicate glass body, food-grade stainless steel nozzle, BPA-free pump mechanism",
+    "claims": [
+      "Fine mist covers entire pan surface evenly",
+      "Uses 80% less oil than pouring from a bottle",
+      "Works with any cooking oil or vinegar",
+      "Adjustable nozzle — mist to stream",
+      "200ml capacity",
+      "Dishwasher safe glass body"
+    ],
+    "review_signals": {
+      "rating": 4.5,
+      "review_count": 1823,
+      "recurring_phrases": [
+        "actually works",
+        "way less oil",
+        "even coating",
+        "great for air fryer",
+        "no more pooling"
+      ]
+    },
+    "badges": [
+      "bestseller"
+    ],
+    "sold_count": "25K+ sold",
+    "raw_text": "Olive Oil Sprayer Mister 200ml glass bottle adjustable nozzle fine mist cooking spray. Uses 80% less oil. Perfect for air fryer, salads, grilling."
+  },
+  "classification": {
+    "primary_category": "KITCHEN",
+    "product_type": "Oil Sprayer Mister",
+    "secondary_modifier": null,
+    "confidence": 95,
+    "confidence_label": "high",
+    "reason": "This is clearly a kitchen cooking tool designed specifically for food preparation - controlling oil application during cooking, air frying, and salad preparation.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "functional_role": [
+      "demonstration-led",
+      "convenience-led",
+      "utility-led"
+    ],
+    "primary_role": "demonstration-led",
+    "buyer_motivation": {
+      "surface": "control oil usage and get even coating",
+      "deep": "feel competent and in control while cooking, create restaurant-quality results at home",
+      "avoidance": "greasy, uneven food and the shame of messy, amateur-looking cooking",
+      "identity": "someone who cooks thoughtfully and skillfully, not wastefully or sloppily",
+      "weighted_primary": "deep"
+    },
+    "belief_barriers": [
+      {
+        "type": "efficacy",
+        "statement": "this will just be another kitchen gadget that doesn't work as well as advertised and takes up space",
+        "weight": "high"
+      },
+      {
+        "type": "relevance",
+        "statement": "I don't cook enough or fancy enough food to need this",
+        "weight": "medium"
+      },
+      {
+        "type": "friction",
+        "statement": "it's probably annoying to clean and refill",
+        "weight": "low"
+      }
+    ],
+    "proof_inventory": [
+      {
+        "type": "live-demonstration",
+        "available": true,
+        "credibility": "high",
+        "notes": "Show side-by-side cooking: pouring oil vs spraying. Film the actual misting action and immediate food result. Must show real cooking, not staged demo."
+      },
+      {
+        "type": "result-display",
+        "available": true,
+        "credibility": "high",
+        "notes": "Close-up of evenly coated food vs pooled oil food. Show golden, crispy results from air fryer. The food quality difference is the strongest proof."
+      },
+      {
+        "type": "comparison",
+        "available": true,
+        "credibility": "high",
+        "notes": "Split-screen or before/after showing oil pooling vs even mist coverage. Measure actual oil used - visual proof of the 80% reduction claim."
+      },
+      {
+        "type": "unexpected-mechanism",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Show the pump mechanism creating fine mist vs stream adjustment. The adjustable nozzle feature is visually interesting and unexpected."
+      },
+      {
+        "type": "quantity-scale",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Show how many sprays vs tablespoons of poured oil. Count pumps needed for full pan coverage to make oil savings tangible."
+      },
+      {
+        "type": "third-party-signal",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Reference the 4.5 rating and 1823 reviews, especially the 'actually works' and 'way less oil' themes from real users."
+      },
+      {
+        "type": "personal-testimony",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Creator's genuine reaction to how much less oil they're using and how evenly food cooks. Must feel authentic, not scripted."
+      },
+      {
+        "type": "problem-framing",
+        "available": true,
+        "credibility": "high",
+        "notes": "Open with the frustration of oil pooling in one spot, uneven cooking, or greasy food. The problem is highly relatable and visual."
+      }
+    ],
+    "category_module_applied": "KITCHEN",
+    "product_type_applied": "Oil Sprayer Mister",
+    "content_fit_rating": 9,
+    "creator_pattern_archetype": "iamsk8bordb-pattern"
+  },
+  "modality": {
+    "selected": "demo-first",
+    "reason": "The oil sprayer's value is entirely in its mechanism and visual result — the fine mist spray pattern and even oil distribution. With high-credibility live-demonstration and result-display proof available, opening immediately with the spray action creates instant visual proof that serves the buyer's need to 'feel competent and in control.' The surprising mist quality becomes the hook itself.",
+    "rejected": [
+      {
+        "modality": "problem-reveal-led",
+        "reason": "While oil application problems are relatable, starting with messy oil pouring delays getting to the product's impressive spray mechanism, which is the strongest proof point for this demonstration-led product."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Side-by-side comparisons would work well but require more complex filming setup and split the viewer's attention. The oil sprayer's mist quality is so visually distinctive it doesn't need comparison context to prove its value."
+      }
+    ]
+  },
+  "show_say": {
+    "must_show": [
+      {
+        "instruction": "Film side-by-side cooking: pour oil from bottle into one pan (showing pooling), spray mist into identical pan (showing even coverage). Use same lighting, same angle, same food.",
+        "why": "Visual comparison eliminates doubt about oil distribution claims - viewer sees the difference with their own eyes rather than trusting words"
+      },
+      {
+        "instruction": "Close-up shot of the actual mist coming out of the nozzle in real time, then immediate cut to the fine droplets hitting the pan surface.",
+        "why": "The misting mechanism is the core product promise - viewers need to see it actually works, not just hear about it"
+      },
+      {
+        "instruction": "Show the adjustable nozzle being turned from mist to stream setting while actively spraying, demonstrating the immediate change in spray pattern.",
+        "why": "The adjustability feature differentiates this from basic sprayers - visual proof that it actually adjusts rather than just claiming it does"
+      },
+      {
+        "instruction": "Film the final cooked food results from both pans: close-up of evenly golden food from sprayed pan vs unevenly cooked/greasy food from poured oil pan.",
+        "why": "The end result is what viewers actually care about - better food - and visual food quality is immediately recognizable proof"
+      },
+      {
+        "instruction": "Count and show the number of pumps needed to cover entire pan surface, then measure the tablespoons of oil that would be poured for same coverage.",
+        "why": "Makes the 80% oil reduction claim tangible and verifiable rather than abstract - viewers can see the actual quantity difference"
+      }
+    ],
+    "can_say": [
+      {
+        "line": "I used to hate how my oil would just pool in one corner of the pan",
+        "purpose": "problem naming"
+      },
+      {
+        "line": "This took me about 6 pumps to cover the whole pan",
+        "purpose": "timeline anchor"
+      },
+      {
+        "line": "Obviously this won't work for deep frying, but for regular cooking...",
+        "purpose": "limitation acknowledgment"
+      },
+      {
+        "line": "I'm making the same eggs in both pans",
+        "purpose": "context setting"
+      },
+      {
+        "line": "Watch what happens when I turn this nozzle",
+        "purpose": "viewer direction"
+      },
+      {
+        "line": "I've been using this for three weeks now and I'm actually going through way less oil",
+        "purpose": "personal experience"
+      }
+    ],
+    "never_say": [
+      {
+        "blocked_phrase_type": "percentage claims without visual proof",
+        "instead": "Show the actual oil amounts being used - count pumps vs measure poured oil so viewer can see the difference"
+      },
+      {
+        "blocked_phrase_type": "superlatives about mist quality",
+        "instead": "Film the actual mist pattern hitting the pan surface and let the viewer judge the coverage quality themselves"
+      },
+      {
+        "blocked_phrase_type": "health benefit claims",
+        "instead": "Show the visual difference in oil usage and let viewer draw their own conclusions about implications"
+      },
+      {
+        "blocked_phrase_type": "universal compatibility promises",
+        "instead": "Show it working with the specific oils you actually tested - olive oil, avocado oil, etc."
+      },
+      {
+        "blocked_phrase_type": "durability or longevity guarantees",
+        "instead": "Show the actual build quality - the glass thickness, pump mechanism, how it feels in hand"
+      }
+    ]
+  },
+  "angle": {
+    "selected": {
+      "name": "Oil Pooling Problem Reveal",
+      "conversion_hypothesis": "If we open with the visceral frustration of oil pooling in one corner of the pan, then the viewer will recognize their own cooking problem and see the sprayer as the obvious solution, which makes purchasing feel like solving a daily annoyance",
+      "entry_mechanism": "Close-up shot of oil being poured from bottle into pan, immediately pooling in one corner while eggs sit in the dry areas, with frustrated sigh",
+      "proof_vehicle": "Live side-by-side cooking demonstration: identical pans, same eggs, oil pour vs spray mist, showing coverage difference and final cooking results",
+      "belief_formation_path": "Viewer sees their exact problem → watches real-time solution demonstration → observes superior cooking results → realizes this solves a daily frustration they experience",
+      "cta_setup": "After seeing perfectly even cooking results, viewer naturally wants to eliminate their own oil pooling problem",
+      "score": {
+        "scroll_stop": 9,
+        "retention_arc": 8,
+        "belief_formation": 9,
+        "filming_feasibility": 9,
+        "cta_naturalness": 8,
+        "composite": 8.4
+      },
+      "creator_pattern_source": "Problem Callout hook pattern combined with Proof Absorbs Objection - the demonstration inherently proves the product works without defensive claims"
+    },
+    "rejected": [
+      {
+        "name": "80% Oil Savings Proof",
+        "score": {
+          "scroll_stop": 7,
+          "retention_arc": 6,
+          "belief_formation": 7,
+          "filming_feasibility": 8,
+          "cta_naturalness": 6,
+          "composite": 6.7
+        },
+        "primary_rejection_reason": "Opens with a claim (80% less oil) rather than proof first - violates core conversion principle and creates skepticism before building belief"
+      },
+      {
+        "name": "Adjustable Nozzle Feature Demo",
+        "score": {
+          "scroll_stop": 6,
+          "retention_arc": 7,
+          "belief_formation": 6,
+          "filming_feasibility": 9,
+          "cta_naturalness": 5,
+          "composite": 6.4
+        },
+        "primary_rejection_reason": "Feature-focused rather than problem-solution focused - viewers don't care about nozzle adjustability until they understand why they need oil spraying at all"
+      }
+    ]
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Close-up of oil being poured from bottle into pan, immediately pooling in one corner while eggs crack into the dry areas",
+        "spoken": "I used to hate how my oil would just pool in one corner of the pan",
+        "text_overlay": null,
+        "filming_note": "Film from above the pan, show oil creating a puddle on one side while eggs sit in completely dry areas"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Hand reaches for the glass oil sprayer, picks it up and gives it 6 deliberate pumps",
+        "spoken": "This took me about 6 pumps to cover the whole pan",
+        "text_overlay": null,
+        "filming_note": "Count the pumps visibly - let viewer see each pump action and hear the spray mechanism"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Close-up of fine mist coming out of nozzle in real time, then cut to mist droplets hitting second identical pan surface evenly",
+        "spoken": "Watch what happens when I spray instead",
+        "text_overlay": null,
+        "filming_note": "Film the actual mist pattern - viewer needs to see the fine droplets dispersing evenly across pan surface"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 14,
+        "type": "SHOW",
+        "content": "Side-by-side shot of both pans: pooled oil pan on left, evenly misted pan on right, same eggs cracking into both",
+        "spoken": "I'm making the same eggs in both pans",
+        "text_overlay": null,
+        "filming_note": "Keep both pans in frame simultaneously, same lighting, same angle - direct visual comparison"
+      },
+      {
+        "start_seconds": 14,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Adjustable nozzle being turned from mist to stream setting while actively spraying, showing immediate change in spray pattern",
+        "spoken": "Obviously this won't work for deep frying, but for regular cooking...",
+        "text_overlay": null,
+        "filming_note": "Film the nozzle adjustment in real time - viewer sees the spray pattern change instantly as you turn it"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 25,
+        "type": "SHOW",
+        "content": "Final cooked eggs results: close-up of evenly golden eggs from sprayed pan vs unevenly cooked, greasy eggs from poured oil pan",
+        "spoken": "I've been using this for three weeks now and I'm actually going through way less oil",
+        "text_overlay": null,
+        "filming_note": "Film the finished eggs in same lighting as beginning - let the visual difference in cooking quality be obvious"
+      },
+      {
+        "start_seconds": 25,
+        "end_seconds": 28,
+        "type": "SHOW",
+        "content": "Creator holding the glass sprayer, showing the 200ml capacity and clean glass body",
+        "spoken": "It's $12.99 in TikTok Shop - way better than wasting oil every morning",
+        "text_overlay": null,
+        "filming_note": "Hold the sprayer naturally, show the glass quality and size in hand"
+      }
+    ],
+    "total_duration_seconds": 28,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "Oil pooling in one corner of pan while eggs sit in completely dry areas",
+        "hook_format": "visual",
+        "rationale": "Immediately shows the exact frustration every home cook experiences - the visual is instantly recognizable and annoying",
+        "performance_note": "Film from directly above the pan, pour oil slowly so it clearly pools to one side, crack eggs into the dry areas to emphasize the problem"
+      },
+      {
+        "rank": 2,
+        "hook_text": "I used to hate how my oil would just pool in one corner of the pan",
+        "hook_format": "spoken",
+        "rationale": "Verbal articulation of the common cooking frustration creates immediate relatability and problem recognition",
+        "performance_note": "Say this with genuine frustration while showing the oil pooling - the emotion should match the visual problem"
+      },
+      {
+        "rank": 3,
+        "hook_text": "Same eggs, same pan, but watch this difference",
+        "hook_format": "spoken",
+        "rationale": "Creates curiosity about what the difference will be while establishing the controlled comparison that follows",
+        "performance_note": "Set up two identical pans side by side, speak with anticipation of revealing something surprising"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Oil pooling creates uneven cooking and wastes oil - a daily frustration that makes home cooking feel less controlled and professional",
+      "why_this_framing": "Every home cook has experienced oil pooling and the resulting uneven cooking. It's visceral, visual, and immediately recognizable as a real problem worth solving",
+      "solution_positioning": "The sprayer eliminates pooling by creating even oil distribution, giving the cook control and better results while using less oil"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen their exact cooking problem solved with clear visual proof of better results and oil savings",
+      "cta_text": "It's $12.99 in TikTok Shop - way better than wasting oil every morning",
+      "pressure_mechanism": null,
+      "why_it_works": "References the daily oil waste problem shown in the demo, positions the price as reasonable for solving a recurring frustration, and connects back to the proof of using less oil"
+    },
+    "caption": "finally found something that actually works for even oil coverage. no more oil pools in one corner while the rest of my pan stays dry. been using way less oil since i got this thing",
+    "hashtags": {
+      "broad": [
+        "#cooking",
+        "#kitchen",
+        "#foodprep"
+      ],
+      "mid": [
+        "#cookinghacks",
+        "#kitchengadgets",
+        "#oilsprayer",
+        "#homecooking"
+      ],
+      "specific": [
+        "#oliveoilsprayer",
+        "#cookingtools",
+        "#kitchenfinds"
+      ]
+    },
+    "content_structure_note": "Demo-first structure that opens with the problem, immediately shows the solution in action, and proves effectiveness through side-by-side cooking results. The visual proof carries the entire argument without defensive claims.",
+    "filming_instructions": {
+      "location": "Kitchen with good overhead lighting for cooking shots",
+      "shots": [
+        {
+          "label": "Problem Setup",
+          "instructions": [
+            "Film from directly above pan",
+            "Pour oil slowly to show pooling",
+            "Crack eggs into dry areas for contrast"
+          ]
+        },
+        {
+          "label": "Sprayer Demo",
+          "instructions": [
+            "Close-up of pump action",
+            "Film actual mist coming from nozzle",
+            "Show mist hitting pan surface evenly"
+          ]
+        },
+        {
+          "label": "Side-by-Side Comparison",
+          "instructions": [
+            "Keep both pans in frame",
+            "Same lighting and angle",
+            "Film cooking process in real time"
+          ]
+        },
+        {
+          "label": "Results",
+          "instructions": [
+            "Close-up of finished eggs from both pans",
+            "Same lighting as setup",
+            "Let visual difference speak for itself"
+          ]
+        }
+      ],
+      "lighting": "Bright, even kitchen lighting from above to clearly show oil distribution and cooking results",
+      "equipment_note": "Phone camera, tripod or stable surface for overhead shots, two identical pans for comparison"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "filming_feasibility",
+        "issue": "Side-by-side shot of both pans at [10s-14s] requires either two cameras or complex setup for solo creator with phone",
+        "severity": "warning"
+      },
+      {
+        "component": "cta_naturalness",
+        "issue": "CTA references price and waste reduction but could be stronger by connecting back to the specific pooling problem shown",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  },
+  "compliance": {
+    "category_requires_compliance": false,
+    "modifications_made": [],
+    "creator_note": null,
+    "cleared": true
+  }
+}

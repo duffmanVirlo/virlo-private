@@ -1,0 +1,58 @@
+import type { ProductTypeDefinition } from "./auto";
+
+export const fitnessProductTypes: ProductTypeDefinition[] = [
+  {
+    category: "FITNESS",
+    type_name: "Equipment",
+    primary_conversion_mechanism: "Home gym legitimacy — showing a full workout using a single piece of equipment proves gym-replacement value and converts space-conscious buyers",
+    dominant_objection: "Is this sturdy enough for real workouts or will it wobble, break, or feel cheap?",
+    required_proof: "Heavy-use workout session showing stability under load, build quality close-up, and comparison to gym equipment performance",
+    content_style_affinity: ["home gym workout", "equipment stress test", "full body with one tool", "apartment gym build", "gym vs home comparison"],
+    anti_patterns: ["Light demo reps that do not test real load capacity", "Only showing assembly without workout footage", "Ignoring noise, footprint, and storage concerns"],
+  },
+  {
+    category: "FITNESS",
+    type_name: "Activewear",
+    primary_conversion_mechanism: "Performance validation — showing activewear surviving an intense workout without failing (riding up, chafing, soaking through) converts through functional proof",
+    dominant_objection: "Will it survive intense workouts and repeated washes, or is it fast fashion with a fitness label?",
+    required_proof: "Full workout wear test with sweat, movement stress points checked, and wash durability after multiple cycles",
+    content_style_affinity: ["workout wear test", "sweat session review", "wash durability check", "gym fit comparison", "movement freedom test"],
+    anti_patterns: ["Only gym mirror selfies", "No actual workout footage", "Ignoring sweat, chafe, and wash performance"],
+  },
+  {
+    category: "FITNESS",
+    type_name: "Recovery tool",
+    primary_conversion_mechanism: "Immediate relief gratification — showing real-time pain reduction, improved range of motion, or soreness relief after a tough workout drives purchase through instant payoff",
+    dominant_objection: "Is this actually better than a $15 foam roller or just an overpriced vibrating gadget?",
+    required_proof: "Range-of-motion test before and after, soreness recovery comparison to manual methods, and multi-session tracking",
+    content_style_affinity: ["post-workout recovery", "ROM before-after", "recovery tool comparison", "muscle group targeting", "athlete recovery routine"],
+    anti_patterns: ["Using on relaxed muscles with no exercise context", "Only showing the device without measurable outcomes", "Ignoring noise, weight, and battery life"],
+  },
+  {
+    category: "FITNESS",
+    type_name: "Tracking device",
+    primary_conversion_mechanism: "Data-driven motivation — showing real workout metrics, progress charts, and accountability features converts the quantified-self fitness audience",
+    dominant_objection: "Is the data accurate enough to be useful, or will inaccurate readings lead me astray?",
+    required_proof: "Accuracy test against a known reference (chest strap HR, gym equipment calorie count), app interface walkthrough, and real training insights gained",
+    content_style_affinity: ["data deep dive", "accuracy comparison test", "training insights reveal", "app walkthrough", "fitness journey with data"],
+    anti_patterns: ["Only showing the hardware design without data accuracy", "Ignoring app experience and ecosystem lock-in", "No accuracy comparison to established devices"],
+  },
+  {
+    category: "FITNESS",
+    type_name: "Supplement",
+    primary_conversion_mechanism: "Performance edge — showing measurable workout improvements (more reps, faster times, better recovery) with supplement use converts competitive fitness enthusiasts",
+    dominant_objection: "Is this third-party tested and free of banned substances, and will I actually notice a difference?",
+    required_proof: "Third-party testing certification, workout performance comparison with and without the supplement, and ingredient transparency breakdown",
+    content_style_affinity: ["performance test", "ingredient breakdown", "lab test results", "training comparison", "supplement stack guide"],
+    anti_patterns: ["Bodybuilder endorsement without data", "Proprietary blend secrecy", "Before-after physique photos that span months of training changes"],
+  },
+  {
+    category: "FITNESS",
+    type_name: "Resistance band",
+    primary_conversion_mechanism: "Portability and value — showing a full-body workout anywhere with a $20 set of bands converts budget-conscious and travel-frequent fitness seekers",
+    dominant_objection: "Will these snap during heavy use, and can they actually provide enough resistance for real strength gains?",
+    required_proof: "Stretch and snap test at maximum extension, full workout demonstrating progressive resistance levels, and durability after repeated use",
+    content_style_affinity: ["travel workout", "band-only full body", "resistance comparison", "hotel room workout", "band vs weights challenge"],
+    anti_patterns: ["Only light rehabilitation exercises", "No tension measurement or comparison to free weights", "Ignoring latex allergy alternatives"],
+  },
+];

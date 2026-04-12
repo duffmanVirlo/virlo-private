@@ -1,0 +1,248 @@
+{
+  "label": "Auto: Microfiber Wheel Brush Kit (3-Piece)",
+  "classification": {
+    "primary_category": "AUTO",
+    "product_type": "Wheel Cleaning Brush Kit",
+    "secondary_modifier": null,
+    "confidence": 95,
+    "confidence_label": "high",
+    "reason": "This is a specialized automotive detailing tool kit designed specifically for cleaning wheels, brake dust removal, and car care maintenance. Perfect for automotive content creators focusing on car detailing and maintenance tutorials.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "demonstration-led",
+    "buyer_motivation": {
+      "surface": "A brush kit that cleans wheels without scratching",
+      "deep": "To maintain their vehicle's appearance with professional-level results without the hassle or cost of detailing services",
+      "avoidance": "Scratching expensive wheels or wasting money on another cleaning tool that doesn't actually work",
+      "identity": "Someone who takes proper care of their vehicle and knows quality tools",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "demo-first",
+    "reason": "The wheel cleaning brush kit's primary functional role is demonstration-led, and the buyer's core fear is 'wasting money on another cleaning tool that doesn't actually work.' Demo-first immediately proves the product works by showing it in action, eliminating the buyer's skepticism through visual proof rather than promises. The high-credibility live-demonstration proof type is perfectly served by opening with the brushes actively cleaning wheel grime.",
+    "rejected": [
+      {
+        "modality": "problem-reveal-led",
+        "reason": "While showing dirty wheels first seems logical, the buyer already knows wheels get dirty. Their fear isn't about the problem existing but about solutions failing. Starting with the problem wastes precious seconds that could be spent proving the solution works."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Comparison requires showing inferior alternatives, which reinforces the buyer's fear that cleaning tools don't work. Demo-first bypasses this negative framing by immediately demonstrating effectiveness, building confidence rather than highlighting failures."
+      }
+    ]
+  },
+  "angle": {
+    "name": "The Spoke Squeeze Test",
+    "conversion_hypothesis": "If we show the barrel brush actually fitting through impossibly tight wheel spokes that nothing else can reach, then the viewer will believe this solves their specific wheel cleaning frustration, which makes buying it feel like finally getting the right tool for an annoying job",
+    "entry_mechanism": "Open with creator trying to jam a regular brush or rag between tight spokes, failing completely, then immediately cut to the barrel brush sliding through effortlessly",
+    "proof_vehicle": "Live demonstration of the brush fitting through at least 3 different wheel spoke configurations - tight performance wheels, standard alloys, and complex multi-spoke designs - showing the flexible core bending to reach every surface",
+    "belief_formation_path": "Viewer sees their exact wheel cleaning frustration → watches brush solve the specific fitment problem → sees brake dust actually being removed instead of spread around → realizes this is the missing piece in their car care routine",
+    "cta_setup": "After showing comprehensive spoke access and brake dust removal, viewer feels equipped to finally clean their wheels properly instead of giving up halfway through",
+    "score": {
+      "scroll_stop": 9,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 9,
+      "composite": 8.8
+    },
+    "creator_pattern_source": "dealswithty-pattern live-demonstration with Objection Inside Proof - the fitment doubt is resolved by showing actual wheel compatibility"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Creator trying to jam a regular cleaning rag between tight wheel spokes, clearly struggling and failing to reach the brake dust buildup",
+        "spoken": "I've been trying to get between these spokes forever and nothing would fit",
+        "text_overlay": null,
+        "filming_note": "Film close-up of your hand forcing a regular rag or old brush against tight spokes - show it bending and not fitting through"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Barrel brush sliding effortlessly through the same tight spokes, flexible core bending to follow the wheel's curve",
+        "spoken": "Look how it actually bends with the wheel instead of fighting against it",
+        "text_overlay": "Flexible core",
+        "filming_note": "Immediate cut to the barrel brush going through - film the flexible core visibly bending as it follows the wheel shape"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Close-up of brake dust being trapped in the microfiber bristles as creator cleans, then rinsing the brush to show dirty water with trapped particles",
+        "spoken": "I was just pushing the brake dust around before, not actually removing it",
+        "text_overlay": null,
+        "filming_note": "Show the brush getting visibly dirty with brake dust, then rinse it in a bucket to show the trapped dust coming out in the water"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 15,
+        "type": "SHOW",
+        "content": "Testing the barrel brush on three different wheel types - tight performance spokes, standard alloys, and multi-spoke design - showing it fits through all configurations",
+        "spoken": null,
+        "text_overlay": "Fits every spoke pattern I tried",
+        "filming_note": "Quick montage of the brush fitting through different wheel spoke patterns - if you only have one car, film different angles to show various spoke gaps"
+      },
+      {
+        "start_seconds": 15,
+        "end_seconds": 20,
+        "type": "SHOW",
+        "content": "Using all three brushes on the same wheel - barrel brush for spokes, lug nut brush for the nuts, fender brush for wheel well",
+        "spoken": "Each brush has its job - spokes, lug nuts, and the wheel well",
+        "text_overlay": null,
+        "filming_note": "Show each brush being used for its specific purpose on the same wheel - demonstrate the complete system"
+      },
+      {
+        "start_seconds": 20,
+        "end_seconds": 25,
+        "type": "SHOW",
+        "content": "Before and after comparison of one wheel cleaned with the kit versus the opposite wheel still dirty with brake dust",
+        "spoken": "This took me maybe three minutes per wheel instead of struggling for twenty",
+        "text_overlay": null,
+        "filming_note": "Side-by-side shot of both wheels - one clean, one still dirty - same lighting and angle for fair comparison"
+      },
+      {
+        "start_seconds": 25,
+        "end_seconds": 28,
+        "type": "SPOKEN",
+        "content": "Obviously this won't help if you never clean your wheels, but if you actually want them clean...",
+        "spoken": "Obviously this won't help if you never clean your wheels, but if you actually want them clean...",
+        "text_overlay": null,
+        "filming_note": "Hold on the clean wheel result while delivering this line"
+      },
+      {
+        "start_seconds": 28,
+        "end_seconds": 32,
+        "type": "SPOKEN",
+        "content": "It's in TikTok Shop - finally got the right tools instead of fighting with rags that don't fit",
+        "spoken": "It's in TikTok Shop - finally got the right tools instead of fighting with rags that don't fit",
+        "text_overlay": null,
+        "filming_note": "Show the three brushes laid out next to the clean wheel"
+      }
+    ],
+    "total_duration_seconds": 32,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "I've been trying to get between these spokes forever and nothing would fit",
+        "hook_format": "spoken",
+        "rationale": "Immediately names the exact frustration every car owner with spoke wheels has experienced - creates instant relatability and sets up the fitment proof",
+        "performance_note": "Say this while actively struggling with a regular rag or brush against tight spokes - show the frustration in real time"
+      },
+      {
+        "rank": 2,
+        "hook_text": "A regular cleaning rag being forced against tight wheel spokes, clearly not fitting through the gaps",
+        "hook_format": "visual",
+        "rationale": "Visual hook that immediately shows the common problem - viewer instantly recognizes their own wheel cleaning struggle",
+        "performance_note": "Close-up shot of your hand trying to force a rag through spokes - make the struggle obvious and relatable"
+      },
+      {
+        "rank": 3,
+        "hook_text": "Watch what happens when I try to clean between these spokes",
+        "hook_format": "spoken",
+        "rationale": "Creates curiosity about the fitment challenge while setting up the comparison between old method and new solution",
+        "performance_note": "Start mid-action while already approaching the wheel with cleaning supplies - don't pause for setup"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "The specific frustration of not being able to reach brake dust between wheel spokes with regular cleaning tools - a problem every car owner with alloy wheels has experienced",
+      "why_this_framing": "This is the exact moment where people give up on wheel cleaning - when they can't physically reach the areas that need cleaning most. It's specific, visual, and universally relatable for the target buyer",
+      "solution_positioning": "The barrel brush as the missing piece that finally makes proper wheel cleaning possible rather than just another cleaning tool"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen their exact wheel cleaning frustration solved through live demonstration and understands this is the tool they've been missing",
+      "cta_text": "It's in TikTok Shop - finally got the right tools instead of fighting with rags that don't fit",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks directly to the core problem demonstrated in the video - positions the purchase as getting the right tool for the job rather than buying another product"
+    },
+    "caption": "been cleaning wheels wrong this whole time. the barrel brush actually fits between spokes and the microfiber traps brake dust instead of just moving it around. three different brushes for spokes, lug nuts, and wheel wells. took me three minutes per wheel instead of twenty minutes of frustration.",
+    "hashtags": {
+      "broad": [
+        "#carcare",
+        "#detailing"
+      ],
+      "mid": [
+        "#wheelcleaning",
+        "#autodetailing",
+        "#carbuff",
+        "#carwash"
+      ],
+      "specific": [
+        "#wheelbrush",
+        "#brakedustremoval",
+        "#spokecleaning"
+      ]
+    },
+    "content_structure_note": "Demo-first structure that immediately proves fitment through live demonstration, then escalates to show the complete cleaning system in action. The proof sequence moves from basic fitment to dust removal to comprehensive wheel cleaning, building credibility at each step.",
+    "filming_instructions": {
+      "location": "Driveway or garage with access to a car with alloy wheels - ideally wheels that need cleaning",
+      "shots": [
+        {
+          "label": "Problem Setup",
+          "instructions": [
+            "Close-up of regular rag or old brush failing to fit between spokes",
+            "Show your hand struggling to force the cleaning tool through tight gaps",
+            "Make the frustration obvious and relatable"
+          ]
+        },
+        {
+          "label": "Solution Demo",
+          "instructions": [
+            "Immediate cut to barrel brush sliding through same spokes effortlessly",
+            "Close-up of flexible core bending to follow wheel curve",
+            "Show brush reaching areas the rag couldn't access"
+          ]
+        },
+        {
+          "label": "Dust Removal Proof",
+          "instructions": [
+            "Film brush getting visibly dirty with brake dust",
+            "Rinse brush in bucket to show trapped particles in water",
+            "Compare to spreading dust around with regular rag"
+          ]
+        },
+        {
+          "label": "Complete System",
+          "instructions": [
+            "Show all three brushes being used on same wheel",
+            "Demonstrate each brush's specific purpose",
+            "Before/after comparison of cleaned vs uncleaned wheel"
+          ]
+        }
+      ],
+      "lighting": "Natural daylight or garage lighting - avoid harsh shadows that hide the cleaning results",
+      "equipment_note": "Phone camera, bucket of water for rinsing demonstration, regular cleaning rag for comparison, dirty wheels for authentic before/after"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA includes product callback but could be stronger - 'finally got the right tools' is somewhat generic compared to the specific spoke-fitting proof demonstrated",
+        "severity": "warning"
+      },
+      {
+        "component": "filming",
+        "issue": "Testing three different wheel types in 5 seconds (10s-15s beat) may be rushed for clear visual proof",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

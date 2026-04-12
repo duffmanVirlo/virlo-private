@@ -1,0 +1,249 @@
+{
+  "label": "Home: Toilet Brush with Holder (Silicone Flex)",
+  "classification": {
+    "primary_category": "HOME",
+    "product_type": "Toilet Brush with Holder",
+    "secondary_modifier": null,
+    "confidence": 95,
+    "confidence_label": "high",
+    "reason": "This is clearly a bathroom cleaning tool designed for toilet maintenance, fitting squarely in the HOME category for household cleaning products. The innovative silicone bristles and wall-mount design are key differentiators for creator content.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "transformation-led",
+    "buyer_motivation": {
+      "surface": "A toilet brush that doesn't get gross and cleans better",
+      "deep": "To eliminate the disgusting ritual of dealing with a bacteria-harboring brush that makes cleaning feel contaminating rather than cleansing",
+      "avoidance": "The revulsion of touching or being near a wet, bacteria-filled brush that defeats the purpose of cleaning",
+      "identity": "Someone who maintains a truly hygienic home without compromising on cleanliness standards",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "The avoidance motivation is triggered by disgust with wet, bacteria-filled brushes, making the problem viscerally relatable when shown visually. Opening with the gross reality of traditional toilet brushes immediately activates the buyer's core pain point, then the product's transformation becomes the emotional relief. This modality leverages the high-credibility problem-framing and live-demonstration proof types while being easily filmable by a solo creator.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the product has strong demonstration value, jumping straight to the solution misses the critical disgust-avoidance trigger that drives purchase intent. The buyer needs to feel the problem viscerally before they care about the solution."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Though comparison proof has high credibility, side-by-side format dilutes the emotional impact of the gross-out problem state. The avoidance motivation requires full immersion in the disgusting reality before presenting the clean alternative."
+      }
+    ]
+  },
+  "angle": {
+    "name": "The Flex Test",
+    "conversion_hypothesis": "If we show the silicone bristles flexing to clean under the toilet rim where traditional brushes can't reach, then the viewer will believe this solves their hidden cleaning problem, which makes buying feel like finally addressing a gross area they've been avoiding",
+    "entry_mechanism": "Open with creator scrubbing under toilet rim, camera showing bristles bending and conforming to reach impossible angles while saying 'I had no idea how much gross stuff was hiding up here'",
+    "proof_vehicle": "Live demonstration of the flex bristles reaching and cleaning areas under the rim that a traditional rigid brush cannot access, followed by immediate comparison showing the clean result",
+    "belief_formation_path": "Viewer sees the hidden mess they recognize from their own toilet → watches bristles flex to reach it → realizes their current brush has been missing this area → understands why their toilet never feels truly clean",
+    "cta_setup": "After seeing the hidden cleaning capability, viewer feels urgency to address the gross areas they've been unknowingly missing in their own bathroom",
+    "score": {
+      "scroll_stop": 8,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 9,
+      "composite": 8.6
+    },
+    "creator_pattern_source": "iamsk8bordb-pattern utility-interruption combined with Objection Inside Proof - the flex demonstration inherently answers the 'too soft to clean' objection"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Creator scrubbing under toilet rim with traditional brush, camera showing bristles can't bend to reach the curved area, visible buildup still there",
+        "spoken": "I had no idea how much gross stuff was hiding up here",
+        "text_overlay": null,
+        "filming_note": "Get close-up shot under rim showing traditional brush failing to reach curved areas"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Switch to silicone brush, camera captures bristles flexing and conforming to reach under rim areas",
+        "spoken": "Until I got this thing that actually bends",
+        "text_overlay": null,
+        "filming_note": "Film from side angle to show bristles flexing into curved spaces"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Close-up of silicone bristles scrubbing away buildup that was unreachable before, showing actual cleaning happening",
+        "spoken": "Look at all this that my old brush was missing",
+        "text_overlay": "reaches where rigid brushes can't",
+        "filming_note": "Focus on the cleaning action and visible results"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 14,
+        "type": "SHOW",
+        "content": "Side-by-side comparison: traditional brush dripping water with debris stuck in bristles vs silicone brush looking clean and dry",
+        "spoken": "And here's the part that actually convinced me",
+        "text_overlay": null,
+        "filming_note": "Film both brushes immediately after cleaning same toilet"
+      },
+      {
+        "start_seconds": 14,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Traditional brush sitting in holder creating puddle underneath while silicone brush sits completely dry in ventilated wall mount",
+        "spoken": "No more disgusting puddle that I have to clean",
+        "text_overlay": "dries completely in minutes",
+        "filming_note": "Show the gross drip tray vs clean wall mount side by side"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 22,
+        "type": "SHOW",
+        "content": "Creator installing wall mount and showing how it frees up floor space where old brush holder used to sit",
+        "spoken": "Plus I finally got my bathroom floor back",
+        "text_overlay": null,
+        "filming_note": "Show before/after of floor space with old vs new setup"
+      },
+      {
+        "start_seconds": 22,
+        "end_seconds": 26,
+        "type": "SHOW",
+        "content": "Final shot of clean toilet with silicone brush hanging dry in wall mount",
+        "spoken": "After two weeks of this, I'm never going back to those nasty nylon brushes",
+        "text_overlay": null,
+        "filming_note": "Clean, organized bathroom shot showing the final result"
+      },
+      {
+        "start_seconds": 26,
+        "end_seconds": 29,
+        "type": "SPOKEN",
+        "content": "TikTok Shop has it - this is the one that actually reaches everywhere",
+        "spoken": "TikTok Shop has it - this is the one that actually reaches everywhere",
+        "text_overlay": null,
+        "filming_note": "Direct to camera delivery"
+      }
+    ],
+    "total_duration_seconds": 29,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "I had no idea how much gross stuff was hiding up here",
+        "hook_format": "spoken",
+        "rationale": "Opens with the exact moment of discovery that triggers the buyer motivation - realizing their current cleaning method is missing disgusting areas. Creates immediate relatability and disgust-based urgency.",
+        "performance_note": "Say this while actively scrubbing under toilet rim with old brush, sounding genuinely surprised and slightly grossed out. Camera should show the unreachable buildup clearly."
+      },
+      {
+        "rank": 2,
+        "hook_text": "Your toilet brush can't reach this",
+        "hook_format": "spoken",
+        "rationale": "Direct challenge that makes viewer immediately think about their own toilet brush limitations. Creates instant curiosity about what 'this' refers to and positions their current tool as inadequate.",
+        "performance_note": "Point directly at the curved area under toilet rim while saying this with confident, matter-of-fact tone. Camera should focus on the hard-to-reach area."
+      },
+      {
+        "rank": 3,
+        "hook_text": "Traditional toilet brush failing to bend under rim, visible buildup still there after scrubbing",
+        "hook_format": "visual",
+        "rationale": "Pure visual proof of the problem - shows the exact failure point that creates the need for this product. No explanation needed, the visual tells the complete story of inadequate cleaning.",
+        "performance_note": "Film close-up of rigid brush bristles hitting the curved rim and bouncing off, unable to conform. Make sure buildup is clearly visible to camera."
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Traditional toilet brushes have rigid bristles that cannot bend to reach the curved areas under the rim where bacteria and buildup accumulate, creating hidden gross areas that never get truly clean",
+      "why_this_framing": "This frames the problem as a mechanical limitation rather than user error, making the viewer realize their cleaning efforts have been structurally limited by their tool, not their technique",
+      "solution_positioning": "Flexible silicone bristles that conform to toilet bowl curves, reaching previously impossible areas while staying cleaner and drying faster than traditional materials"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen proof that their current brush is missing gross areas and that this brush reaches everywhere while staying cleaner. They feel urgency to address the hidden mess in their own toilet.",
+      "cta_text": "TikTok Shop has it - this is the one that actually reaches everywhere",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the core proof demonstrated in the video (reaching everywhere) and positions the product as THE solution to the specific problem they just witnessed, not just another toilet brush option"
+    },
+    "caption": "been using this for two weeks and my toilet has never been this clean. the flexible bristles actually reach under the rim where all the gross stuff hides. plus no more nasty drip puddle to clean up",
+    "hashtags": {
+      "broad": [
+        "#cleaning",
+        "#bathroom",
+        "#CleanTok"
+      ],
+      "mid": [
+        "#toiletbrush",
+        "#bathroomcleaning",
+        "#cleaninghacks",
+        "#cleaningproducts"
+      ],
+      "specific": [
+        "#siliconebrush",
+        "#wallmount",
+        "#bathroomorganization"
+      ]
+    },
+    "content_structure_note": "Problem-reveal structure that opens with the gross discovery moment, demonstrates the mechanical advantage of flexible bristles, then shows the cleanliness and convenience benefits. Each beat escalates the proof while maintaining the disgust-to-relief emotional arc.",
+    "filming_instructions": {
+      "location": "Personal bathroom with real toilet that needs cleaning",
+      "shots": [
+        {
+          "label": "Hook shot",
+          "instructions": [
+            "Close-up under toilet rim showing traditional brush failing to reach curved areas",
+            "Ensure buildup is visible to camera",
+            "Film from side angle to show bristle limitation clearly"
+          ]
+        },
+        {
+          "label": "Flex demonstration",
+          "instructions": [
+            "Film silicone bristles bending and conforming to rim curves",
+            "Show actual cleaning happening with visible results",
+            "Capture the bristles reaching areas traditional brush couldn't"
+          ]
+        },
+        {
+          "label": "Comparison shots",
+          "instructions": [
+            "Side-by-side of both brushes immediately after cleaning",
+            "Show traditional brush dripping vs silicone brush dry",
+            "Film drip tray puddle vs clean wall mount"
+          ]
+        },
+        {
+          "label": "Installation and space",
+          "instructions": [
+            "Quick wall mount installation",
+            "Before/after of floor space freed up",
+            "Final organized bathroom shot"
+          ]
+        }
+      ],
+      "lighting": "Good bathroom lighting that clearly shows cleaning results and brush details",
+      "equipment_note": "Phone camera with macro capability for close-up cleaning shots. Ensure traditional brush and silicone brush are both available for comparison."
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA lacks strong product callback - 'this is the one that actually reaches everywhere' is weak compared to the specific proof demonstrated",
+        "severity": "warning"
+      },
+      {
+        "component": "filming",
+        "issue": "Side-by-side comparison shot at 10s-14s may be challenging for solo creator to execute smoothly while maintaining natural flow",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

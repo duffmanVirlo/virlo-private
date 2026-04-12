@@ -1,0 +1,258 @@
+{
+  "label": "Problem-Solver: Drain Hair Catcher (Silicone)",
+  "classification": {
+    "primary_category": "HOME",
+    "product_type": "Drain Hair Catcher",
+    "secondary_modifier": "Bathroom Maintenance",
+    "confidence": 95,
+    "confidence_label": "high",
+    "reason": "This is a bathroom maintenance product designed to prevent drain clogs by catching hair before it enters pipes. It fits perfectly in the HOME category as a household cleaning/maintenance solution.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "relief-led",
+    "buyer_motivation": {
+      "surface": "prevent drain clogs and avoid calling a plumber",
+      "deep": "eliminate the disgusting, anxiety-inducing ritual of dealing with hair clogs and the helpless feeling when the drain backs up",
+      "avoidance": "the gross-out factor of pulling hair clumps from drains and the panic of a completely blocked drain during a shower",
+      "identity": "someone who has their household maintenance under control and doesn't have to deal with gross plumbing emergencies",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "The avoidance-driven buyer motivation centers on the 'gross-out factor' and 'panic' of drain blockages, making the problem itself the strongest hook. Opening with a clogged drain or hair clump immediately triggers the viewer's pain point, creating urgency before the product appears. This modality leverages the high-credibility problem-framing and live-demonstration proof types while serving the relief-led functional role perfectly.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the product has strong visual proof, starting with the solution before establishing the problem misses the emotional trigger that drives avoidance purchases. Viewers need to feel the pain before they value the relief."
+      },
+      {
+        "modality": "silent-visual-first",
+        "reason": "The gross-out factor requires emotional framing that pure visuals can't provide. Without voiceover or text to contextualize the disgust and panic, the visual demonstration lacks the psychological impact needed for avoidance-motivated buyers."
+      }
+    ]
+  },
+  "angle": {
+    "name": "Hair Horror Reveal",
+    "conversion_hypothesis": "If we open with the creator lifting a TubShroom after one week to reveal a massive hair ball while showing the completely clean drain underneath, then the viewer will realize how much hair they're sending down their own drain daily, which makes buying this to prevent their next clog feel urgent",
+    "entry_mechanism": "Open mid-action lifting the TubShroom from drain after one week of family use, revealing a shocking amount of collected hair while showing the pristine drain underneath",
+    "proof_vehicle": "Live reveal of actual hair mass collected over one week, followed by immediate demonstration of how easily it wipes clean and reinstalls",
+    "belief_formation_path": "Shock at hair volume → realization of what goes down their drain → understanding this prevents expensive clogs → seeing how easy maintenance is → urgency to protect their own pipes",
+    "cta_setup": "After showing the easy cleanup and reinstall, viewer is thinking about their own drain situation and wants to prevent the next clog before it happens",
+    "score": {
+      "scroll_stop": 9,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 9,
+      "composite": 8.8
+    },
+    "creator_pattern_source": "@iamsk8bordb pattern - energetic discovery momentum through genuine shocking reveal that creates contagious urgency"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Creator lifts a TubShroom from bathroom drain after one week, revealing a massive tangled hair ball wrapped around it while showing the completely clean drain opening underneath",
+        "spoken": "This is what came out of my drain after just one week",
+        "text_overlay": null,
+        "filming_note": "Film from above the drain - lift the TubShroom slowly to show the hair mass, then tilt camera to show the pristine drain opening beneath"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Close-up of the hair-covered TubShroom held up to camera, showing the mushroom shape completely wrapped in collected hair",
+        "spoken": "Look at how much hair this thing caught before it could clog my pipes",
+        "text_overlay": "1 week of family showers",
+        "filming_note": "Hold the TubShroom close to camera so viewers can see the hair wrapped around the mushroom ridges"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Creator wipes all the hair off the TubShroom in one smooth motion with tissue, revealing the clean silicone mushroom shape underneath",
+        "spoken": "It's honestly kind of gross but also so satisfying to see what didn't go down my drain",
+        "text_overlay": null,
+        "filming_note": "Film the wiping action in real time - no cuts. Show how easily the hair comes off in one wipe"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 14,
+        "type": "SHOW",
+        "content": "Creator drops the clean TubShroom back into the drain, showing how it sits perfectly inside the standard drain opening",
+        "spoken": "You just drop it back in and it's ready for another week",
+        "text_overlay": "Fits standard 1.5 inch drains",
+        "filming_note": "Film from above to show how the TubShroom sits flush in the drain - it should look like it belongs there"
+      },
+      {
+        "start_seconds": 14,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Water running over the installed TubShroom while creator brushes hair directly over it, showing hair wrapping around the mushroom while water flows freely underneath",
+        "spoken": "Watch this - the hair gets caught but the water still drains perfectly",
+        "text_overlay": null,
+        "filming_note": "Use actual loose hair or brush your hair over the running water to show the mechanism in action"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 22,
+        "type": "SHOW",
+        "content": "Split screen comparison: one side shows hair going straight down a drain without protection, other side shows the same hair wrapping around the TubShroom",
+        "spoken": "I used to have anxiety every time I showered because I knew I was making the drain worse",
+        "text_overlay": "Before vs After",
+        "filming_note": "Film both scenarios with the same lighting and angle - the contrast should be obvious"
+      },
+      {
+        "start_seconds": 22,
+        "end_seconds": 26,
+        "type": "SHOW",
+        "content": "Creator holds up the hair-covered TubShroom again, then looks directly at camera",
+        "spoken": "I wish I had found this before I spent money on drain snake tools",
+        "text_overlay": null,
+        "filming_note": "Direct eye contact with camera for this line - this is the personal conviction moment"
+      },
+      {
+        "start_seconds": 26,
+        "end_seconds": 30,
+        "type": "SHOW",
+        "content": "Quick montage: TubShroom being wiped clean, dropped back in drain, water flowing freely",
+        "spoken": "Takes literally five seconds to clean and you're done",
+        "text_overlay": "So easy",
+        "filming_note": "Fast-paced editing showing the full maintenance cycle in under 4 seconds"
+      },
+      {
+        "start_seconds": 30,
+        "end_seconds": 33,
+        "type": "SHOW",
+        "content": "Final shot of the clean drain with TubShroom installed, water flowing smoothly",
+        "spoken": "It's in TikTok Shop - no more panic when the water starts backing up",
+        "text_overlay": null,
+        "filming_note": "End on a clean, satisfying shot of the working drain"
+      }
+    ],
+    "total_duration_seconds": 33,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "This is what came out of my drain after just one week",
+        "hook_format": "spoken",
+        "rationale": "Opens mid-reveal with the shocking visual proof that immediately triggers the viewer's own drain anxiety. The timeline anchor makes it feel real and urgent.",
+        "performance_note": "Lift the hair-covered TubShroom slowly as you say this, letting the visual horror build. Sound genuinely surprised by the amount of hair."
+      },
+      {
+        "rank": 2,
+        "hook_text": "A TubShroom covered in a massive tangle of hair being lifted from a bathroom drain, revealing the spotless drain opening underneath",
+        "hook_format": "visual",
+        "rationale": "Pure visual shock that makes viewers immediately think about their own drain situation. The contrast between the hair mass and clean drain is the strongest proof.",
+        "performance_note": "Film from directly above the drain. Lift slowly to build the reveal. The hair mass should look genuinely shocking, not staged."
+      },
+      {
+        "rank": 3,
+        "hook_text": "I used to have anxiety every time I showered",
+        "hook_format": "spoken",
+        "rationale": "Emotional entry that names the exact feeling many viewers have about their drains. Creates immediate relatability before showing the solution.",
+        "performance_note": "Say this with genuine frustration while looking at a clogged drain or hair-covered TubShroom. The emotion should feel real, not performed."
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "The gross-out factor and panic of pulling hair clumps from drains, plus the anxiety of knowing you're making the problem worse every time you shower",
+      "why_this_framing": "This hits both the immediate disgust reaction and the underlying anxiety that builds over time. Viewers can instantly relate to both the gross cleanup and the dread of a completely blocked drain.",
+      "solution_positioning": "A tiny silicone mushroom that sits in your drain and catches every hair before it becomes a problem - no more gross cleanouts or emergency plumber calls"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen the shocking amount of hair one family produces in a week, watched how easily it cleans, and is now thinking about their own drain situation with new awareness",
+      "cta_text": "It's in TikTok Shop - no more panic when the water starts backing up",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the specific emotional payoff (no more panic) rather than pushing price or urgency. Feels like helpful information, not a sales pitch."
+    },
+    "caption": "the amount of hair that came off this thing after one week actually shocked me. like i knew we shed but seeing it all caught in one place instead of going down the drain was wild. honestly wish i found this years ago before dealing with so many clogs",
+    "hashtags": {
+      "broad": [
+        "#tiktokmademebuyit",
+        "#amazonfinds"
+      ],
+      "mid": [
+        "#bathroomhacks",
+        "#drainclog",
+        "#hairproblems",
+        "#homeimprovement"
+      ],
+      "specific": [
+        "#tubshroom",
+        "#drainhair",
+        "#bathroomfails"
+      ]
+    },
+    "content_structure_note": "Opens with maximum shock value (the hair reveal) to immediately trigger viewer's drain anxiety, then demonstrates the simple mechanism and easy maintenance to show this actually solves the problem long-term. The proof escalates from 'look what it caught' to 'look how it works' to 'look how easy it is to maintain.'",
+    "filming_instructions": {
+      "location": "Bathroom with standard shower/tub drain",
+      "shots": [
+        {
+          "label": "Hair reveal shot",
+          "instructions": [
+            "Film from directly above the drain",
+            "Lift TubShroom slowly to build suspense",
+            "Show the contrast between hair mass and clean drain",
+            "Use good lighting so hair detail is visible"
+          ]
+        },
+        {
+          "label": "Cleaning demonstration",
+          "instructions": [
+            "Film the wiping action in real time with no cuts",
+            "Show how easily hair comes off in one motion",
+            "Use tissue or paper towel for contrast against dark hair"
+          ]
+        },
+        {
+          "label": "Mechanism demo",
+          "instructions": [
+            "Run water while brushing hair over the TubShroom",
+            "Show hair wrapping around mushroom shape",
+            "Demonstrate water still flows freely underneath"
+          ]
+        },
+        {
+          "label": "Comparison shots",
+          "instructions": [
+            "Film same hair going down unprotected drain",
+            "Use identical lighting and angle for fair comparison",
+            "Make the difference obvious"
+          ]
+        }
+      ],
+      "lighting": "Bright bathroom lighting or ring light to show hair detail clearly against the white drain and silicone",
+      "equipment_note": "Phone camera is sufficient. Consider using a small ring light for consistent lighting across all shots. Have loose hair ready for demonstrations."
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 6
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA is mostly bare 'It's in TikTok Shop' with minimal product callback - could be stronger by referencing the specific anxiety relief or hair-catching proof demonstrated",
+        "severity": "warning"
+      },
+      {
+        "component": "filming",
+        "issue": "Split screen comparison shot may be challenging for solo creator with single phone - requires either editing skills or multiple takes",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

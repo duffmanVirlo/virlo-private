@@ -1,0 +1,261 @@
+{
+  "label": "Clean Living: Glass Spray Bottles (Amber, 4-Pack)",
+  "classification": {
+    "primary_category": "HOME",
+    "product_type": "Spray Bottles",
+    "secondary_modifier": "Cleaning & Organization",
+    "confidence": 92,
+    "confidence_label": "high",
+    "reason": "These are refillable glass spray bottles designed for household use including homemade cleaners, essential oil mixes, and plant care. The UV-protective amber glass and organizational features make them ideal for home cleaning and organization content.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "utility-led",
+    "buyer_motivation": {
+      "surface": "Better spray bottles for homemade cleaners and organization",
+      "deep": "Creating a home that feels intentional, sustainable, and aesthetically pleasing while being functionally superior",
+      "avoidance": "Looking like someone who settles for cheap plastic solutions or doesn't care about their home environment",
+      "identity": "Someone who makes thoughtful, sustainable choices and has an organized, beautiful home",
+      "weighted_primary": "identity"
+    }
+  },
+  "modality": {
+    "selected": "demo-first",
+    "reason": "Spray bottles are utility-led products where the mechanism IS the proof - the spray pattern, coverage, and functionality are immediately visible and compelling. The buyer motivation centers on 'thoughtful choices' which means they want to see the product actually work before purchasing. Demo-first leverages the high-credibility live-demonstration and unexpected-mechanism proof types by opening with the spray bottle in action, creating immediate visual proof of quality and functionality.",
+    "rejected": [
+      {
+        "modality": "problem-reveal-led",
+        "reason": "While spray bottles solve problems, the problems (poor spray patterns, leaking bottles) are not visually dramatic enough to create strong retention. The product's strength is in its positive performance, not in highlighting inferior alternatives."
+      },
+      {
+        "modality": "creator-to-camera",
+        "reason": "Spray bottles don't require personal credibility or complex explanation - their value is in mechanical performance that viewers can assess visually. Creator testimony would slow down access to the visual proof that drives purchase decisions for utility products."
+      }
+    ]
+  },
+  "angle": {
+    "name": "Four-Bottle System Setup",
+    "conversion_hypothesis": "If we show the complete transformation from chaotic plastic bottles to an organized four-bottle cleaning system in real-time, then the viewer will realize they need this exact organizational solution, which makes buying the 4-pack feel like the obvious next step",
+    "entry_mechanism": "Open mid-action filling the fourth and final bottle while saying 'okay so this is my glass cleaner, this one's all-purpose, plant mister, and room spray' - dropping viewer into the middle of creating a complete system",
+    "proof_vehicle": "Real-time system creation: show the actual mixing process for all four solutions, demonstrate nozzle adjustment on each, then show the before/after of the cleaning supply area with proper labeling",
+    "belief_formation_path": "Viewer sees the chaos of multiple plastic bottles → watches four distinct solutions being made → sees the organized final system → realizes they could replicate this exact setup → wants the same transformation",
+    "cta_setup": "After showing the complete organized system, viewer feels equipped with the knowledge to recreate it and sees the 4-pack as the foundation for their own transformation",
+    "score": {
+      "scroll_stop": 8,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 9,
+      "composite": 8.6
+    },
+    "creator_pattern_source": "@iamsk8bordb pattern - utility-interruption hook with energetic discovery momentum through system building"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Wide shot of kitchen counter cluttered with 8-10 different plastic spray bottles - Windex, 409, Fantastik, plant spray, etc. - all mismatched and crowded together",
+        "spoken": "I used to buy a different cleaner for every single surface and my cabinet was chaos",
+        "text_overlay": null,
+        "filming_note": "Film your actual cleaning supply area in its messy state - don't stage it perfectly"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Hands pulling out four empty amber glass bottles from a box, setting them on counter next to the plastic bottle chaos",
+        "spoken": "So I got these four amber glass bottles and made my own system",
+        "text_overlay": null,
+        "filming_note": "Show the size comparison - 16oz bottles are substantial next to typical store cleaners"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 12,
+        "type": "SHOW",
+        "content": "Real-time mixing of first cleaner: pouring white vinegar, water, and dish soap into bottle #1, screwing on sprayer",
+        "spoken": "All-purpose cleaner - just vinegar, water, and a drop of dish soap",
+        "text_overlay": "all-purpose",
+        "filming_note": "Film the actual measuring and pouring - viewers need to see it's genuinely easy to make"
+      },
+      {
+        "start_seconds": 12,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Quick mixing of bottles #2, #3, #4: glass cleaner (vinegar + water), plant mister (water), room spray (water + essential oils)",
+        "spoken": "Glass cleaner, plant mister, and this one's my lavender room spray",
+        "text_overlay": null,
+        "filming_note": "Speed up this section but show each bottle getting filled and labeled"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 23,
+        "type": "SHOW",
+        "content": "Demonstrating nozzle adjustment on the all-purpose bottle: twist from fine mist to stream while spraying onto counter, showing the spray pattern change",
+        "spoken": "Watch how the spray pattern changes when I twist this",
+        "text_overlay": null,
+        "filming_note": "Get close-up of the nozzle adjustment and the actual spray patterns hitting the surface"
+      },
+      {
+        "start_seconds": 23,
+        "end_seconds": 28,
+        "type": "SHOW",
+        "content": "Drop test: dropping one bottle with silicone sleeve from counter height onto tile floor, showing it bounces safely",
+        "spoken": "The silicone sleeve actually works - I've been using these same four bottles for eight months",
+        "text_overlay": null,
+        "filming_note": "Real drop test from realistic height - don't exaggerate the drop but show genuine protection"
+      },
+      {
+        "start_seconds": 28,
+        "end_seconds": 33,
+        "type": "SHOW",
+        "content": "Before/after reveal: split screen or quick cut showing the original plastic bottle chaos versus the organized four amber bottles with labels on the clean counter",
+        "spoken": "This took me about ten minutes to set up and now my counter actually looks intentional",
+        "text_overlay": null,
+        "filming_note": "Same lighting and angle for the before/after so the transformation is clear"
+      },
+      {
+        "start_seconds": 33,
+        "end_seconds": 37,
+        "type": "SHOW",
+        "content": "Using the all-purpose cleaner across multiple surfaces - counter, stovetop, cabinet fronts - showing coverage from one 16oz bottle",
+        "spoken": "You do have to actually make the cleaners yourself, but one bottle goes way further than you'd think",
+        "text_overlay": null,
+        "filming_note": "Show the spray coverage and cleaning action to demonstrate the 16oz capacity"
+      },
+      {
+        "start_seconds": 37,
+        "end_seconds": 40,
+        "type": "SPOKEN",
+        "content": "TikTok Shop has the four-pack - I actually use all four bottles regularly instead of just buying them and forgetting about them",
+        "spoken": "TikTok Shop has the four-pack - I actually use all four bottles regularly instead of just buying them and forgetting about them",
+        "text_overlay": null,
+        "filming_note": "Direct to camera while holding one of the bottles in use"
+      }
+    ],
+    "total_duration_seconds": 40,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "I used to buy a different cleaner for every single surface and my cabinet was chaos",
+        "hook_format": "spoken",
+        "rationale": "Opens with the exact frustration viewers feel - buying too many single-use cleaners. The word 'chaos' is visceral and relatable. Sets up the four-bottle system as the obvious solution.",
+        "performance_note": "Speak while showing the actual cluttered cabinet/counter. Sound slightly exasperated but not dramatic - like you're telling a friend about a problem you finally solved."
+      },
+      {
+        "rank": 2,
+        "hook_text": "Wide shot of kitchen counter completely covered with 8-10 mismatched plastic spray bottles crowding each other",
+        "hook_format": "visual",
+        "rationale": "Immediate visual recognition of the problem. Viewers see their own cleaning supply chaos reflected back. The visual mess creates instant 'I need to fix this' motivation.",
+        "performance_note": "Film your actual messy cleaning supplies - don't stage it. The more real and cluttered it looks, the more viewers will connect with needing a solution."
+      },
+      {
+        "rank": 3,
+        "hook_text": "So I got these four bottles and made my own cleaning system",
+        "hook_format": "spoken",
+        "rationale": "Direct solution-focused opening that immediately positions the four-pack as a complete system, not just bottles. 'Made my own system' suggests customization and control.",
+        "performance_note": "Start mid-thought like you're continuing a conversation. Hold up the four bottles while saying this to show the complete set immediately."
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Cleaning supply chaos: too many single-purpose plastic bottles cluttering cabinets and counters, creating visual mess and decision fatigue",
+      "why_this_framing": "This problem is immediately visible and universally relatable. Most people have accumulated random cleaning products over time and feel the clutter. The visual chaos creates instant motivation for organization.",
+      "solution_positioning": "Four-bottle system that replaces the chaos with intentional organization while being refillable and customizable to your actual cleaning needs"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen the complete transformation from chaos to organized system, watched the bottles being filled and used, and understands this is a practical solution they could implement",
+      "cta_text": "TikTok Shop has the four-pack - I actually use all four bottles regularly instead of just buying them and forgetting about them",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the system demonstration and addresses the hidden objection that people buy organizing products but don't actually use them. Shows ongoing utility rather than one-time purchase."
+    },
+    "caption": "turned my cleaning supply chaos into an actual system with four bottles. the amber glass keeps my essential oils fresh and the silicone sleeves mean i haven't broken one yet. takes about 10 minutes to set up all four cleaners.",
+    "hashtags": {
+      "broad": [
+        "#cleaning",
+        "#organization",
+        "#diy"
+      ],
+      "mid": [
+        "#cleaninghacks",
+        "#glassspraybottles",
+        "#homemadecleaners",
+        "#kitchenorganization"
+      ],
+      "specific": [
+        "#amberglass",
+        "#spraybottles",
+        "#cleaningsupplies"
+      ]
+    },
+    "content_structure_note": "System-building demo that shows the complete transformation from chaos to organization. The proof is in watching the actual mixing process and seeing the before/after organization, not just claims about the bottles themselves.",
+    "filming_instructions": {
+      "location": "Kitchen with natural lighting near window",
+      "shots": [
+        {
+          "label": "Chaos establishing shot",
+          "instructions": [
+            "Wide shot of actual cluttered cleaning supplies",
+            "Don't stage it - use real mess",
+            "Same angle you'll use for the after shot"
+          ]
+        },
+        {
+          "label": "System building sequence",
+          "instructions": [
+            "Medium shots of hands mixing each cleaner",
+            "Close-ups of ingredients going into bottles",
+            "Show the actual measuring and pouring"
+          ]
+        },
+        {
+          "label": "Nozzle demonstration",
+          "instructions": [
+            "Close-up of nozzle adjustment",
+            "Show spray pattern change on surface",
+            "Film the actual spray hitting counter/surface"
+          ]
+        },
+        {
+          "label": "Drop test",
+          "instructions": [
+            "Real drop from counter height",
+            "Show bottle bouncing safely",
+            "Don't exaggerate the height"
+          ]
+        },
+        {
+          "label": "Before/after reveal",
+          "instructions": [
+            "Same angle as opening chaos shot",
+            "Show organized four bottles with labels",
+            "Good lighting to show the transformation clearly"
+          ]
+        }
+      ],
+      "lighting": "Natural window light or bright kitchen lighting - avoid harsh shadows that hide the bottle details",
+      "equipment_note": "Phone camera is sufficient. Use phone tripod or prop for steady shots during mixing sequences."
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 9,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA could be stronger by referencing specific proof shown in video (drop test, 8-month durability, counter transformation) rather than generic 'actually use all four bottles regularly'",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

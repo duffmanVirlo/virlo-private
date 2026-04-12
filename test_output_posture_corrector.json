@@ -1,0 +1,476 @@
+{
+  "session_id": "test-1775371926821",
+  "generated_at": "2026-04-05T06:52:06.821Z",
+  "product": {
+    "url": "https://www.tiktok.com/shop/product/posture-corrector",
+    "title": "Adjustable Posture Corrector for Men and Women — Back Brace for Upper Back Pain Relief",
+    "description": "Comfortable posture corrector that gently pulls your shoulders back into alignment. Adjustable straps fit chest sizes 28-48 inches. Lightweight breathable mesh fabric wears invisibly under clothing.",
+    "price": 19.99,
+    "currency": "USD",
+    "images": [
+      "https://example.com/posture-corrector.jpg"
+    ],
+    "category_tags": [
+      "wellness",
+      "posture",
+      "back support"
+    ],
+    "ingredients_or_materials": "Breathable mesh fabric, adjustable velcro straps, lightweight plastic support plate",
+    "claims": [
+      "Gently trains muscles to hold correct posture over time",
+      "Fits chest sizes 28-48 inches",
+      "Wears invisibly under most clothing",
+      "Breathable mesh prevents sweating",
+      "Lightweight — under 4 oz"
+    ],
+    "review_signals": {
+      "rating": 4.2,
+      "review_count": 3421,
+      "recurring_phrases": [
+        "actually comfortable",
+        "noticed difference after a week",
+        "invisible under shirt",
+        "helps with desk pain",
+        "took time to adjust"
+      ]
+    },
+    "badges": [],
+    "sold_count": "80K+ sold",
+    "raw_text": "Adjustable Posture Corrector back brace. Breathable mesh. Fits 28-48 inch chest. Invisible under clothing. Trains muscles for correct posture."
+  },
+  "classification": {
+    "primary_category": "WELLNESS",
+    "product_type": "Posture Corrector",
+    "secondary_modifier": null,
+    "confidence": 92,
+    "confidence_label": "high",
+    "reason": "This is a health-focused device designed to improve posture and relieve back pain through muscle training and alignment correction. Perfect for wellness content about back health and posture improvement.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "functional_role": [
+      "relief-led",
+      "demonstration-led",
+      "transformation-led",
+      "identity-led"
+    ],
+    "primary_role": "relief-led",
+    "buyer_motivation": {
+      "surface": "fix my posture and reduce back pain",
+      "deep": "feel confident and capable in my body again without constant physical discomfort",
+      "avoidance": "becoming permanently hunched over or dealing with chronic pain that limits my daily activities",
+      "identity": "someone who takes care of their body and maintains good physical presence",
+      "weighted_primary": "deep"
+    },
+    "belief_barriers": [
+      {
+        "type": "efficacy",
+        "statement": "This will just be a crutch that makes my muscles weaker and more dependent on the device",
+        "weight": "high"
+      },
+      {
+        "type": "efficacy",
+        "statement": "It won't actually retrain my posture long-term, just temporarily hold me up while wearing it",
+        "weight": "high"
+      },
+      {
+        "type": "friction",
+        "statement": "It will be uncomfortable to wear for hours at work or feel bulky under my clothes",
+        "weight": "medium"
+      },
+      {
+        "type": "relevance",
+        "statement": "My posture problem might be too severe or different from what this can help with",
+        "weight": "low"
+      }
+    ],
+    "proof_inventory": [
+      {
+        "type": "live-demonstration",
+        "available": true,
+        "credibility": "high",
+        "notes": "Side-profile footage showing immediate posture change when putting on the device, then demonstrating how it feels during normal activities like typing or walking"
+      },
+      {
+        "type": "result-display",
+        "available": true,
+        "credibility": "high",
+        "notes": "Before/after side-profile photos over 2-3 weeks showing posture improvement both with AND without the device to prove muscle retraining"
+      },
+      {
+        "type": "personal-testimony",
+        "available": true,
+        "credibility": "high",
+        "notes": "Detailed experience of wearing it during a full workday, specific pain relief timeline, and honest assessment of comfort and visibility under clothing"
+      },
+      {
+        "type": "unexpected-mechanism",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Explain how gentle backward pull creates muscle memory rather than forced correction - show the difference between this and rigid braces"
+      },
+      {
+        "type": "problem-framing",
+        "available": true,
+        "credibility": "high",
+        "notes": "Mirror or side-profile footage showing viewer's own posture problems to create immediate recognition and discomfort with current state"
+      },
+      {
+        "type": "third-party-signal",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Reference the 4.2 rating and specific review themes about comfort and gradual improvement, especially the 'noticed difference after a week' timeline"
+      },
+      {
+        "type": "comparison",
+        "available": true,
+        "credibility": "medium",
+        "notes": "Compare to rigid back braces or expensive physical therapy sessions, showing this as a gentler, more affordable muscle retraining approach"
+      },
+      {
+        "type": "quantity-scale",
+        "available": false,
+        "credibility": "low",
+        "notes": "Not applicable for this product type"
+      }
+    ],
+    "category_module_applied": "WELLNESS",
+    "product_type_applied": "Posture Corrector",
+    "content_fit_rating": 8,
+    "creator_pattern_archetype": "belush-pattern"
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "This posture corrector's relief-led function and deep buyer motivation ('feel confident and capable in my body again') are perfectly served by opening with the visceral problem of poor posture and its physical discomfort. The available high-credibility proof types (live-demonstration, result-display, problem-framing) align with showing the slouched, uncomfortable state first, then demonstrating the corrector providing immediate relief and improved posture.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the product has strong demonstration potential, jumping straight to the corrector in use misses the emotional connection to the pain point. The buyer's deep motivation is rooted in escaping discomfort, so they need to see and feel that discomfort acknowledged before the solution appears."
+      },
+      {
+        "modality": "creator-to-camera",
+        "reason": "Personal testimony is available as proof, but the physical transformation and relief are more compelling when shown visually rather than described. The product's impact is immediately visible in posture change, making talking-head format less efficient than visual demonstration."
+      }
+    ]
+  },
+  "show_say": {
+    "must_show": [
+      {
+        "instruction": "Film yourself in profile view putting on the posture corrector, showing the immediate change in shoulder position and spine alignment the moment the straps are adjusted",
+        "why": "The instant visual transformation proves the device works mechanically - viewers see the posture change happen in real time, eliminating doubt about whether it actually does anything"
+      },
+      {
+        "instruction": "Record side-by-side footage of yourself typing, walking, and reaching for objects while wearing the corrector versus without it, keeping the same camera angle and lighting",
+        "why": "Shows the device works during real activities viewers do daily, proving it's not just a static pose but functional support during normal movement"
+      },
+      {
+        "instruction": "Demonstrate putting on a regular shirt or jacket over the corrector, showing how it looks from front and side angles under normal clothing",
+        "why": "Visibility under clothing is a major purchase barrier - showing actual concealment under real clothes proves the 'invisible' claim without having to argue it"
+      },
+      {
+        "instruction": "Film yourself removing the corrector after wearing it, then immediately show your posture without it - capture whether your shoulders stay back or immediately slump forward",
+        "why": "This directly addresses the 'muscle dependency' fear by showing whether the muscles maintain the position independently or immediately revert to poor posture"
+      },
+      {
+        "instruction": "Show the mesh fabric up close and demonstrate the velcro adjustment range by extending and contracting the straps to their limits",
+        "why": "Proves the breathability and size range claims through direct visual evidence rather than just stating specifications"
+      }
+    ],
+    "can_say": [
+      {
+        "line": "I've been hunched over my laptop for three years and my upper back constantly aches by 2 PM",
+        "purpose": "problem naming"
+      },
+      {
+        "line": "I wore this for eight hours on my first day and honestly forgot I had it on after about an hour",
+        "purpose": "personal experience"
+      },
+      {
+        "line": "This isn't going to fix years of bad posture overnight - I'm testing it for three weeks to see if it actually retrains anything",
+        "purpose": "limitation acknowledgment"
+      },
+      {
+        "line": "Watch what happens to my shoulders the second I put this on",
+        "purpose": "viewer direction"
+      },
+      {
+        "line": "Day twelve of wearing this - let me show you something interesting I noticed",
+        "purpose": "timeline anchor"
+      },
+      {
+        "line": "The real test is whether my posture stays better when I take it off",
+        "purpose": "context setting"
+      }
+    ],
+    "never_say": [
+      {
+        "blocked_phrase_type": "medical treatment claims",
+        "instead": "Show the comfort and posture change visually, let viewers draw their own conclusions about how it might help their specific situation"
+      },
+      {
+        "blocked_phrase_type": "universal effectiveness promises",
+        "instead": "Share your specific experience with specific timelines and acknowledge that results may vary for different body types and posture issues"
+      },
+      {
+        "blocked_phrase_type": "instant transformation claims",
+        "instead": "Document your actual day-by-day experience over multiple weeks, showing both immediate mechanical effects and longer-term muscle memory development"
+      },
+      {
+        "blocked_phrase_type": "comparison attacks on alternatives",
+        "instead": "Demonstrate this product's specific features and let the visual evidence speak for itself without criticizing other approaches"
+      },
+      {
+        "blocked_phrase_type": "proprietary technology claims",
+        "instead": "Show exactly how the simple mechanical design works and explain the basic principle of gentle backward tension creating muscle awareness"
+      }
+    ]
+  },
+  "angle": {
+    "selected": {
+      "name": "The Immediate Posture Snap",
+      "conversion_hypothesis": "If we show the instant visual transformation when putting on the corrector, then the viewer will believe it actually works mechanically, which makes trying it for $19.99 feel like a low-risk test",
+      "entry_mechanism": "Film yourself in profile view hunched over laptop, then put on corrector and show shoulders immediately snap back into alignment",
+      "proof_vehicle": "Side-by-side profile shots showing before/after posture in real-time as the corrector is adjusted",
+      "belief_formation_path": "Visual shock of immediate change → understanding it's mechanical not magical → seeing it's invisible under clothes → realizing $20 is worth testing something that works instantly",
+      "cta_setup": "After seeing the immediate visual proof, viewer wants to experience that same instant transformation themselves",
+      "score": {
+        "scroll_stop": 9,
+        "retention_arc": 8,
+        "belief_formation": 9,
+        "filming_feasibility": 9,
+        "cta_naturalness": 8,
+        "composite": 8.4
+      },
+      "creator_pattern_source": "Result First hook pattern combined with Proof Before Claim principle - showing the transformation immediately, then explaining the mechanism"
+    },
+    "rejected": [
+      {
+        "name": "The Three Week Retraining Test",
+        "score": {
+          "scroll_stop": 6,
+          "retention_arc": 7,
+          "belief_formation": 8,
+          "filming_feasibility": 4,
+          "cta_naturalness": 7,
+          "composite": 6.4
+        },
+        "primary_rejection_reason": "Filming feasibility below 6 - requires 3 weeks of consistent documentation which most creators cannot execute reliably"
+      },
+      {
+        "name": "The Invisible Under Clothes Demo",
+        "score": {
+          "scroll_stop": 7,
+          "retention_arc": 6,
+          "belief_formation": 6,
+          "filming_feasibility": 8,
+          "cta_naturalness": 6,
+          "composite": 6.4
+        },
+        "primary_rejection_reason": "Lower belief formation - addressing comfort/discretion objection but not the core efficacy doubt that drives purchase decisions"
+      }
+    ]
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Profile view of creator hunched over laptop, shoulders visibly rolled forward, head jutting out",
+        "spoken": "Three years of working from home and my shoulders live here now",
+        "text_overlay": null,
+        "filming_note": "Film in profile from the side - exaggerate the slouch naturally, shoulders should be visibly rounded forward"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 7,
+        "type": "SHOW",
+        "content": "Creator picks up posture corrector, shows the mesh fabric and adjustable straps briefly",
+        "spoken": "Nineteen dollars to see if this actually does anything",
+        "text_overlay": null,
+        "filming_note": "Keep it quick - just show the product exists, don't linger on features yet"
+      },
+      {
+        "start_seconds": 7,
+        "end_seconds": 12,
+        "type": "SHOW",
+        "content": "Real-time footage of putting on the corrector - shoulders immediately snap back into alignment as straps are adjusted",
+        "spoken": "Watch what happens the second I put this on",
+        "text_overlay": null,
+        "filming_note": "CRITICAL: Film in same profile angle as opening shot. The shoulder transformation must be visible and immediate"
+      },
+      {
+        "start_seconds": 12,
+        "end_seconds": 16,
+        "type": "SHOW",
+        "content": "Side-by-side comparison: typing with corrector vs without, same camera angle and lighting",
+        "spoken": "Left side is me normally, right side with the brace",
+        "text_overlay": "Same person, same desk",
+        "filming_note": "Split screen or quick cut between the two states - posture difference should be obvious"
+      },
+      {
+        "start_seconds": 16,
+        "end_seconds": 21,
+        "type": "SHOW",
+        "content": "Putting on a regular t-shirt over the corrector, showing front and side view",
+        "spoken": "The real test - can anyone tell I'm wearing it",
+        "text_overlay": null,
+        "filming_note": "Use a fitted shirt, not baggy. Show that the corrector doesn't create visible bulk or lines"
+      },
+      {
+        "start_seconds": 21,
+        "end_seconds": 25,
+        "type": "SHOW",
+        "content": "Removing the corrector after wearing it, immediately showing posture without it",
+        "spoken": "Day twelve of testing - here's what I noticed",
+        "text_overlay": null,
+        "filming_note": "Show whether shoulders stay back or immediately slump forward when corrector is removed"
+      },
+      {
+        "start_seconds": 25,
+        "end_seconds": 29,
+        "type": "SHOW",
+        "content": "Close-up of the mesh fabric and velcro straps being adjusted to show size range",
+        "spoken": "Fits chest sizes twenty-eight to forty-eight inches",
+        "text_overlay": "$19.99",
+        "filming_note": "Demonstrate the adjustment range by extending and contracting the straps fully"
+      },
+      {
+        "start_seconds": 29,
+        "end_seconds": 32,
+        "type": "SPOKEN",
+        "content": "It's in TikTok Shop for nineteen ninety-nine - worth testing if your shoulders live in your ears like mine did",
+        "spoken": "It's in TikTok Shop for nineteen ninety-nine - worth testing if your shoulders live in your ears like mine did",
+        "text_overlay": null,
+        "filming_note": "Return to the profile view showing good posture while speaking the CTA"
+      }
+    ],
+    "total_duration_seconds": 32,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "Three years of working from home and my shoulders live here now",
+        "hook_format": "spoken",
+        "rationale": "Immediately identifies the specific problem (WFH posture) with a vivid, relatable phrase that makes viewers instantly check their own posture",
+        "performance_note": "Film in profile view while actually hunched over laptop - let the visual and audio hit simultaneously for maximum impact"
+      },
+      {
+        "rank": 2,
+        "hook_text": "Creator hunched over laptop in profile view, shoulders visibly rolled forward and head jutting out",
+        "hook_format": "visual",
+        "rationale": "Pure visual hook that makes viewers immediately recognize their own posture problem without needing explanation",
+        "performance_note": "Silent opening with dramatic profile shot - exaggerate the slouch naturally, hold for 2-3 seconds to let viewers see themselves"
+      },
+      {
+        "rank": 3,
+        "hook_text": "My upper back constantly aches by 2 PM every single day",
+        "hook_format": "spoken",
+        "rationale": "Targets the pain point directly with a specific time reference that many desk workers will recognize from their own experience",
+        "performance_note": "Say this while rubbing upper back/neck area, looking genuinely uncomfortable - not performed pain but real recognition"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Years of desk work have trained shoulders into a permanently hunched position, causing daily discomfort and visible posture issues",
+      "why_this_framing": "Frames poor posture as a learned behavior from modern work habits rather than a personal failing, making the corrector feel like retraining rather than a crutch",
+      "solution_positioning": "Mechanical device that provides immediate physical reminder and support while muscles relearn proper alignment over time"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen the immediate visual transformation, proof it works during daily activities, and evidence it's invisible under clothing",
+      "cta_text": "It's in TikTok Shop for nineteen ninety-nine - worth testing if your shoulders live in your ears like mine did",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the opening hook phrase while positioning the purchase as a low-risk test rather than a commitment, with specific price point for impulse decision"
+    },
+    "caption": "been working from home for three years and just realized my shoulders have been living in my ears this whole time. nineteen dollars to see if this posture corrector actually retrains anything or just holds me up while wearing it. day twelve update in comments",
+    "hashtags": {
+      "broad": [
+        "#posture",
+        "#workfromhome",
+        "#backpain"
+      ],
+      "mid": [
+        "#posturecorrector",
+        "#deskjob",
+        "#upperbackpain",
+        "#shoulderpain"
+      ],
+      "specific": [
+        "#posturecheck",
+        "#wfhlife",
+        "#deskposture"
+      ]
+    },
+    "content_structure_note": "Video follows Problem-Mechanism-Result sequence with immediate visual proof as the core retention driver. The instant shoulder transformation at 7-12 seconds is the key moment that either hooks or loses the viewer.",
+    "filming_instructions": {
+      "location": "Home office or desk setup with good natural lighting from the side",
+      "shots": [
+        {
+          "label": "Profile slouch shot",
+          "instructions": [
+            "Film from the side at chest height",
+            "Exaggerate natural slouch while working",
+            "Keep lighting consistent for before/after comparison"
+          ]
+        },
+        {
+          "label": "Corrector application",
+          "instructions": [
+            "Same profile angle as slouch shot",
+            "Film in real-time, no cuts during strap adjustment",
+            "Capture the moment shoulders snap back"
+          ]
+        },
+        {
+          "label": "Invisibility test",
+          "instructions": [
+            "Front and side angles while putting on shirt",
+            "Use fitted clothing, not baggy",
+            "Show no visible bulk or lines"
+          ]
+        },
+        {
+          "label": "Product detail shots",
+          "instructions": [
+            "Close-up of mesh fabric texture",
+            "Demonstrate full strap adjustment range",
+            "Show velcro mechanism working"
+          ]
+        }
+      ],
+      "lighting": "Natural side lighting to create definition between good and poor posture positions",
+      "equipment_note": "Phone camera with tripod or stable surface for consistent framing across comparison shots"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 8,
+      "generic_language": 8,
+      "filming_feasibility": 9,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA includes product callback but could be stronger by referencing specific proof shown in the video",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  },
+  "compliance": {
+    "category_requires_compliance": true,
+    "modifications_made": [
+      {
+        "original": "nineteen dollars to see if this posture corrector actually retrains anything",
+        "replacement": "nineteen dollars to see if this posture corrector helps support better posture habits for me",
+        "reason": "Avoided implied medical claim about 'retraining' body function; reframed as personal support experience"
+      }
+    ],
+    "creator_note": "Made a small tweak to keep your content compliant while preserving your authentic voice. Changed 'retrains' to 'helps support better posture habits for me' to frame it as personal experience rather than a medical claim about changing body function. Your relatable hook and honest testing approach are perfect!",
+    "cleared": true
+  }
+}

@@ -1,0 +1,58 @@
+import type { ProductTypeDefinition } from "./auto";
+
+export const fashionProductTypes: ProductTypeDefinition[] = [
+  {
+    category: "FASHION",
+    type_name: "Everyday top",
+    primary_conversion_mechanism: "Styling versatility — showing one top styled 3-5 different ways proves cost-per-wear value and converts wardrobe-conscious buyers",
+    dominant_objection: "Will it fit my body type the way it fits the creator, and will it shrink or pill after washing?",
+    required_proof: "Try-on across multiple body types, wash test showing no shrinkage or pilling, and styled in different outfit contexts",
+    content_style_affinity: ["style multiple ways", "try-on haul", "body type comparison", "wash test", "capsule wardrobe staple"],
+    anti_patterns: ["Single body type representation", "Only showing unworn flat lays", "No fabric quality or wash durability evidence"],
+  },
+  {
+    category: "FASHION",
+    type_name: "Activewear",
+    primary_conversion_mechanism: "Performance proof — showing the garment performing through squats, runs, and sweat without riding up, going see-through, or sliding converts the functional buyer",
+    dominant_objection: "Will it be squat-proof, stay in place during movement, and not become see-through when stretched?",
+    required_proof: "Squat test, stretch test, sweat test, and see-through check under bright lighting with real workout footage",
+    content_style_affinity: ["squat proof test", "workout try-on", "sweat session review", "activewear comparison", "gym fit check"],
+    anti_patterns: ["Only posing in activewear without movement", "Studio lighting that hides see-through issues", "No real workout footage"],
+  },
+  {
+    category: "FASHION",
+    type_name: "Dress",
+    primary_conversion_mechanism: "Event visualization — viewers mentally place themselves at the wedding, date, or event when they see someone in the dress, driving occasion-based impulse purchases",
+    dominant_objection: "Will the fabric quality and fit match the photos, or will it arrive looking like a cheap knockoff?",
+    required_proof: "360-degree video showing fabric movement, close-up of material quality, sizing comparison across body types, and expectation vs reality transparency",
+    content_style_affinity: ["occasion outfit", "wedding guest GRWM", "date night look", "360 dress spin", "expectation vs reality"],
+    anti_patterns: ["Only front-facing static photos", "Heavy editing that misrepresents fabric color or drape", "Single body type representation"],
+  },
+  {
+    category: "FASHION",
+    type_name: "Footwear",
+    primary_conversion_mechanism: "Comfort-meets-style proof — showing all-day wear without blisters or pain while maintaining aesthetic appeal converts the comfort-seeking buyer",
+    dominant_objection: "Will they be comfortable after 8+ hours of wear, and do they run true to size?",
+    required_proof: "Full-day wear test with honest comfort updates, sizing guidance compared to popular brands, and break-in period transparency",
+    content_style_affinity: ["all-day comfort test", "walking city review", "outfit pairing", "size comparison guide", "break-in diary"],
+    anti_patterns: ["Only showing shoes for the first 5 minutes of wear", "No walking footage", "Ignoring common fit issues like width or arch support"],
+  },
+  {
+    category: "FASHION",
+    type_name: "Shapewear",
+    primary_conversion_mechanism: "Confidence transformation — the visible smoothing and shaping effect in a side-by-side drives immediate body-confidence purchases",
+    dominant_objection: "Will it be uncomfortable, roll down, or be visible under clothes?",
+    required_proof: "Before-after under the same outfit, comfort test during sitting and bending, visibility check under different fabrics, and all-day wear report",
+    content_style_affinity: ["under outfit reveal", "sitting and bending test", "size inclusive try-on", "comfort diary", "event prep"],
+    anti_patterns: ["Only standing poses that hide roll-down issues", "Single body type representation", "No movement or sitting tests"],
+  },
+  {
+    category: "FASHION",
+    type_name: "Accessories",
+    primary_conversion_mechanism: "Outfit elevation — showing a basic outfit transformed by a single accessory proves low-cost high-impact styling, driving impulse add-to-cart behavior",
+    dominant_objection: "Will this look cheap in person or tarnish and break quickly?",
+    required_proof: "Close-up quality check, tarnish or wear test over time, and styling across multiple outfits to prove versatility",
+    content_style_affinity: ["outfit elevation", "accessory haul", "quality close-up", "capsule wardrobe styling", "dupe vs designer"],
+    anti_patterns: ["Only photographing accessories in isolation", "No quality or durability evidence", "Presenting costume jewelry as fine without transparency"],
+  },
+];

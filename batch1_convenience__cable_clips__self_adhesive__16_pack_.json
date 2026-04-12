@@ -1,0 +1,257 @@
+{
+  "label": "Convenience: Cable Clips (Self-Adhesive, 16-Pack)",
+  "classification": {
+    "primary_category": "OFFICE",
+    "product_type": "Cable Management Clips",
+    "secondary_modifier": null,
+    "confidence": 92,
+    "confidence_label": "high",
+    "reason": "These adhesive cable clips are specifically designed for organizing workspace cables on desks and office surfaces, making them a clear office organization product that helps creators showcase desk setup and productivity content.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "transformation-led",
+    "buyer_motivation": {
+      "surface": "organize my cables and clean up my desk",
+      "deep": "eliminate the daily micro-stress of tangled cables and create a workspace that doesn't embarrass me",
+      "avoidance": "the shame of showing others my chaotic cable mess and the frustration of hunting for the right cable",
+      "identity": "someone who has their life together and maintains an organized, professional workspace",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "The buyer motivation is explicitly avoidance-driven around 'chaotic cable mess' shame and frustration. Opening with the visual problem (tangled cables, messy desk) directly triggers the emotional pain point, then the clips provide immediate visual relief. This modality perfectly serves the high-credibility result-display and problem-framing proof types while creating natural tension that resolves satisfyingly.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the clips have a clear mechanism, starting with the demo misses the emotional hook. The buyer's primary motivation is avoiding the shame and frustration of cable chaos, so leading with the problem state creates stronger viewer identification than leading with the solution."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Before/after would work well for the transformation aspect, but this product's strength is solving a specific emotional pain point (shame, frustration) rather than being better than alternatives. The problem-reveal format better captures the emotional relief aspect that drives purchase intent."
+      }
+    ]
+  },
+  "angle": {
+    "name": "The Daily Cable Chaos Fix",
+    "conversion_hypothesis": "If we show the viewer their exact daily frustration with cables falling behind their desk, then they'll recognize this as their problem and see the clips solving it in real-time, which makes buying feel like finally fixing an annoying daily friction",
+    "entry_mechanism": "Open with creator crawling under desk saying 'I'm so tired of doing this every single morning' while fishing for a laptop charger that fell behind the desk",
+    "proof_vehicle": "Live demonstration of installing clips and routing actual workspace cables - phone charger, laptop cord, monitor cable - then showing daily unplugging/plugging routine over multiple days",
+    "belief_formation_path": "Viewer sees their own frustration reflected → watches real-time installation on actual messy desk → sees cables staying accessible through normal daily use → realizes this solves their specific problem",
+    "cta_setup": "After showing 3-month durability test, viewer is convinced this actually works long-term and wants to stop crawling under their desk every morning",
+    "score": {
+      "scroll_stop": 8,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 9,
+      "cta_naturalness": 8,
+      "composite": 8.6
+    },
+    "creator_pattern_source": "belush-pattern methodical build combined with Workflow Fix category pattern - showing the specific daily friction point and demonstrating elimination"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Creator crawling under desk reaching behind it, looking frustrated",
+        "spoken": "I'm so tired of doing this every single morning",
+        "text_overlay": null,
+        "filming_note": "Film from side angle showing creator on hands and knees reaching behind desk. Make sure cables are visibly tangled and fallen behind desk"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Close-up of messy desk with multiple cables hanging down and disappearing behind it - phone charger, laptop cord, monitor cable all fallen",
+        "spoken": "My laptop charger, phone charger, everything just falls back there",
+        "text_overlay": null,
+        "filming_note": "Top-down shot of actual messy desk showing cables in their natural chaotic state"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Creator opening package of clear cable clips, showing three different sizes side by side",
+        "spoken": "So I got these little clear clips - three different sizes for different cable thicknesses",
+        "text_overlay": null,
+        "filming_note": "Close-up of hands holding the three clip sizes next to each other for size comparison"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 15,
+        "type": "SHOW",
+        "content": "Real-time installation - creator peeling adhesive backing and sticking first clip to desk edge, then threading phone charger through it",
+        "spoken": "You just peel and stick them wherever you need cables to stay put",
+        "text_overlay": null,
+        "filming_note": "Film the entire installation process without cuts - peel, stick, thread cable. Show it actually working in real time"
+      },
+      {
+        "start_seconds": 15,
+        "end_seconds": 20,
+        "type": "SHOW",
+        "content": "Installing multiple clips along desk edge and routing different cables - thin phone cable in small clip, thick monitor cable in large clip",
+        "spoken": "Thin cables go in the small ones, thick monitor cord goes in the big one",
+        "text_overlay": null,
+        "filming_note": "Show the size matching process - demonstrate how different cable thicknesses fit different clip sizes"
+      },
+      {
+        "start_seconds": 20,
+        "end_seconds": 25,
+        "type": "SHOW",
+        "content": "Creator unplugging laptop charger from clip, taking it away, then plugging it back in - clip holds firm during the process",
+        "spoken": "Watch this - I unplug my laptop charger to take it with me, plug it right back in when I get back",
+        "text_overlay": null,
+        "filming_note": "Film the unplugging and replugging motion multiple times to show the clips don't fail with normal use"
+      },
+      {
+        "start_seconds": 25,
+        "end_seconds": 30,
+        "type": "SHOW",
+        "content": "Wide shot of complete desk setup with all cables organized in clips, then creator removing one clip showing clean surface underneath with no residue",
+        "spoken": "I've had these up for three months now and they're still holding strong",
+        "text_overlay": null,
+        "filming_note": "Show the organized final result, then demonstrate clean removal to prove no damage to furniture"
+      },
+      {
+        "start_seconds": 30,
+        "end_seconds": 35,
+        "type": "SHOW",
+        "content": "Creator sitting at now-organized desk, easily grabbing phone charger from its clip without having to reach behind desk",
+        "spoken": "Now I can actually find my phone charger when I need it instead of crawling under my desk",
+        "text_overlay": null,
+        "filming_note": "Show the daily use payoff - easy access to cables that used to fall behind desk"
+      },
+      {
+        "start_seconds": 35,
+        "end_seconds": 38,
+        "type": "SPOKEN",
+        "content": "These are in TikTok Shop - finally fixed that one annoying problem I deal with every morning",
+        "spoken": "These are in TikTok Shop - finally fixed that one annoying problem I deal with every morning",
+        "text_overlay": null,
+        "filming_note": "Direct to camera while sitting at organized desk"
+      }
+    ],
+    "total_duration_seconds": 38,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "I'm so tired of doing this every single morning",
+        "hook_format": "spoken",
+        "rationale": "Opens with the exact daily frustration the viewer experiences - crawling under desk for fallen cables. The viewer immediately recognizes their own problem and wants to see the solution",
+        "performance_note": "Say this while actually crawling under desk reaching for cables. Sound genuinely frustrated, not performed. The visual of crawling sells the pain point"
+      },
+      {
+        "rank": 2,
+        "hook_text": "Creator's laptop charger visibly stuck behind desk, creator reaching for it unsuccessfully",
+        "hook_format": "visual",
+        "rationale": "Pure visual problem recognition - viewer sees the exact scenario they deal with. No explanation needed, the visual triggers immediate 'that's my problem' recognition",
+        "performance_note": "Film the charger actually fallen behind desk in natural lighting. Show genuine difficulty reaching it. Let the visual frustration build for 2-3 seconds before any words"
+      },
+      {
+        "rank": 3,
+        "hook_text": "Why do all my cables end up back here every single day",
+        "hook_format": "spoken",
+        "rationale": "Frames the universal cable management frustration as a question the viewer has asked themselves. Creates immediate relatability and positions the video as providing an answer",
+        "performance_note": "Say this while showing the space behind desk where cables collect. Tone should be genuinely puzzled, not rhetorical. The viewer should feel like you're voicing their exact thought"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "The daily frustration of cables falling behind desk and having to crawl under to retrieve them every morning",
+      "why_this_framing": "This is the specific pain point that makes people buy cable management - not aesthetics or productivity, but eliminating the physical annoyance of hunting for fallen cables",
+      "solution_positioning": "Clear clips that keep cables accessible at desk level so they never fall behind furniture in the first place"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen their exact daily frustration solved in real-time and wants to stop crawling under their desk every morning",
+      "cta_text": "These are in TikTok Shop - finally fixed that one annoying problem I deal with every morning",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the opening frustration and positions purchase as solving the specific daily friction point demonstrated in the video"
+    },
+    "caption": "spent way too many mornings crawling under my desk for my laptop charger. these little clear clips actually keep everything where i can reach it. three different sizes so they work with thin phone cables and thick monitor cords. been using them for months and they still stick solid.",
+    "hashtags": {
+      "broad": [
+        "#desksetup",
+        "#organization",
+        "#productivity"
+      ],
+      "mid": [
+        "#cablemanagement",
+        "#deskorganization",
+        "#workfromhome",
+        "#officesetup"
+      ],
+      "specific": [
+        "#cableclips",
+        "#deskclips"
+      ]
+    },
+    "content_structure_note": "Problem-reveal structure that opens with the viewer's exact daily frustration, then shows real-time installation and durability testing. The proof is entirely visual - viewer sees the clips working through normal daily use rather than hearing claims about adhesive strength.",
+    "filming_instructions": {
+      "location": "At your actual work desk with real cable mess",
+      "shots": [
+        {
+          "label": "Problem setup",
+          "instructions": [
+            "Film your actual messy desk from multiple angles",
+            "Show cables that have fallen behind desk",
+            "Film yourself crawling under desk reaching for cables"
+          ]
+        },
+        {
+          "label": "Installation process",
+          "instructions": [
+            "Close-up of clip sizes for comparison",
+            "Real-time installation without cuts - peel, stick, thread",
+            "Show different cable thicknesses going into appropriate clip sizes"
+          ]
+        },
+        {
+          "label": "Durability test",
+          "instructions": [
+            "Film unplugging and replugging cables multiple times",
+            "Show clips holding firm during normal use",
+            "Demonstrate clean removal with no residue"
+          ]
+        },
+        {
+          "label": "Final result",
+          "instructions": [
+            "Wide shot of organized desk setup",
+            "Show easy access to cables that used to fall",
+            "Film normal daily use at organized desk"
+          ]
+        }
+      ],
+      "lighting": "Natural desk lighting - don't over-light, keep it looking like real workspace",
+      "equipment_note": "Phone camera is sufficient. Focus on clear close-ups during installation and wide shots for before/after comparison"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA is functional but could be stronger - references 'that one annoying problem' but doesn't specifically callback the crawling under desk visual proof that was built throughout the video",
+        "severity": "warning"
+      },
+      {
+        "component": "filming",
+        "issue": "The 25s-30s beat requires showing 'three months of use' durability which cannot be filmed in real-time - this creates a credibility gap unless the creator actually has been using them for months",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "label": "Visual Transform: Shower Head with Filter",
+  "classification": {
+    "primary_category": "HOME",
+    "product_type": "Filtered Shower Head",
+    "secondary_modifier": "Bathroom / Water Filtration",
+    "confidence": 92,
+    "confidence_label": "high",
+    "reason": "This is a bathroom fixture that filters water - clearly a home improvement product. While it has wellness benefits, its primary function is as a shower head replacement for the home.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "transformation-led",
+    "buyer_motivation": {
+      "surface": "Better water pressure and cleaner water for showering",
+      "deep": "Visible transformation of hair and skin quality that others will notice and compliment",
+      "avoidance": "Continuing to damage hair and skin with harsh water while spending money on expensive treatments that don't work",
+      "identity": "Someone who takes care of themselves and makes smart home improvements that have real impact",
+      "weighted_primary": "deep"
+    }
+  },
+  "modality": {
+    "selected": "demo-first",
+    "reason": "The filtered shower head's transformation-led role and high-credibility live-demonstration proof type demand immediate visual impact. Opening with water flowing through the filter, showing visible sediment capture or water clarity change, creates instant proof that serves the deep buyer motivation of visible transformation. The product's mechanism is inherently filmable and compelling enough to hook viewers without setup.",
+    "rejected": [
+      {
+        "modality": "problem-reveal-led",
+        "reason": "While the problem of poor water quality is relatable, starting with the problem dilutes the immediate visual impact of the transformation. The filtered shower head's strength is its active demonstration, not problem framing."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Side-by-side water comparison could work but requires more complex filming setup and doesn't leverage the product's strongest proof type of live-demonstration. The real-time filtering action is more compelling than static before/after shots."
+      }
+    ]
+  },
+  "angle": {
+    "name": "Water Quality Reveal",
+    "conversion_hypothesis": "If we show two glasses of water side-by-side with visible difference, then the viewer will realize their water quality is worse than they thought, which makes buying a filter feel like solving a problem they just discovered",
+    "entry_mechanism": "Open with filling two identical clear glasses - one from tap, one from filtered shower head - holding them up to camera with visible color/clarity difference",
+    "proof_vehicle": "Side-by-side water comparison in clear glasses, then soap lather test showing dramatically different bubble formation between filtered and unfiltered water",
+    "belief_formation_path": "Viewer sees their water isn't as clean as they assumed → realizes this affects their daily shower → connects poor water quality to skin/hair issues they experience → wants the solution that's proven to work",
+    "cta_setup": "After seeing undeniable visual proof their water needs filtering, viewer is primed to get the exact solution that just solved the problem on screen",
+    "score": {
+      "scroll_stop": 9,
+      "retention_arc": 8,
+      "belief_formation": 9,
+      "filming_feasibility": 9,
+      "cta_naturalness": 8,
+      "composite": 8.4
+    },
+    "creator_pattern_source": "iamsk8bordb-pattern utility-interruption combined with Proof Before Claim principle - showing evidence first so viewer reaches conclusion independently"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Fill two identical clear glasses with water - one from current shower head, one from filtered shower head. Hold them side by side at eye level showing visible color difference",
+        "spoken": "Your shower water is dirtier than you think",
+        "text_overlay": null,
+        "filming_note": "Use bright natural lighting. The water difference must be clearly visible - if no visual difference, use white background behind glasses"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 8,
+        "type": "SHOW",
+        "content": "Unscrew the filter cartridge and show the 15 different colored layers inside, then hold a dirty used filter next to a clean new one",
+        "spoken": "This is what's been in your water - and this is what the filter actually catches",
+        "text_overlay": null,
+        "filming_note": "Close-up shot showing the distinct layers clearly. The used filter should show visible discoloration or buildup"
+      },
+      {
+        "start_seconds": 8,
+        "end_seconds": 15,
+        "type": "SHOW",
+        "content": "Install the shower head in real-time by hand, no tools, then immediately turn on water showing the pressure difference",
+        "spoken": "Two minutes to install, no tools needed, and look at this pressure",
+        "text_overlay": null,
+        "filming_note": "Film installation without cuts. Show the immediate before/after water flow side by side or in quick succession"
+      },
+      {
+        "start_seconds": 15,
+        "end_seconds": 22,
+        "type": "SHOW",
+        "content": "Create soap lather in hands using unfiltered water, then filtered water, showing dramatically different bubble formation",
+        "spoken": "Same soap, same amount - but look how much more it bubbles with filtered water",
+        "text_overlay": null,
+        "filming_note": "Use identical amounts of liquid soap. The bubble difference should be immediately obvious"
+      },
+      {
+        "start_seconds": 22,
+        "end_seconds": 28,
+        "type": "SHOW",
+        "content": "Rinse hair under both water sources, showing how hair moves and feels different under the filtered water",
+        "spoken": "My hair stylist asked what I changed because it felt completely different",
+        "text_overlay": null,
+        "filming_note": "Show hair texture and movement clearly. Hair should look noticeably smoother or less tangled under filtered water"
+      },
+      {
+        "start_seconds": 28,
+        "end_seconds": 32,
+        "type": "SHOW",
+        "content": "Show the two water glasses again side by side, then point to the filtered shower head installed and working",
+        "spoken": "Twenty-nine ninety-nine to fix your water - it's in TikTok Shop",
+        "text_overlay": null,
+        "filming_note": "Return to the opening visual proof, then show the installed product as the solution"
+      }
+    ],
+    "total_duration_seconds": 32,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "Your shower water is dirtier than you think",
+        "hook_format": "spoken",
+        "rationale": "Immediately challenges viewer's assumption about their water quality while creator fills two glasses showing visible proof",
+        "performance_note": "Say this matter-of-factly while filling the glasses, not dramatically. Let the visual evidence do the shocking, not your tone"
+      },
+      {
+        "rank": 2,
+        "hook_text": "Two identical glasses of water - one from my shower, one from this filtered shower head - can you see the difference?",
+        "hook_format": "spoken",
+        "rationale": "Creates immediate visual curiosity and gets viewer actively looking for the difference in water quality",
+        "performance_note": "Hold the glasses steady at eye level with good lighting behind them. Pause after 'difference' to let viewer actually look"
+      },
+      {
+        "rank": 3,
+        "hook_text": "I was honestly skeptical because I've tried other shower filters that did basically nothing",
+        "hook_format": "spoken",
+        "rationale": "Addresses the main objection upfront while setting up for proof that this one actually works",
+        "performance_note": "Casual, conversational tone like talking to a friend. Start filling glasses while saying this to transition into proof"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Your shower water contains visible contaminants that affect your hair, skin, and soap effectiveness - but you can't see it until you compare it to filtered water",
+      "why_this_framing": "Most people assume their water is clean enough. Showing visible proof of contamination creates immediate problem awareness and urgency to fix it",
+      "solution_positioning": "This specific shower head with 15-stage filtration that you can see working, installs in 2 minutes, and creates immediately noticeable improvements"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Viewer has seen undeniable visual proof their water is contaminated and witnessed the transformation filtered water creates",
+      "cta_text": "Twenty-nine ninety-nine to fix your water - it's in TikTok Shop",
+      "pressure_mechanism": null,
+      "why_it_works": "Price feels reasonable after seeing dramatic water quality improvement. CTA connects directly to the problem just revealed and solution just demonstrated"
+    },
+    "caption": "found out my shower water was way dirtier than i thought. the difference in these two glasses is wild and my hair actually feels different now. installed in like 2 minutes with no tools",
+    "hashtags": {
+      "broad": [
+        "#shower",
+        "#water",
+        "#home"
+      ],
+      "mid": [
+        "#showerhead",
+        "#filteredwater",
+        "#hardwater",
+        "#haircare"
+      ],
+      "specific": [
+        "#waterfilter",
+        "#showerfilter",
+        "#chlorineremoval"
+      ]
+    },
+    "content_structure_note": "Demo-first structure with immediate visual proof, followed by mechanism reveal, installation demonstration, and benefit proof through soap and hair tests. Each beat builds credibility for the next claim.",
+    "filming_instructions": {
+      "location": "Bathroom with good natural lighting, clean shower area visible",
+      "shots": [
+        {
+          "label": "Water comparison setup",
+          "instructions": [
+            "Use identical clear glasses",
+            "Fill simultaneously from both sources",
+            "Hold at eye level with bright background",
+            "Ensure color/clarity difference is visible"
+          ]
+        },
+        {
+          "label": "Filter cartridge reveal",
+          "instructions": [
+            "Unscrew cartridge carefully",
+            "Show all colored layers clearly",
+            "Compare used vs new filter side by side",
+            "Close-up on filter contents"
+          ]
+        },
+        {
+          "label": "Installation demo",
+          "instructions": [
+            "Film installation in real-time without cuts",
+            "Show hand-tightening only",
+            "Immediate water flow test",
+            "Show pressure difference clearly"
+          ]
+        },
+        {
+          "label": "Soap lather test",
+          "instructions": [
+            "Use identical soap amounts",
+            "Same hand motions for both",
+            "Show bubble formation difference",
+            "Good lighting on hands"
+          ]
+        }
+      ],
+      "lighting": "Bright natural bathroom lighting, avoid shadows on water glasses and hands",
+      "equipment_note": "Phone camera, two identical clear glasses, liquid soap, towel for cleanup"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 6
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA is bare 'it's in TikTok Shop' with minimal product callback - could reference the water quality proof or installation ease more specifically",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

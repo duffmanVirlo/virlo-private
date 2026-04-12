@@ -1,0 +1,58 @@
+import type { ProductTypeDefinition } from "./auto";
+
+export const outdoorProductTypes: ProductTypeDefinition[] = [
+  {
+    category: "OUTDOOR",
+    type_name: "Camping gear",
+    primary_conversion_mechanism: "Wilderness reliability — showing gear performing in real weather conditions (rain, wind, cold) converts through survival-confidence building",
+    dominant_objection: "Will this hold up in actual bad weather or is it only good for backyard camping?",
+    required_proof: "Real camping trip footage in adverse conditions, setup speed test, pack size demonstration, and weight comparison to alternatives",
+    content_style_affinity: ["campsite setup timelapse", "weather stress test", "gear loadout", "backpacking weight check", "overnight field test"],
+    anti_patterns: ["Only backyard or perfect weather demos", "Spec-reading without field footage", "Ignoring pack weight and size for backpackers"],
+  },
+  {
+    category: "OUTDOOR",
+    type_name: "Garden tool",
+    primary_conversion_mechanism: "Effort elimination — showing a tedious garden task completed in a fraction of the time with the right tool converts through labor-saving revelation",
+    dominant_objection: "Is this durable enough for actual yard work or will it break after one season?",
+    required_proof: "Full task completion (weeding, pruning, digging) with effort and time comparison to manual methods, plus durability evidence after extended use",
+    content_style_affinity: ["garden transformation", "tool comparison", "seasonal yard work", "beginner gardener", "time-saving demo"],
+    anti_patterns: ["Only light-duty demonstrations", "No comparison to hand tools or existing alternatives", "Brand new tool only with no durability evidence"],
+  },
+  {
+    category: "OUTDOOR",
+    type_name: "Sports accessory",
+    primary_conversion_mechanism: "Performance upgrade — showing measurable improvement in outdoor sport performance with the accessory converts competitive outdoor enthusiasts",
+    dominant_objection: "Will this actually improve my performance or is it just another gimmick that adds weight to my pack?",
+    required_proof: "In-sport footage showing real performance context, before-after metrics where applicable, and weight or convenience trade-off transparency",
+    content_style_affinity: ["trail run test", "cycling gear review", "outdoor sport POV", "gear upgrade comparison", "race day prep"],
+    anti_patterns: ["Indoor or static demos for outdoor gear", "No real sport context", "Ignoring weight and portability trade-offs"],
+  },
+  {
+    category: "OUTDOOR",
+    type_name: "Adventure gear",
+    primary_conversion_mechanism: "Aspirational lifestyle — epic outdoor footage with the gear as the enabling factor converts through adventure identity association",
+    dominant_objection: "Is this pro-grade overkill for a weekend warrior, and does the price match the durability?",
+    required_proof: "Real adventure use footage (hiking, climbing, kayaking), durability after multiple trips, and honest assessment of who actually needs this tier of gear",
+    content_style_affinity: ["adventure vlog", "gear after 6 months", "weekend warrior review", "durability torture test", "trail to summit"],
+    anti_patterns: ["Professional athlete demos that alienate casual users", "Brand-new gear only with no wear evidence", "Lifestyle content with zero practical review"],
+  },
+  {
+    category: "OUTDOOR",
+    type_name: "Portable light",
+    primary_conversion_mechanism: "Darkness anxiety — showing how dark a campsite, trail, or power outage actually is before turning on the light creates immediate safety-purchase urgency",
+    dominant_objection: "How long does the battery actually last at full brightness, and is it bright enough to be useful?",
+    required_proof: "Lumen output comparison to competitors, real battery runtime test at different brightness levels, and real-world darkness illumination footage",
+    content_style_affinity: ["darkness to light reveal", "campsite lighting setup", "power outage prep", "brightness comparison", "battery runtime test"],
+    anti_patterns: ["Only studio brightness demos", "No battery runtime evidence", "Ignoring weight, size, and charging method"],
+  },
+  {
+    category: "OUTDOOR",
+    type_name: "Water bottle",
+    primary_conversion_mechanism: "Hydration accountability — showing daily water intake tracking or insulation performance converts health-conscious and outdoor-active buyers",
+    dominant_objection: "How is this better than any other insulated bottle, and will it fit in my car cup holder and bag pocket?",
+    required_proof: "Temperature retention test over 12-24 hours, fit test in common cup holders and bag pockets, and durability drop test",
+    content_style_affinity: ["ice retention challenge", "daily hydration routine", "cup holder fit test", "bottle comparison", "hiking hydration"],
+    anti_patterns: ["Only showing the bottle as a fashion accessory", "No temperature or durability testing", "Ignoring practical fit and portability"],
+  },
+];

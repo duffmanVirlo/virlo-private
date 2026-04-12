@@ -1,0 +1,248 @@
+{
+  "label": "Workshop: Magnetic Parts Tray (Stainless Steel)",
+  "classification": {
+    "primary_category": "AUTO",
+    "product_type": "Magnetic Tool Organization",
+    "secondary_modifier": "Workshop / Garage Use",
+    "confidence": 92,
+    "confidence_label": "high",
+    "reason": "This magnetic parts tray is specifically designed for automotive and workshop use, holding screws, bolts, and metal parts during repairs. The category tags and product claims clearly position it for garage/workshop environments.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "utility-led",
+    "buyer_motivation": {
+      "surface": "A magnetic tray to hold small parts during repairs",
+      "deep": "To feel competent and in control during mechanical work without the frustration of lost parts",
+      "avoidance": "The maddening experience of dropping and losing small screws or bolts mid-repair, forcing them to stop work and search",
+      "identity": "Someone who is organized, prepared, and capable of handling their own repairs professionally",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "The buyer motivation is specifically about the 'maddening experience' of dropping and losing small parts mid-repair. Opening with this exact frustration moment creates immediate emotional connection before revealing the magnetic solution. The high-credibility proof types (live-demonstration, comparison, problem-framing) all work perfectly within this structure, showing the chaos of dropped screws then the magnetic capture in real-time.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the magnetic mechanism is visually compelling, jumping straight to the solution misses the critical emotional hook of the frustration experience that drives this purchase decision."
+      },
+      {
+        "modality": "silent-visual-first",
+        "reason": "The product's value isn't just visual transformation but emotional relief from a specific pain point. Text overlays can't capture the frustration narrative as effectively as showing the actual problem scenario."
+      }
+    ]
+  },
+  "angle": {
+    "name": "The Gravity Defier",
+    "conversion_hypothesis": "If we open with the tray loaded with heavy sockets tilted completely vertical while parts stay in place, then the viewer will believe the magnet is genuinely strong enough for their heaviest work, which makes buying it feel like solving their parts-dropping problem",
+    "entry_mechanism": "Open mid-action with the creator tilting a fully-loaded magnetic tray to 90 degrees vertical against a car fender, heavy sockets and bolts clearly visible staying in place",
+    "proof_vehicle": "Live demonstration of the 90-degree tilt test with actual socket sets and heavy bolts, followed by placing the loaded tray on vertical surfaces",
+    "belief_formation_path": "Viewer sees impossible-seeming physics (heavy parts defying gravity) → realizes this isn't a weak magnet → pictures their own dropped screws problem solved → wants the peace of mind",
+    "cta_setup": "After seeing multiple gravity-defying demonstrations, viewer is convinced of strength and imagining their own frustration solved",
+    "score": {
+      "scroll_stop": 9,
+      "retention_arc": 9,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 8,
+      "composite": 8.6
+    },
+    "creator_pattern_source": "@dealswithty pattern - disbelief-reveal hook with live-demonstration proof that stacks multiple impressive capabilities"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Creator loads magnetic tray with heavy socket set pieces and large bolts, then tilts the entire tray completely vertical against a car fender - all parts stay magnetically attached",
+        "spoken": "Watch what happens when I tilt this thing completely sideways",
+        "text_overlay": null,
+        "filming_note": "Start with tray horizontal, load it with visibly heavy sockets and bolts, then in one smooth motion tilt to 90 degrees vertical against car. Hold for 2 seconds to let viewer process"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 8,
+        "type": "SHOW",
+        "content": "Cut to scattered screws and small bolts across a messy workbench, then creator sweeps them all onto the magnetic tray in one motion - they all stick instantly",
+        "spoken": "I used to lose screws under the car every single time I worked on something",
+        "text_overlay": null,
+        "filming_note": "Show real mess of small parts on workbench, then use tray like a magnet wand to collect them all in one satisfying sweep"
+      },
+      {
+        "start_seconds": 8,
+        "end_seconds": 13,
+        "type": "SHOW",
+        "content": "Side-by-side comparison: regular bowl filled with same parts tilted sideways (parts fall out) next to magnetic tray tilted same angle (parts stay put)",
+        "spoken": "This thing has saved me probably twenty trips back to the hardware store",
+        "text_overlay": "Regular bowl vs magnetic tray",
+        "filming_note": "Film both containers side by side, tilt them simultaneously to same angle, let the contrast speak for itself"
+      },
+      {
+        "start_seconds": 13,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Creator places loaded magnetic tray on vertical toolbox side, then car door frame, showing it sticks and holds position with all parts intact",
+        "spoken": "Obviously this won't hold your entire toolbox, but for the parts you're actually working with",
+        "text_overlay": null,
+        "filming_note": "Show unexpected vertical surface mounting - toolbox side, car door, any metal vertical surface where it sticks and stays"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 23,
+        "type": "SHOW",
+        "content": "Close-up of rubber base sliding across painted car hood surface, then wider shot showing no scratches or marks left behind",
+        "spoken": "I've been using this for about six months now on every project",
+        "text_overlay": "Rubber base won't scratch",
+        "filming_note": "Start tight on rubber base contact with painted surface, slide it around, then pull back to show clean surface with no damage"
+      },
+      {
+        "start_seconds": 23,
+        "end_seconds": 28,
+        "type": "SHOW",
+        "content": "Final shot of creator working under car hood with magnetic tray stuck to fender, easily grabbing bolts as needed without looking down",
+        "spoken": "TikTok Shop has it - nine ninety-nine to never crawl around looking for dropped bolts again",
+        "text_overlay": null,
+        "filming_note": "Show natural working scenario where tray is positioned for easy access while hands are busy with actual repair work"
+      }
+    ],
+    "total_duration_seconds": 28,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "Watch what happens when I tilt this thing completely sideways",
+        "hook_format": "spoken",
+        "rationale": "Opens mid-demonstration with impossible-seeming physics about to be proven. The word 'sideways' understates what's actually vertical, creating curiosity gap about magnet strength",
+        "performance_note": "Start loading the tray while speaking, then execute the tilt as you finish the sentence. Let the visual proof land before any explanation"
+      },
+      {
+        "rank": 2,
+        "hook_text": "I dropped my third socket this month under the car",
+        "hook_format": "spoken",
+        "rationale": "Specific relatable frustration that every DIY person has experienced. The number 'third' makes it feel real and current, not hypothetical",
+        "performance_note": "Say this while showing scattered parts on workbench, frustrated tone but not overdramatic. Immediately transition to gathering them with the magnetic tray"
+      },
+      {
+        "rank": 3,
+        "hook_text": "Heavy sockets and bolts stuck vertically to a car fender, defying gravity",
+        "hook_format": "visual",
+        "rationale": "Pure visual disbelief hook - viewer sees something that shouldn't be possible and needs to understand how. No setup needed, just impossible physics",
+        "performance_note": "Open with the tray already vertical and loaded, hold the shot for 2 full seconds in silence to let the impossibility register, then explain"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "The maddening cycle of dropping small parts during repairs and having to stop work to search for them, often losing expensive sockets or critical bolts",
+      "why_this_framing": "This is the exact frustration that drives tool purchases - not organization for its own sake, but the workflow interruption and cost of lost parts that every DIYer has experienced",
+      "solution_positioning": "A magnetic capture system that eliminates the dropping problem entirely by holding parts against gravity, even in awkward positions"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Convinced the magnet is genuinely strong after seeing multiple gravity-defying demonstrations, picturing their own dropped parts frustration solved",
+      "cta_text": "TikTok Shop has it - nine ninety-nine to never crawl around looking for dropped bolts again",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks to the core problem (crawling around looking for dropped parts) while positioning the purchase as buying peace of mind, not just a tool. Price feels reasonable for the frustration it eliminates"
+    },
+    "caption": "this magnetic tray actually holds heavy sockets when you tilt it vertical. been using it for months and haven't lost a single bolt since. the rubber base doesn't scratch paint either which is huge when you're working on the car",
+    "hashtags": {
+      "broad": [
+        "#tools",
+        "#diy",
+        "#carrepair"
+      ],
+      "mid": [
+        "#magnetictray",
+        "#garagetips",
+        "#autorepair",
+        "#toolorganization"
+      ],
+      "specific": [
+        "#socketset",
+        "#mechanictools",
+        "#garagehacks"
+      ]
+    },
+    "content_structure_note": "Opens with impossible physics demonstration to create immediate disbelief, then works backward to show the problem this solves. Each proof escalation shows the magnet working in increasingly challenging conditions, building credibility through visual evidence rather than claims.",
+    "filming_instructions": {
+      "location": "Garage or driveway with car and workbench visible",
+      "shots": [
+        {
+          "label": "Opening tilt test",
+          "instructions": [
+            "Load tray with heavy sockets and bolts while speaking",
+            "Tilt to full 90 degrees against car fender in smooth motion",
+            "Hold vertical position for 2 seconds to show parts staying put"
+          ]
+        },
+        {
+          "label": "Problem demonstration",
+          "instructions": [
+            "Scatter various small parts across workbench surface",
+            "Use magnetic tray to sweep them up in one satisfying motion",
+            "Show all parts sticking to tray surface"
+          ]
+        },
+        {
+          "label": "Comparison test",
+          "instructions": [
+            "Fill regular bowl with same parts as magnetic tray",
+            "Position both containers side by side",
+            "Tilt both simultaneously to same angle",
+            "Let visual contrast show the difference"
+          ]
+        },
+        {
+          "label": "Vertical mounting",
+          "instructions": [
+            "Place loaded tray on toolbox side or car door frame",
+            "Show it sticking and holding position",
+            "Demonstrate accessing parts while tray is mounted vertically"
+          ]
+        },
+        {
+          "label": "Surface protection",
+          "instructions": [
+            "Close-up of rubber base on painted car surface",
+            "Slide tray around to show no scratching",
+            "Pull back to show clean surface with no marks"
+          ]
+        },
+        {
+          "label": "Real use scenario",
+          "instructions": [
+            "Position tray on car fender while working under hood",
+            "Show natural workflow of grabbing parts without looking down",
+            "Demonstrate hands-free access during actual repair work"
+          ]
+        }
+      ],
+      "lighting": "Natural outdoor lighting or bright garage lighting to clearly show parts and surfaces",
+      "equipment_note": "Phone camera sufficient, focus on steady shots that clearly show parts staying attached to magnet during tilting"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 7,
+      "cta_naturalness": 7
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA mentions price but could be stronger by leading with the proof callback about never losing bolts again",
+        "severity": "warning"
+      },
+      {
+        "component": "filming",
+        "issue": "Side-by-side comparison shot at 8s-13s may be challenging for solo creator to execute smoothly",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "label": "Kitchen: Silicone Stretch Lids (6-Pack)",
+  "classification": {
+    "primary_category": "KITCHEN",
+    "product_type": "Food Storage Lids",
+    "secondary_modifier": null,
+    "confidence": 95,
+    "confidence_label": "high",
+    "reason": "These silicone stretch lids are specifically designed for kitchen food storage, replacing plastic wrap and foil to create airtight seals on containers. Perfect for kitchen organization and meal prep content.",
+    "competing_classification": null,
+    "requires_override_prompt": false
+  },
+  "analysis": {
+    "primary_role": "utility-led",
+    "buyer_motivation": {
+      "surface": "better food storage solution that replaces plastic wrap",
+      "deep": "feeling competent and organized in the kitchen while reducing waste guilt",
+      "avoidance": "frustration with plastic wrap that doesn't stick and creates kitchen mess",
+      "identity": "someone who has their kitchen organized and makes smart, eco-conscious choices",
+      "weighted_primary": "avoidance"
+    }
+  },
+  "modality": {
+    "selected": "problem-reveal-led",
+    "reason": "The buyer motivation is avoidance-based frustration with plastic wrap mess, making the problem-reveal structure perfectly aligned with their psychology. Opening with the relatable mess of plastic wrap failing to stick creates immediate emotional connection, then the food storage lids solving this exact problem delivers high-credibility live demonstration proof that directly addresses their pain point.",
+    "rejected": [
+      {
+        "modality": "demo-first",
+        "reason": "While the lids have strong visual demonstration potential, jumping straight to the solution misses the critical emotional hook of the frustration that drives purchase intent for this avoidance-motivated buyer."
+      },
+      {
+        "modality": "comparison-led",
+        "reason": "Side-by-side comparison would work well for proof but lacks the emotional engagement of showing the actual problem state first, which is essential for connecting with buyers motivated by avoiding plastic wrap frustration."
+      }
+    ]
+  },
+  "angle": {
+    "name": "Upside Down Seal Test",
+    "conversion_hypothesis": "If we open with flipping a bowl of pasta completely upside down with the lid on, then the viewer will believe these actually create airtight seals unlike plastic wrap, which makes buying a 6-pack feel like solving their food storage frustrations",
+    "entry_mechanism": "Open mid-flip: bowl of leftover spaghetti completely inverted, held upside down for 3 seconds, then flip back to show zero spillage",
+    "proof_vehicle": "Live demonstration of the upside-down test on multiple containers with different foods, followed by showing plastic wrap failing the same test",
+    "belief_formation_path": "Shock at the upside-down hold → realization this seal actually works → comparison showing plastic wrap failure → understanding this solves their daily leftover storage problem",
+    "cta_setup": "After proving the seal works and showing plastic wrap failing, viewer naturally wants the solution that actually seals their leftovers",
+    "score": {
+      "scroll_stop": 9,
+      "retention_arc": 8,
+      "belief_formation": 9,
+      "filming_feasibility": 8,
+      "cta_naturalness": 8,
+      "composite": 8.4
+    },
+    "creator_pattern_source": "iamsk8bordb-pattern utility-interruption combined with Disbelief/Reveal hook archetype"
+  },
+  "script": {
+    "beats": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 3,
+        "type": "SHOW",
+        "content": "Bowl of leftover spaghetti with silicone lid stretched over it, creator grips the bowl and flips it completely upside down, holds it there for 3 seconds",
+        "spoken": "I'm so tired of plastic wrap that just refuses to stick",
+        "text_overlay": null,
+        "filming_note": "Use a clear glass bowl so viewer can see the pasta. Flip confidently and hold steady - any wobbling kills the effect"
+      },
+      {
+        "start_seconds": 3,
+        "end_seconds": 6,
+        "type": "SHOW",
+        "content": "Flip bowl right-side up, remove lid to show pasta completely intact, no spillage",
+        "spoken": "and then I find it stuck to itself in a ball",
+        "text_overlay": null,
+        "filming_note": "Quick reveal - lift the lid smoothly to show the pasta is perfect"
+      },
+      {
+        "start_seconds": 6,
+        "end_seconds": 10,
+        "type": "SHOW",
+        "content": "Take plastic wrap, attempt to cover the same bowl - it peels off, won't stick, leaves gaps around edges",
+        "spoken": "Watch what happens when I try the same thing with plastic wrap",
+        "text_overlay": null,
+        "filming_note": "Don't exaggerate the plastic wrap failure - let it fail naturally as it always does"
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 14,
+        "type": "SHOW",
+        "content": "Take smallest silicone lid, stretch it over a small 3-inch container, then take same lid and stretch it over large 8-inch mixing bowl",
+        "spoken": "These stretch from tiny containers all the way up to my biggest mixing bowls",
+        "text_overlay": null,
+        "filming_note": "Use the same lid for both - the stretch transformation is the key visual proof"
+      },
+      {
+        "start_seconds": 14,
+        "end_seconds": 18,
+        "type": "SHOW",
+        "content": "Open fridge to reveal 6-7 different containers all covered with silicone lids - various sizes of bowls, pots, leftover containers",
+        "spoken": "I've been using these for three months and I'm still on the same six lids",
+        "text_overlay": null,
+        "filming_note": "Show your actual fridge setup - this proves real-world usage better than any demo"
+      },
+      {
+        "start_seconds": 18,
+        "end_seconds": 22,
+        "type": "SHOW",
+        "content": "Remove lid from container that's been stored overnight, show food underneath - no dried edges, still fresh-looking",
+        "spoken": "My leftovers actually stay fresh now instead of getting that weird dried-out edge",
+        "text_overlay": null,
+        "filming_note": "Use real leftovers that have been stored - the freshness difference is visible"
+      },
+      {
+        "start_seconds": 22,
+        "end_seconds": 26,
+        "type": "SHOW",
+        "content": "Toss used lids directly into dishwasher with other dishes",
+        "spoken": "They don't work on square containers, just round ones, but honestly that covers most of what I store",
+        "text_overlay": null,
+        "filming_note": "Show the actual cleanup convenience - this addresses the maintenance objection"
+      },
+      {
+        "start_seconds": 26,
+        "end_seconds": 30,
+        "type": "SHOW",
+        "content": "Final shot of the 6-pack of lids laid out, then quick montage of them covering different containers",
+        "spoken": "If plastic wrap drives you crazy, these are in TikTok Shop - six lids that actually stay put",
+        "text_overlay": null,
+        "filming_note": "End with the product but emphasize the solution to the opening problem"
+      }
+    ],
+    "total_duration_seconds": 30,
+    "hook_options": [
+      {
+        "rank": 1,
+        "hook_text": "I'm so tired of plastic wrap that just refuses to stick",
+        "hook_format": "spoken",
+        "rationale": "Opens with the exact frustration every viewer has experienced - plastic wrap failure is universally relatable and immediately creates emotional connection",
+        "performance_note": "Say this while already holding the bowl upside down - start mid-flip for maximum visual impact. Sound genuinely annoyed, not performative"
+      },
+      {
+        "rank": 2,
+        "hook_text": "Bowl of spaghetti held completely upside down with no spillage",
+        "hook_format": "visual",
+        "rationale": "Pure visual shock - seeing food held upside down without spilling immediately creates disbelief and curiosity about how this is possible",
+        "performance_note": "Start the video already mid-flip. Hold the upside-down position for full 3 seconds. Use a clear bowl so pasta is visible"
+      },
+      {
+        "rank": 3,
+        "hook_text": "Watch what happens when I flip this whole thing over",
+        "hook_format": "spoken",
+        "rationale": "Creates anticipation and directs attention to the key proof moment - viewer has to stay to see if the seal actually holds",
+        "performance_note": "Say this while gripping the bowl, just before the flip. Pause briefly after 'over' then execute the flip"
+      }
+    ],
+    "problem_solution_logic": {
+      "problem_framing": "Plastic wrap never sticks properly, creates kitchen mess, and leaves food exposed to air and spills",
+      "why_this_framing": "This is the daily frustration that drives purchase intent - everyone has wrestled with plastic wrap that won't seal, and the mess it creates is viscerally annoying",
+      "solution_positioning": "Silicone lids that actually create airtight seals and stretch to fit multiple container sizes, eliminating plastic wrap frustration entirely"
+    },
+    "cta_logic": {
+      "viewer_state_at_cta": "Convinced the lids actually work after seeing upside-down test, size versatility, and real fridge usage. Ready for solution to their plastic wrap problem",
+      "cta_text": "If plastic wrap drives you crazy, these are in TikTok Shop - six lids that actually stay put",
+      "pressure_mechanism": null,
+      "why_it_works": "Callbacks directly to the opening frustration and promises the specific solution demonstrated - staying put, which is exactly what plastic wrap fails to do"
+    },
+    "caption": "plastic wrap is the worst invention ever created. these silicone lids actually seal and i can throw them in the dishwasher. been using the same six for months now and they still stretch perfectly over everything in my kitchen.",
+    "hashtags": {
+      "broad": [
+        "#kitchenhacks",
+        "#foodstorage"
+      ],
+      "mid": [
+        "#leftovers",
+        "#kitchenorganization",
+        "#reusable",
+        "#zerowaste"
+      ],
+      "specific": [
+        "#siliconelids",
+        "#plasticwrapfail",
+        "#foodprep"
+      ]
+    },
+    "content_structure_note": "Problem-reveal structure that opens with the solution working (upside-down test) then reveals why it's needed (plastic wrap failure). The proof escalates from seal strength to size versatility to real-world usage, building complete confidence in the product's utility.",
+    "filming_instructions": {
+      "location": "Kitchen with good natural light, access to fridge",
+      "shots": [
+        {
+          "label": "Upside-down bowl test",
+          "instructions": [
+            "Use clear glass bowl with colorful food like pasta",
+            "Flip confidently and hold steady for full 3 seconds",
+            "Film at eye level so viewer sees the full flip"
+          ]
+        },
+        {
+          "label": "Plastic wrap failure",
+          "instructions": [
+            "Use same bowl as upside-down test",
+            "Don't force the failure - let plastic wrap behave naturally",
+            "Show the gaps and peeling clearly"
+          ]
+        },
+        {
+          "label": "Size versatility demo",
+          "instructions": [
+            "Use same lid for both small and large containers",
+            "Show the stretch happening in real time",
+            "Choose containers with obvious size difference"
+          ]
+        },
+        {
+          "label": "Fridge reveal",
+          "instructions": [
+            "Show actual stored leftovers with lids on",
+            "Include variety of container sizes",
+            "Good lighting inside fridge is crucial"
+          ]
+        }
+      ],
+      "lighting": "Bright natural kitchen lighting, ensure fridge interior is well-lit for the storage reveal",
+      "equipment_note": "Phone camera, tripod optional but helpful for steady upside-down shot"
+    }
+  },
+  "qa": {
+    "passed": true,
+    "overall_score": 8.1,
+    "scores": {
+      "hook_strength": 8,
+      "belief_loop_completeness": 9,
+      "proof_authenticity": 9,
+      "generic_language": 8,
+      "filming_feasibility": 9,
+      "cta_naturalness": 6
+    },
+    "flags": [
+      {
+        "component": "cta",
+        "issue": "CTA is functional but could be stronger - references the problem but doesn't callback to the specific proof demonstration that made this product compelling",
+        "severity": "warning"
+      }
+    ],
+    "regeneration_targets": []
+  }
+}

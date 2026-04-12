@@ -1,0 +1,58 @@
+import type { ProductTypeDefinition } from "./auto";
+
+export const kitchenProductTypes: ProductTypeDefinition[] = [
+  {
+    category: "KITCHEN",
+    type_name: "Appliance",
+    primary_conversion_mechanism: "Meal transformation — showing a complex or time-consuming meal made effortlessly with one appliance converts through the time-saving revelation",
+    dominant_objection: "Is this just another appliance that will sit in my cabinet after the novelty wears off?",
+    required_proof: "Multiple different meals prepared over a week, cleaning ease demonstrated, and storage footprint shown in a real kitchen",
+    content_style_affinity: ["meal prep series", "recipe challenge", "appliance vs traditional", "kitchen counter real estate", "weeknight dinner solution"],
+    anti_patterns: ["Single recipe that only works with this appliance", "Ignoring cleaning difficulty", "Hiding the size and storage requirements"],
+  },
+  {
+    category: "KITCHEN",
+    type_name: "Cooking tool",
+    primary_conversion_mechanism: "Skill elevation — showing an amateur cook produce professional results with a single tool converts through the empowerment of accessible expertise",
+    dominant_objection: "Do I really need another kitchen gadget when a basic knife and pan should do?",
+    required_proof: "Side-by-side result comparison using the tool vs traditional method, showing time saved and quality improvement",
+    content_style_affinity: ["tool vs hand comparison", "cooking hack", "kitchen gadget test", "beginner cook challenge", "time-saving demo"],
+    anti_patterns: ["Expert chef demos that do not represent average skill level", "Only showing the tool without comparison to existing methods", "Infomercial-style overacting"],
+  },
+  {
+    category: "KITCHEN",
+    type_name: "Ingredient/seasoning",
+    primary_conversion_mechanism: "Flavor revelation — genuine taste reaction footage showing surprise and delight converts through shared sensory experience and curiosity",
+    dominant_objection: "Is this just overpriced salt or generic spice in fancy packaging?",
+    required_proof: "Blind taste test comparing to common alternatives, recipe applications showing versatility, and ingredient sourcing transparency",
+    content_style_affinity: ["taste test reaction", "recipe upgrade", "blind comparison", "pantry staple ranking", "chef endorsement"],
+    anti_patterns: ["Only showing the packaging or label", "Exaggerated taste reactions", "Single recipe application that limits perceived versatility"],
+  },
+  {
+    category: "KITCHEN",
+    type_name: "Meal solution",
+    primary_conversion_mechanism: "Decision fatigue elimination — showing a week of meals solved without planning or thinking converts exhausted parents and busy professionals",
+    dominant_objection: "Will the portions be enough, will my family actually eat it, and is it nutritionally worth the cost?",
+    required_proof: "Full week meal documentation with portion visibility, family reaction footage, nutritional comparison to homemade, and cost-per-meal breakdown",
+    content_style_affinity: ["weekly meal unboxing", "family taste test", "cost breakdown", "meal prep comparison", "busy parent solution"],
+    anti_patterns: ["Only showing the best-looking meal from the box", "Ignoring cost comparison to grocery shopping", "No family or household member reactions"],
+  },
+  {
+    category: "KITCHEN",
+    type_name: "Storage container",
+    primary_conversion_mechanism: "Freshness proof — showing food staying fresh dramatically longer than in original packaging converts through waste-reduction savings",
+    dominant_objection: "Are these actually airtight and leakproof, or will they stain and warp like every other container I own?",
+    required_proof: "Leak test (flip upside down with liquid), stain test with tomato sauce, freshness comparison over days, and stacking or nesting demo",
+    content_style_affinity: ["freshness comparison", "leak test challenge", "pantry organization", "meal prep container review", "fridge restock"],
+    anti_patterns: ["Only showing empty containers stacked neatly", "No real food storage or freshness testing", "Ignoring microwave and dishwasher safety"],
+  },
+  {
+    category: "KITCHEN",
+    type_name: "Drinkware",
+    primary_conversion_mechanism: "Temperature promise — showing ice still frozen after 12+ hours or coffee still steaming hours later creates dramatic temperature-retention proof",
+    dominant_objection: "Is this actually better than my current tumbler, and will the lid leak in my bag?",
+    required_proof: "Timed temperature retention test with thermometer readings, leak test in a bag, and comparison to a popular competitor",
+    content_style_affinity: ["ice test challenge", "temperature tracking", "leak test in bag", "daily carry review", "tumbler comparison"],
+    anti_patterns: ["Claiming temperature retention without timed proof", "Only showing the exterior design", "No competitor comparison or lid leak test"],
+  },
+];
