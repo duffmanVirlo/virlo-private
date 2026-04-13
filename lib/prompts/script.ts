@@ -166,9 +166,10 @@ Return a JSON object with:
   },
 
   "cta_logic": {
-    "proof_beat_echoed": string — REQUIRED. Before writing the CTA, identify the single strongest proof moment from the beats above. Name it specifically: "the upside-down bowl test", "the side-by-side oil comparison", "the glasses screw fix", "the hair ball reveal", etc. The CTA must anchor to THIS moment.,
-    "viewer_state_at_cta": string — what the viewer believes/feels after seeing that proof beat,
-    "cta_text": string — the exact CTA the creator says. Must directly reference or echo the proof_beat_echoed moment. Should sound like the creator naturally finishing their thought after that demo landed. NOT a generic problem callback. NOT bare "link in bio" or "it's in TikTok Shop.",
+    "viewer_state_at_cta": string — REQUIRED. What is the viewer thinking and feeling RIGHT NOW after watching this video? Are they convinced by proof? Tired of their current problem? Weighing the value? Imagining the product in their life? Feeling relief? This drives everything below.,
+    "cta_conversion_logic": string — REQUIRED. Which conversion logic fits this viewer state? One of: "proof_conviction", "problem_tiredness", "relief_discovery", "value_justification", "offer_timing", "practical_ownership", "situation_match", "upgrade_replacement", "soft_recommendation". Choose based on the viewer state, NOT by default.,
+    "proof_anchor": string — identify the strongest proof moment from the beats. The CTA may reference this, but it is NOT required to echo it directly. Some CTA logics (problem tiredness, value justification, soft recommendation) work better WITHOUT a direct proof echo.,
+    "cta_text": string — the exact CTA the creator says. Must match the chosen cta_conversion_logic. Must sound like a real creator naturally closing. NOT a template. NOT bare "link in bio." The CTA must do NEW conversion work — it must not simply restate the final beat in slightly different words.,
     "pressure_mechanism": string or null,
     "why_it_works": string
   },
@@ -258,66 +259,85 @@ BEAT RULES:
 CTA RULES:
 
 CTA GENERATION PROCEDURE:
-Step 1: LOOK BACK at the beats you just wrote. Identify the single strongest visual proof moment. Name it in proof_beat_echoed.
-Step 2: Write the CTA as a creator naturally finishing the thought that started with that proof moment. The proof echo can appear at the BEGINNING, MIDDLE, or END of the CTA — do not always lead with it. Vary the structure.
-Step 3: If the CTA does not reference the proof beat at all, rewrite it. But if the proof echo is embedded in the middle or end rather than as the opener, that is fine and often more natural.
+Step 1: IDENTIFY THE VIEWER STATE. After watching all the beats, what is the viewer thinking and feeling? Are they convinced? Tired of their old way? Weighing the cost? Imagining the product in their life? This is the PRIMARY driver.
+Step 2: SELECT THE CONVERSION LOGIC that matches this viewer state. Do NOT default to proof conviction. Read the viewer state honestly and pick the logic that does the most conversion work.
+Step 3: WRITE THE CTA from that conversion logic. The CTA must do NEW conversion work — it cannot simply restate or rephrase the final beat. If the last beat showed proof, the CTA should move to the NEXT step (recommending, justifying, framing the decision) — not just admire the proof again.
+Step 4: CHECK — does this CTA sound like a real creator closing a video? Would they actually say this? If it sounds like a template or a marketing line, rewrite it.
 
-CTA MASTER PRINCIPLE: The CTA is the natural continuation of the exact proof the viewer just watched. It should sound like a real creator wrapping up — NOT a template being filled.
+CTA MASTER PRINCIPLE: The CTA is a CONVERSION MOVE, not a proof summary. The proof already happened in the video. The CTA's job is to move the viewer from "that was impressive" to "I should get this." Those are two different psychological steps. The CTA must advance the viewer forward, not look backward at what they already saw.
 
-CTA VARIETY RULE: Do NOT default to "After seeing [X]..." as the standard opener. That is ONE valid frame but must not be the automatic default. Vary the CTA structure. The proof echo can be the opener, the middle, or the justification at the end.
+CTA / FINAL BEAT SEPARATION RULE: The CTA must be a DIFFERENT sentence doing DIFFERENT conversion work than the final beat before it. If the final beat demonstrates proof, the CTA must not simply echo that same proof. The two must work as a one-two punch: the final beat delivers evidence, the CTA delivers the recommendation, justification, or decision framing.
 
-NATURAL CTA FRAMES — ORGANIZED BY CONVERSION LOGIC (choose the logic that fits the viewer state, then vary phrasing):
+CTA CONVERSION LOGICS — select based on viewer state:
 
-LOGIC 1: PROOF CONVICTION — viewer just saw undeniable evidence
-- "[Specific demo result] was all I needed"
-- "Honestly, [specific result] is what sold me"
-- "Once I saw [result], I stopped looking for alternatives"
+1. PROOF CONVICTION — use when viewer just saw something undeniable and needs minimal push
+   - "honestly, after that [result], I don't even look at other options"
+   - "that's the kind of result that makes the decision easy"
 
-LOGIC 2: PROBLEM TIREDNESS — viewer identifies with ongoing frustration
-- "If you're tired of [specific problem from hook], this is worth a try"
-- "If [specific friction] has been your thing too, I'd grab it"
-- "I spent way too long dealing with [problem] before I found this"
+2. PROBLEM TIREDNESS — use when the hook/video surfaced a frustration the viewer has been living with
+   - "if you're tired of dealing with [specific friction], this is worth a try"
+   - "if [specific problem] has been your thing too, this one actually fixes it"
+   - "I spent way too long putting up with [problem] before I found this"
 
-LOGIC 3: RELIEF / DISCOVERY — viewer feels the weight of the problem lifting
-- "I'm never going back to [old way] after that [specific result]"
-- "I wish I'd found this [timeframe] ago"
-- "If your [specific thing] looks like mine did, this is the one that fixed it"
+3. RELIEF / DISCOVERY — use when the product resolves something the viewer didn't know had a solution
+   - "I genuinely wish I'd found this [timeframe] ago"
+   - "this would have saved me so much [time/money/frustration]"
 
-LOGIC 4: VALUE JUSTIFICATION — viewer is weighing whether it's worth it
-- "For the price, this is one of those things that just makes sense to try"
-- "Honestly, [price point] for something that actually [specific result]? Easy"
-- "It pays for itself after [specific use scenario]"
+4. VALUE JUSTIFICATION — use when the viewer is weighing whether it's worth the money
+   - "for the price, this is one of those things that just makes sense to try"
+   - "it kind of pays for itself after [specific use scenario]"
+   - "honestly, [price range] for something that actually works? I'll take it"
 
-LOGIC 5: OFFER / TIMING — genuine scarcity or deal exists
-- "If you've been thinking about it, I'd grab it while it's [on sale / at this price]"
-- "They've got a deal on it right now which is why I'm even mentioning it"
+5. OFFER / TIMING — use ONLY when a genuine deal or limited availability exists
+   - "if you've been thinking about it, I'd grab it while it's still [on sale / at this price]"
+   - "they've got a deal on it right now which is honestly why I'm even posting this"
 
-LOGIC 6: PRACTICAL OWNERSHIP — viewer imagines product in their life
-- "That [proof beat] alone is why I keep this [in specific location] now"
-- "This just lives [in location] now and I don't think about [problem] anymore"
-- "It's one of those things you don't realize you needed until you have it"
+6. PRACTICAL OWNERSHIP — use when the product integrates into daily life
+   - "this just lives [in specific location] now and I don't think about [problem] anymore"
+   - "it's one of those things you end up using more than you'd expect"
 
-SELECTION RULE: Pick the CTA logic that matches the VIEWER STATE after watching the proof, not just the proof itself. A viewer who saw a dramatic demo needs CONVICTION logic. A viewer who related to a long frustration needs TIREDNESS logic. A viewer weighing a purchase needs VALUE logic. A viewer who saw an offer needs TIMING logic.
+7. SITUATION MATCH — use when the video demonstrated a specific setup/scenario the viewer might share
+   - "if your [setup/situation] looks anything like mine, this solves it"
+   - "if you've got the same [specific problem], definitely worth checking out"
 
-CTA TAIL VARIETY: Do NOT default to "I linked the exact one" as the standard close. Vary the tail — sometimes omit the link reference, sometimes reference where you use the product, sometimes end on a belief statement, sometimes end on a practical scenario.
+8. UPGRADE / REPLACEMENT — use when the product clearly replaces something worse
+   - "if your current [thing] is annoying you, this is an easy upgrade"
+   - "this just straight up replaces [old method] and it's not even close"
+
+9. SOFT RECOMMENDATION — use when the tone should stay casual and low-pressure
+   - "definitely worth looking into if that's been your issue"
+   - "just thought I'd share this one because it actually works"
+   - "not saying you need it but if you've been dealing with [problem], it's worth a look"
+
+SELECTION RULE: THINK about what the viewer is feeling, then select the logic that moves them forward. Match examples:
+- Dramatic visual demo with clear before/after → PROOF CONVICTION
+- Product the viewer didn't know existed → RELIEF / DISCOVERY
+- Product clearly better than what viewer currently uses → UPGRADE / REPLACEMENT
+- Viewer imagining product in their own space → PRACTICAL OWNERSHIP or SITUATION MATCH
+- Low-cost product where the decision is easy → VALUE JUSTIFICATION
+- Product with active sale/deal → OFFER / TIMING
+- Casual vibe, low-stakes product → SOFT RECOMMENDATION
+- Viewer relates to ongoing frustration → PROBLEM TIREDNESS
+
+ANTI-MONOCULTURE RULE: Do NOT default to problem_tiredness or proof_conviction for every product. These are two of nine options, not the standard. Before selecting, explicitly consider whether RELIEF, VALUE, UPGRADE, SITUATION MATCH, PRACTICAL OWNERSHIP, or SOFT RECOMMENDATION would be a stronger and more natural fit. "If you're tired of..." is a valid CTA shape but it must NOT become the default pattern. Variety across products is a system requirement.
 
 CTA HARD RULES:
-- CTA must connect to the SPECIFIC proof or problem demonstrated in this video, not a generic category callback.
-- NEVER output bare "it's in TikTok Shop" or "link in bio." If platform is mentioned, it must be subordinate to a proof or value callback.
-- NEVER default to price-first closes. Price may appear in VALUE JUSTIFICATION logic when genuinely relevant.
-- CTA should sound like the creator naturally finishing their thought — not a scripted sales line bolted onto the end.
-- If no strong CTA improves the output, use a soft natural close instead of forcing a hard sales line. A soft close is always better than a bad CTA.
+- The CTA must do DIFFERENT conversion work than the final beat. Never restate the same idea in slightly different words.
+- NEVER output bare "it's in TikTok Shop" or "link in bio." If platform is mentioned, it must be subordinate to the conversion logic.
+- CTA should sound like a real creator naturally closing — casual, direct, real.
 - Do NOT repeat the hook in weaker form as the CTA.
 - Do NOT use generic formulas like "grab yours", "don't walk run", "before it sells out."
-- Do NOT use the same CTA logic for every product. The logic should vary based on what the viewer just experienced.
 
-BAD CTAs (suppress):
-- "After seeing [X], I linked the exact one" (overused formula — this specific combo is too repetitive)
-- "That [X] alone is why I switched/changed to this" (overused conversion frame)
-- "That [test/result] alone is why I use this now" (same-shape repetition)
-- "It's in TikTok Shop" (bare platform mention)
-- "$X.XX to never [problem] again" (price-first without proof context)
-- "If you [broad category need], this is the one" (generic)
+STALE PATTERNS — these are now BANNED unless truly the only option:
+- "that [test/proof/shot] is what sold me" (overused proof-echo)
+- "that's why I switched to this" (overused conversion frame)
+- "that's why I keep this now" (overused ownership echo)
+- "once I saw that, I was sold" (overused proof conviction)
+- "that alone made me change" (overused proof conviction)
+- "after seeing [X], I linked the exact one" (overused formula)
+- "[result] alone is why I use this now" (overused proof ownership)
+- "that [X] is what convinced me" (overused proof echo)
+These all express the SAME logic: "I saw proof → I'm converted." That is ONE logic. The system has 9 logics. Use the others.
 
 SCRIPT RULES:
 - Total duration should be 25-45 seconds.

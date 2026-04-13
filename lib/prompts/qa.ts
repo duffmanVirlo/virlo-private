@@ -68,7 +68,7 @@ Return a JSON object with:
     "proof_authenticity": number 0-10 (WEIGHTED 1.5x). 10=all proof is visual, filmable, product-specific, and creates independent belief. 8-9=strong proof, minor reliance on claims. 6-7=mixed showing and telling. 4-5=mostly verbal claims. Most outputs should score 7-9.,
     "generic_language": number 0-10. 10=every line is specific to this product, no template language. 8-9=mostly specific, one generic moment. 6-7=some template-feeling lines. 4-5=significantly generic. Score honestly — if ANY blacklisted phrase or template pattern appears, cap at 6.,
     "filming_feasibility": number 0-10. 10=every beat is immediately filmable by solo creator with phone. 8-9=mostly filmable, one challenging shot. 6-7=requires some setup or editing skill. 4-5=impractical for solo creator. Score strictly on real-world feasibility.,
-    "cta_naturalness": number 0-10. 10=CTA directly echoes the specific proof moment just shown, feels like creator finishing a thought. 8-9=strong proof callback, natural tone. 6-7=references the problem but not the specific demo. 4-5=generic or platform-first. 1-3=bare 'link in bio'. Most CTAs should score 5-8, not 7-8. Reserve 9+ for CTAs that directly echo a specific demo beat.
+    "cta_naturalness": number 0-10. 10=CTA uses the right conversion logic for the viewer state, sounds like a real creator closing, and does NEW conversion work beyond the final beat. 8-9=strong conversion logic match, natural tone, moves viewer forward. 6-7=decent close but uses overused proof-echo pattern or restates the final beat. 4-5=generic or platform-first. 1-3=bare 'link in bio'. Reserve 9+ for CTAs that clearly advance the viewer from 'impressed' to 'I should get this' using the right conversion logic.
   },
   "flags": array of {
     "component": string - which part of the output has an issue,
@@ -93,12 +93,20 @@ HOOK ENFORCEMENT (corrected caps on 0-10 scale):
 - If the hook text has no connection to the opening visual beat (hook is purely verbal with no implied filmable first frame), flag as warning with component "hook-visual" — hooks must pair with a compelling opening visual.
 - If all 3 hooks are near-duplicate phrasings, use the same psychological entry angle, or differ only in wording rather than approach, flag as warning. Meaningful variation in entry behavior is required. Strict archetype taxonomy diversity is not — if one hook family is clearly dominant for the product, adjacent hooks are acceptable as long as each offers a genuinely distinct opening move.
 CTA ENFORCEMENT:
-- If the CTA is bare "it's in TikTok Shop" or "link in bio" with no product callback, cta_naturalness caps at 4 and flag it.
-- If the CTA uses "TikTok Shop has it — [vague problem reference]" without referencing the SPECIFIC proof demonstrated in the video, cta_naturalness caps at 6.
-- If the CTA is price-first ("$X to never [problem]" formula) when a stronger proof-callback CTA exists, cta_naturalness caps at 6.
-- If the CTA could apply to any product in the category with minimal changes, cta_naturalness caps at 6 — the CTA must feel specific to THIS video's proof.
-- If the CTA follows the shape "that [test/result] alone is why I [switched/changed/use] this now" — this is an overused conversion frame. Flag as warning and cap cta_naturalness at 7 UNLESS it is genuinely the strongest possible close for this specific proof. The CTA logic should match the viewer state: proof conviction, problem tiredness, relief/discovery, value justification, offer/timing, or practical ownership.
-- A CTA that directly echoes the specific demo moment AND uses the conversion logic best suited to the viewer's emotional state should score 8-10.
+- If the CTA is bare "it's in TikTok Shop" or "link in bio" with no conversion logic, cta_naturalness caps at 4 and flag it (blocking).
+- If the CTA could apply to any product in the category with minimal changes, cta_naturalness caps at 6 — flag with issue "generic CTA".
+- If the CTA is price-first when a stronger conversion logic exists, cta_naturalness caps at 6.
+- STALE PATTERN ENFORCEMENT: If the CTA matches any of these overused shapes, cta_naturalness caps at 6 and flag as warning:
+  * "that [test/proof/shot] is what sold me"
+  * "that's why I switched/changed to this"
+  * "that's why I keep this now"
+  * "once I saw that, I was sold/convinced"
+  * "that alone made me change"
+  * "[result] alone is why I use this now"
+  * Any CTA where the ENTIRE logic is "I saw proof and now I'm converted" with no other conversion move.
+  These are ALL the same conversion logic. They are stale. Penalize them.
+- FINAL BEAT / CTA DUPLICATION: If the CTA essentially restates the final beat in different words without adding a new conversion move, cta_naturalness caps at 6 and flag with issue "CTA duplicates final beat — must do new conversion work."
+- A CTA that uses the conversion logic best suited to the viewer's emotional state, sounds like a real creator, and does NEW work beyond the final beat should score 8-10. The 9 valid conversion logics are: proof_conviction, problem_tiredness, relief_discovery, value_justification, offer_timing, practical_ownership, situation_match, upgrade_replacement, soft_recommendation.
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.
