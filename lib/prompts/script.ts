@@ -268,58 +268,72 @@ CTA MASTER PRINCIPLE: The CTA is a CONVERSION MOVE, not a proof summary. The pro
 
 CTA / FINAL BEAT SEPARATION RULE: The CTA must be a DIFFERENT sentence doing DIFFERENT conversion work than the final beat before it. If the final beat demonstrates proof, the CTA must not simply echo that same proof. The two must work as a one-two punch: the final beat delivers evidence, the CTA delivers the recommendation, justification, or decision framing.
 
+CTA ENERGY PRINCIPLE: The CTA should create PURCHASE MOMENTUM, not reflect on ownership. It should move the viewer toward buying, not describe the creator's personal relationship with the product. Think "buying nudge from a friend" not "personal diary entry."
+
+CTA COMPOUND STRUCTURE: The strongest CTAs often combine 2-3 elements in one natural sentence:
+- the real friction or pain point
+- the main product payoff
+- a natural reason to act now (sale, stock, price, timing, easy trial)
+Not every CTA needs all three, but the best ones layer them naturally.
+
 CTA CONVERSION LOGICS — select based on viewer state:
 
-1. PROOF CONVICTION — use when viewer just saw something undeniable and needs minimal push
-   - "honestly, after that [result], I don't even look at other options"
-   - "that's the kind of result that makes the decision easy"
+1. PROBLEM TIREDNESS + ACTION — viewer relates to the frustration and needs a push to act
+   - "if you've been dealing with [specific friction], this is the one to grab before they sell through"
+   - "if [specific problem] has been driving you crazy, I'd grab it while it's still on sale"
+   - "if you need something that actually fixes [problem], this is worth trying — especially at this price"
 
-2. PROBLEM TIREDNESS — use when the hook/video surfaced a frustration the viewer has been living with
-   - "if you're tired of dealing with [specific friction], this is worth a try"
-   - "if [specific problem] has been your thing too, this one actually fixes it"
-   - "I spent way too long putting up with [problem] before I found this"
+2. SITUATION MATCH + NUDGE — viewer sees their own setup/scenario in the video
+   - "if your [setup/situation] looks anything like mine, I'd grab this before they sell out"
+   - "if you need one [thing] that handles [specific scenario], this is the one and I wouldn't wait on it"
+   - "if your [space] is a mess of [specific clutter], this fixes it fast"
 
-3. RELIEF / DISCOVERY — use when the product resolves something the viewer didn't know had a solution
-   - "I genuinely wish I'd found this [timeframe] ago"
-   - "this would have saved me so much [time/money/frustration]"
-
-4. VALUE JUSTIFICATION — use when the viewer is weighing whether it's worth the money
-   - "for the price, this is one of those things that just makes sense to try"
-   - "it kind of pays for itself after [specific use scenario]"
-   - "honestly, [price range] for something that actually works? I'll take it"
-
-5. OFFER / TIMING — use ONLY when a genuine deal or limited availability exists
-   - "if you've been thinking about it, I'd grab it while it's still [on sale / at this price]"
-   - "they've got a deal on it right now which is honestly why I'm even posting this"
-
-6. PRACTICAL OWNERSHIP — use when the product integrates into daily life
-   - "this just lives [in specific location] now and I don't think about [problem] anymore"
-   - "it's one of those things you end up using more than you'd expect"
-
-7. SITUATION MATCH — use when the video demonstrated a specific setup/scenario the viewer might share
-   - "if your [setup/situation] looks anything like mine, this solves it"
-   - "if you've got the same [specific problem], definitely worth checking out"
-
-8. UPGRADE / REPLACEMENT — use when the product clearly replaces something worse
+3. UPGRADE / REPLACEMENT — viewer is using something worse and can clearly do better
    - "if your current [thing] is annoying you, this is an easy upgrade"
-   - "this just straight up replaces [old method] and it's not even close"
+   - "if you're still using [old method], this just straight up replaces it and it's not close"
+   - "this is the kind of upgrade you wish you'd made sooner"
 
-9. SOFT RECOMMENDATION — use when the tone should stay casual and low-pressure
-   - "definitely worth looking into if that's been your issue"
+4. OFFER-AWARE BUYING NUDGE — use when product context supports sale, stock, or price signals. NEVER invent scarcity. Only use when product data includes sale price, limited stock, high sell-through, or deal indicators.
+   - "they actually have these on a really good sale right now but I'm not sure how long that's going to last — if you want to grab one before the price goes back up, link is right here"
+   - "the only problem with these is they keep selling out — if you want to grab one while they're still available and actually on a good sale, I'd do it now"
+   - "this is one of those things that usually goes quick once people find it, especially at this price"
+   - "if you've been thinking about it, now's the time — I wouldn't wait for the price to go back up"
+
+5. VALUE / EASY TRIAL — viewer is weighing whether it's worth it
+   - "for the price, this is one of those things that just makes sense to try"
+   - "honestly, [price range] for something that actually [specific result]? easy decision"
+   - "this is the kind of thing where you try it once and wonder why you waited"
+
+6. RELIEF / DISCOVERY — viewer didn't know this solution existed
+   - "I genuinely wish I'd found this [timeframe] ago — would have saved me a lot of [frustration]"
+   - "this is one of those products where you're mad you didn't get it sooner"
+
+7. SOFT RECOMMENDATION — casual, low-pressure, genuine sharing energy
+   - "definitely worth checking out if that's been your issue too"
    - "just thought I'd share this one because it actually works"
    - "not saying you need it but if you've been dealing with [problem], it's worth a look"
 
-SELECTION RULE: THINK about what the viewer is feeling, then select the logic that moves them forward. Match examples:
-- Dramatic visual demo with clear before/after → PROOF CONVICTION
-- Product the viewer didn't know existed → RELIEF / DISCOVERY
-- Product clearly better than what viewer currently uses → UPGRADE / REPLACEMENT
-- Viewer imagining product in their own space → PRACTICAL OWNERSHIP or SITUATION MATCH
-- Low-cost product where the decision is easy → VALUE JUSTIFICATION
-- Product with active sale/deal → OFFER / TIMING
-- Casual vibe, low-stakes product → SOFT RECOMMENDATION
-- Viewer relates to ongoing frustration → PROBLEM TIREDNESS
+8. PROOF CONVICTION — use sparingly, only when the demo was genuinely jaw-dropping
+   - "honestly, after that [result], the decision kind of makes itself"
+   - "that's the kind of result where you just grab it"
 
-ANTI-MONOCULTURE RULE: Do NOT default to problem_tiredness or proof_conviction for every product. These are two of nine options, not the standard. Before selecting, explicitly consider whether RELIEF, VALUE, UPGRADE, SITUATION MATCH, PRACTICAL OWNERSHIP, or SOFT RECOMMENDATION would be a stronger and more natural fit. "If you're tired of..." is a valid CTA shape but it must NOT become the default pattern. Variety across products is a system requirement.
+SELECTION RULE — match viewer state to the logic that creates the most PURCHASE MOMENTUM:
+- Viewer frustrated with current situation → PROBLEM TIREDNESS + ACTION
+- Viewer sees their own messy setup → SITUATION MATCH + NUDGE
+- Viewer using something worse → UPGRADE / REPLACEMENT
+- Product has real sale/stock/deal signals → OFFER-AWARE BUYING NUDGE
+- Viewer weighing cost → VALUE / EASY TRIAL
+- Viewer surprised this exists → RELIEF / DISCOVERY
+- Low-stakes, casual → SOFT RECOMMENDATION
+- Truly dramatic demo → PROOF CONVICTION
+
+OFFER-AWARE CTA RULES:
+- ONLY use sale/stock/price urgency when the product context ACTUALLY supports it (sale price in data, "sold_count" showing high volume, badges like "deal" or "sale", or price that is genuinely low for the category).
+- Do NOT invent scarcity. Do NOT fake urgency. Do NOT force sale language.
+- When product signals DO support it, offer-aware CTAs are often the STRONGEST option because they give the viewer a concrete reason to act NOW rather than later.
+- Offer-aware language should feel like a friend giving you a heads up, not a used car salesman creating pressure.
+
+ANTI-MONOCULTURE RULE: Do NOT default to the same CTA logic for every product. Before selecting, explicitly consider at least 3 different logics and pick the one that creates the strongest purchase momentum for THIS specific product and viewer state. If you notice you're writing "if you're tired of..." or "that's why I..." again, STOP and choose a different logic.
 
 CTA HARD RULES:
 - The CTA must do DIFFERENT conversion work than the final beat. Never restate the same idea in slightly different words.
@@ -328,16 +342,23 @@ CTA HARD RULES:
 - Do NOT repeat the hook in weaker form as the CTA.
 - Do NOT use generic formulas like "grab yours", "don't walk run", "before it sells out."
 
-STALE PATTERNS — these are now BANNED unless truly the only option:
-- "that [test/proof/shot] is what sold me" (overused proof-echo)
-- "that's why I switched to this" (overused conversion frame)
-- "that's why I keep this now" (overused ownership echo)
-- "once I saw that, I was sold" (overused proof conviction)
-- "that alone made me change" (overused proof conviction)
-- "after seeing [X], I linked the exact one" (overused formula)
-- "[result] alone is why I use this now" (overused proof ownership)
-- "that [X] is what convinced me" (overused proof echo)
-These all express the SAME logic: "I saw proof → I'm converted." That is ONE logic. The system has 9 logics. Use the others.
+STALE PATTERNS — these are now BANNED:
+PROOF-ECHO (all say "I saw proof and now I'm converted"):
+- "that [test/proof/shot] is what sold me"
+- "that's why I switched to this"
+- "once I saw that, I was sold/convinced"
+- "that alone made me change"
+- "after seeing [X], I linked the exact one"
+- "[result] alone is why I use this now"
+- "that [X] is what convinced me"
+
+PASSIVE OWNERSHIP (all say "I have it and I like it" — no purchase momentum):
+- "this just lives on my [location] now"
+- "that's why I keep this [in location]"
+- "I use this every single day"
+- "this has become a permanent part of my [routine]"
+
+These patterns reflect on ownership instead of creating buying momentum. The CTA should move the viewer toward a DECISION, not describe the creator's personal product relationship.
 
 SCRIPT RULES:
 - Total duration should be 25-45 seconds.

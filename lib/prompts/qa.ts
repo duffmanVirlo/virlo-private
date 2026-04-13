@@ -96,17 +96,14 @@ CTA ENFORCEMENT:
 - If the CTA is bare "it's in TikTok Shop" or "link in bio" with no conversion logic, cta_naturalness caps at 4 and flag it (blocking).
 - If the CTA could apply to any product in the category with minimal changes, cta_naturalness caps at 6 — flag with issue "generic CTA".
 - If the CTA is price-first when a stronger conversion logic exists, cta_naturalness caps at 6.
-- STALE PATTERN ENFORCEMENT: If the CTA matches any of these overused shapes, cta_naturalness caps at 6 and flag as warning:
-  * "that [test/proof/shot] is what sold me"
-  * "that's why I switched/changed to this"
-  * "that's why I keep this now"
-  * "once I saw that, I was sold/convinced"
-  * "that alone made me change"
-  * "[result] alone is why I use this now"
-  * Any CTA where the ENTIRE logic is "I saw proof and now I'm converted" with no other conversion move.
-  These are ALL the same conversion logic. They are stale. Penalize them.
-- FINAL BEAT / CTA DUPLICATION: If the CTA essentially restates the final beat in different words without adding a new conversion move, cta_naturalness caps at 6 and flag with issue "CTA duplicates final beat — must do new conversion work."
-- A CTA that uses the conversion logic best suited to the viewer's emotional state, sounds like a real creator, and does NEW work beyond the final beat should score 8-10. The 9 valid conversion logics are: proof_conviction, problem_tiredness, relief_discovery, value_justification, offer_timing, practical_ownership, situation_match, upgrade_replacement, soft_recommendation.
+- STALE PATTERN ENFORCEMENT: If the CTA matches any of these shapes, cta_naturalness caps at 5 and flag as blocking:
+  * Proof-echo: "that [X] is what sold me", "that's why I switched", "once I saw that I was sold", "[X] alone is why I use this"
+  * Passive ownership: "this just lives on my [location]", "that's why I keep this", "I use this every day", "this has become part of my routine"
+  These reflect on ownership instead of creating purchase momentum. They are stale and banned.
+- FINAL BEAT / CTA DUPLICATION: If the CTA essentially restates the final beat in different words without adding a new conversion move, cta_naturalness caps at 6 and flag with issue "CTA duplicates final beat."
+- CTA MOMENTUM TEST: A strong CTA creates PURCHASE MOMENTUM — it moves the viewer toward buying, not just admiring. Score 8-10 for CTAs that combine the viewer's pain point or need with the product payoff AND a natural reason to act (sale, stock, value, easy trial, timing). Score 6-7 for CTAs that recommend but don't create urgency or action framing. Score 4-5 for CTAs that only reflect ownership or echo proof.
+- OFFER-AWARE CTA: If the product data includes sale indicators, high sold_count, deal badges, or a notably low price for the category, and the CTA does NOT leverage this as a buying nudge, flag as warning with issue "missed offer-aware CTA opportunity." Offer-aware CTAs are often the strongest option when supported by data.
+- The 8 valid CTA logics are: problem_tiredness_action, situation_match_nudge, upgrade_replacement, offer_aware_buying_nudge, value_easy_trial, relief_discovery, soft_recommendation, proof_conviction.
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.
