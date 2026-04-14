@@ -280,6 +280,21 @@ If a real-world action takes longer than 3-5 seconds (letting oil absorb, waitin
 - "timer overlay" — when showing "X seconds/minutes" with an on-screen timer
 If a beat's real duration would exceed its allotted time in the script, the filming_note MUST include one of these cues. Never generate a beat that implies filming a full real-time extended action.
 
+PRODUCTION BURDEN REALISM:
+The default creator has a phone, minimal time, and no crew. Scripts that require staged group reactions, timed multi-person choreography, or multi-hour continuous capture will feel inauthentic and will be abandoned by real creators. Before finalizing any script:
+- Count the people required. If more than 1 person (creator) is needed on-camera, flag internally. If 2+ people must act naturally on cue at timed moments, the concept is overproduced.
+- Check for manufactured group reactions: "friend laughs", "everyone leans in", "she rolls her eyes", "the whole room goes silent." These read as staged unless the creator type is known for organic group content.
+- Check for multi-hour coordination: "two hours later", "by the end of the night", "three rounds in" — these cannot be captured believably without significant filming effort.
+- Check for coordinated scene changes: "we started at the dinner table, then the living room, then outside" — multi-scene arcs are commercial structure, not creator structure.
+If the script leans on staged social proof, REWRITE toward creator-native alternatives:
+- Solo creator-to-camera explanation with ONE genuine insert
+- Voiceover over a single continuous scene or close-up of the product
+- Post-experience storytelling ("okay so we played this last night and...") with minimal re-enactment
+- Product-as-proof — let the product itself be the proof vehicle (cards readable on screen, packaging close-up, contents shown) instead of group reactions
+
+GROUP / SOCIAL / PARTY PRODUCT RULES:
+For products that require a group to use (card games, party games, drinking games, social experiences), default the creator role to SOLO narrator, not host of a staged gathering. The creator talks about the product, shows the product, reads a prompt from a card, or tells a short story about playing it — WITHOUT requiring on-camera friends performing reactions. If any group footage is needed, limit it to ONE short, low-fidelity insert (a snippet of genuine laughter, a phone-captured moment, a single screenshot) rather than a full staged arc.
+
 IMPOSSIBLE SHOT DETECTION:
 Before finalizing any beat, check: is the visual actually filmable with a phone?
 - Cannot show liquid level INSIDE an opaque/tinted bottle — instead show pouring out, drops falling, liquid on a spoon or dropper, or a transparent measuring cup
@@ -322,6 +337,8 @@ CTA / FINAL BEAT SEPARATION RULE: The CTA must be a DIFFERENT sentence doing DIF
 CTA ENERGY PRINCIPLE: The CTA should create PURCHASE MOMENTUM, not reflect on ownership. It should move the viewer toward buying, not describe the creator's personal relationship with the product. Think "buying nudge from a friend" not "personal diary entry."
 
 CTA vs PRE-CTA DISTINCTION: A PRE-CTA is a conditional thought that sets up the decision ("if you feel mentally foggy, this might be worth the experiment"). An ACTUAL CTA moves toward action ("if you've been feeling mentally foggy, this is worth trying — and it's on sale right now"). Pre-CTA language ending in "might be worth it", "could be worth exploring", "maybe worth considering" is TOO SOFT to close a video. The CTA must include an action-leaning element: worth trying + reason to act, clear recommendation, buying nudge, or offer awareness. If the CTA only sets up the decision without nudging toward it, it is a pre-CTA and must be rewritten to close the loop.
+
+CTA LENGTH DISCIPLINE: The CTA must close cleanly. Target 15-25 spoken words. A CTA over ~25 words is almost always bloated — it is re-explaining the premise, listing multiple conditions, or stacking too many frames. Tighten it. The CTA's job is the FINAL PUSH, not a recap. For group/social/party products, this discipline is especially important: if the video has already shown the product and the experience, the CTA should land fast and close — NOT re-describe what the product does or repeat the value proposition.
 
 CTA COMPOUND STRUCTURE: The strongest CTAs often combine 2-3 elements in one natural sentence:
 - the real friction or pain point

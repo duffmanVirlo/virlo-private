@@ -5,6 +5,7 @@ export type AngleScore = {
   filming_feasibility: number;
   cta_naturalness: number;
   proof_concentration: number;
+  creator_authenticity: number;
   composite: number;
 };
 

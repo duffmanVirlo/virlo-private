@@ -137,6 +137,16 @@ SPOKEN LENGTH CALIBRATION:
 
 CTA vs PRE-CTA CHECK:
 - If the CTA ends in pure conditional speculation without an action nudge — "might be worth the experiment", "could be worth trying", "maybe worth considering", "possibly worth a shot" — flag as warning with component "cta" and issue "pre-CTA / no purchase direction — strengthen the close with an action-leaning element (worth trying + reason to act, recommendation, offer awareness)."
+
+CTA LENGTH CHECK:
+- If the CTA is longer than ~25 spoken words, flag as warning with component "cta" and issue "CTA is bloated — tighten to a clean close (target 15-25 words). The CTA is the final push, not a recap of the video."
+
+PRODUCTION AUTHENTICITY CHECK:
+- Scan the beats for staged group-reaction dependency. If the script requires 2+ additional people acting naturally on cue at timed moments, timed multi-hour coordination ("two hours later", "by the end of the night"), or multi-scene arcs requiring coordinated transitions, flag as BLOCKING with component "authenticity" and issue "overproduced concept — this script reads like a commercial/brand shoot, not creator content. Rewrite toward creator-native execution (solo creator-to-camera, voiceover with single continuous scene, post-experience storytelling with minimal re-enactment, or product-as-proof with one genuine low-fidelity insert)."
+- If the script depends on manufactured group reactions — "friend rolls eyes", "everyone laughs", "the room goes silent", "nobody touched their phone" — and the product is not inherently a solo-content product, flag as warning with component "authenticity" and issue "staged group-reaction dependence — replace with creator narration, single genuine insert, or product-as-proof."
+
+GROUP / SOCIAL PRODUCT CHECK:
+- If the product is a card game, party game, drinking game, social experience, or any group-dependent product AND the script requires filming friends reacting on cue, flag as warning with component "authenticity" and issue "group-product staging risk — default creator role should be solo narrator, not host of a staged gathering. Let the product content (cards, prompts, packaging) be the proof vehicle."
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.
