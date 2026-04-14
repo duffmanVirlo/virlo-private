@@ -104,30 +104,36 @@ export function checkRateLimit(
 
 const isDev = process.env.NODE_ENV === "development";
 
+// ── Founder rollout calibration ────────────────────────────────────────────
+// Limits sized for trusted founder/tester rollout on shared infrastructure.
+// Per-IP daily limits must allow multiple testers to exercise the full flow
+// without collectively bottlenecking each other. Burst protection stays
+// tight to prevent abuse. When auth ships, migrate to per-user quotas.
+
 /** /api/generate — most expensive route (~$0.14/call) */
 export const GENERATE_LIMIT: RateLimitConfig = {
-  limit: isDev ? 30 : 15,
+  limit: isDev ? 60 : 40,
   windowMs: 24 * 60 * 60 * 1000, // 24 hours
   routeName: "/api/generate",
 };
 
 /** /api/generate — burst protection */
 export const GENERATE_BURST_LIMIT: RateLimitConfig = {
-  limit: isDev ? 5 : 3,
+  limit: isDev ? 6 : 5,
   windowMs: 60 * 1000, // 1 minute
   routeName: "/api/generate:burst",
 };
 
 /** /api/extract — moderate cost (Claude call + HTTP fetch) */
 export const EXTRACT_LIMIT: RateLimitConfig = {
-  limit: isDev ? 60 : 30,
+  limit: isDev ? 120 : 80,
   windowMs: 24 * 60 * 60 * 1000,
   routeName: "/api/extract",
 };
 
 /** /api/classify — low cost but still a Claude call */
 export const CLASSIFY_LIMIT: RateLimitConfig = {
-  limit: isDev ? 60 : 30,
+  limit: isDev ? 120 : 80,
   windowMs: 24 * 60 * 60 * 1000,
   routeName: "/api/classify",
 };

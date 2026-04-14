@@ -103,7 +103,40 @@ CTA ENFORCEMENT:
 - FINAL BEAT / CTA DUPLICATION: If the CTA essentially restates the final beat in different words without adding a new conversion move, cta_naturalness caps at 6 and flag with issue "CTA duplicates final beat."
 - CTA MOMENTUM TEST: A strong CTA creates PURCHASE MOMENTUM — it moves the viewer toward buying, not just admiring. Score 8-10 for CTAs that combine the viewer's pain point or need with the product payoff AND a natural reason to act (sale, stock, value, easy trial, timing). Score 6-7 for CTAs that recommend but don't create urgency or action framing. Score 4-5 for CTAs that only reflect ownership or echo proof.
 - OFFER-AWARE CTA: If the product data includes sale indicators, high sold_count, deal badges, or a notably low price for the category, and the CTA does NOT leverage this as a buying nudge, flag as warning with issue "missed offer-aware CTA opportunity." Offer-aware CTAs are often the strongest option when supported by data.
-- The 8 valid CTA logics are: problem_tiredness_action, situation_match_nudge, upgrade_replacement, offer_aware_buying_nudge, value_easy_trial, relief_discovery, soft_recommendation, proof_conviction.
+- The 9 valid CTA logics are: problem_tiredness_action, situation_match_nudge, upgrade_replacement, offer_aware_buying_nudge, value_easy_trial, comfort_relief_worth_trying, relief_discovery, soft_recommendation, proof_conviction.
+
+CLAIM SAFETY ENFORCEMENT (applies to ALL spoken lines, text overlays, hooks, CTAs, captions):
+- COMFORT / RELIEF PRODUCTS (footwear, recovery slides, insoles, compression wear, sleep aids, posture tools, anti-fatigue products): If any line uses hard-fix language — "fixes your feet", "cures [pain/condition]", "eliminates [pain]", "these fix [problem]" — flag as BLOCKING with component "claim_safety" and issue "hard-fix language on comfort product — replace with relief framing ('gives so much relief', 'your [body part] feels way better', 'makes such a difference by the end of the day', 'worth trying')." Comfort products must describe the relief experience, NOT claim to fix or cure a condition.
+- ABSOLUTE EFFICACY CLAIMS (waterproof, grip, durability, performance): If any line uses absolute language that could be proven false by a single counterexample — "they're actually waterproof", "100% waterproof", "literally never [fails]", "completely [absolute]", "guaranteed to [outcome]" — flag as warning with component "claim_safety" and issue "absolute claim — replace with observable language ('water rolls right off', 'these still grip really well on [surface]', 'handled [surface] better than expected', 'held up way better than the last pair')."
+- SPOKEN CADENCE: If any spoken line is longer than ~12 words AND includes unnecessary setup imperatives ("Press it down this hard and watch...", "Notice the way it...", "Pay attention to how..."), flag as warning with component "spoken_cadence" and issue "over-explained line — tighten to natural creator cadence ('watch how it bounces back', 'look how it comes back', drop setup words)."
+
+PRICE CALLOUT DISCIPLINE:
+- If any SPOKEN line, HOOK, TEXT OVERLAY, or CAPTION contains a specific price reference, flag as BLOCKING with component "price_safety". Check for ALL of these patterns:
+  * Dollar figures: "$80", "$19.99", "$40"
+  * Spoken numbers + dollars/bucks: "eighty dollars", "twenty bucks", "forty-dollar", "forty dollar", "dropped forty", "wasted eighty"
+  * Colloquial price phrases: "X bucks", "X dollar [product]", "this X dollar [thing]", "spent X on this"
+  * "Only" price prefixes: "only $X", "only twenty bucks"
+  * Price ranges: "around thirty", "like forty dollars"
+  Issue text: "specific spoken price ('[exact phrase]') — replace with relative phrasing (expensive, pricey, premium, cheap, low cost, surprisingly affordable)."
+- If price appears in hook, CTA, AND caption, flag as warning — price is being overused as a persuasive shortcut.
+
+TIME COMPRESSION FILMING CHECK:
+- For any beat that implies waiting, absorbing, drying, brewing, multi-step routines, or any extended process longer than ~3-5 seconds real-time, the filming_note MUST include one of: "timelapse", "jump cut", "quick insert", "sped up", "timer overlay". If missing, flag as warning with component "filming_feasibility" and issue "extended real-time action without time-compression cue — creator cannot film this in the allotted beat duration."
+
+IMPOSSIBLE SHOT DETECTION:
+- If any beat instructs showing something physically unfilmable on a phone (liquid level inside an opaque/tinted bottle, internal mechanisms of sealed products, microscopic action, chemistry inside skin, smell/taste/sensation), flag as BLOCKING with component "filming_feasibility" and issue "unfilmable shot — rewrite to show adjacent filmable proof (pouring, dropper, before/after, facial reaction, environmental reaction)."
+
+ON-SCREEN TEXT HOOK PRESENCE:
+- If NONE of the hook_options has hook_format = "text-overlay", flag as warning with component "hooks" and issue "no text-overlay hook generated — TikTok Shop feeds rely heavily on muted-scroll text hooks; add one unless every viable hook is genuinely stronger as spoken or visual."
+
+DOSAGE / MEASUREMENT READABILITY:
+- If any SPOKEN line or TEXT overlay contains abbreviated units ("ml", "oz", "g", "tsp", "tbsp") in a dosage or measurement context, flag as warning with component "language" and issue "spell out unit for creator readability (milliliters, ounces, grams, teaspoons, tablespoons)." Abbreviations in filming_note fields are acceptable.
+
+SPOKEN LENGTH CALIBRATION:
+- Before finalizing, sum the words across all "spoken" fields. Compare to the budget: 2.5-3 words/second × total_duration_seconds. If total_spoken_words > (3.2 × total_duration_seconds), flag as warning with component "script_length" and issue "script likely runs long — natural creator delivery will exceed total_duration_seconds. Trim spoken content or reduce beat count."
+
+CTA vs PRE-CTA CHECK:
+- If the CTA ends in pure conditional speculation without an action nudge — "might be worth the experiment", "could be worth trying", "maybe worth considering", "possibly worth a shot" — flag as warning with component "cta" and issue "pre-CTA / no purchase direction — strengthen the close with an action-leaning element (worth trying + reason to act, recommendation, offer awareness)."
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.

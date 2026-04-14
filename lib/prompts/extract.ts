@@ -38,5 +38,14 @@ Rules:
 - raw_text should be the most product-relevant text, stripped of navigation and boilerplate.
 - Images should be actual product image URLs, not icons or logos.
 
+SOURCE OF TRUTH HIERARCHY (for ingredients_or_materials and factual product facts):
+When the page has conflicting or ambiguous signals, use this priority order:
+1. Structured data (JSON-LD, product schema) — highest trust
+2. Explicit labeled sections ("Ingredients:", "Materials:", "What's inside:") in the main product description
+3. The main product description body
+4. Inferred content from title or bullet points — lowest trust
+If the page has label-style text that appears unreliable (OCR artifacts, partial extraction, inconsistent formatting), prefer the cleaner description text as the source of truth. Do NOT mix partial label fragments with description content — pick the most reliable single source.
+If no source is clearly reliable, return null for ingredients_or_materials rather than inventing or merging.
+
 Return ONLY the JSON object.`;
 }
