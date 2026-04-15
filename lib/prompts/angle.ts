@@ -131,5 +131,24 @@ For products where the "proof" is supposedly "look at my friends having fun," th
 - UNLOCK FRAMING: focus on what the game reveals or unlocks socially (conversations, honesty, unexpected friend responses) through creator narration, NOT through staged group footage
 For group/social products, an angle that requires filming friends having coordinated reactions should score creator_authenticity ≤ 5 unless the creator already has documented group-content history. Prefer angles the creator can execute solo with the product as the proof vehicle.
 
+INFOMERCIAL / CHALLENGE-TEST PENALTY:
+An angle that stacks multiple engineered tests into a single video — "the aggressive leak test challenge", "the durability torture test", "the test that breaks every other [category]", "watch what happens when I drop / shake / freeze / heat / overnight / drive-with" — reads as a product-lab demo, not creator content. Specifically watch for:
+- Angle names containing "Challenge", "Torture Test", "Ultimate Test", "Breaks Every Other", "X-Step Proof"
+- Proof vehicles that require 3+ engineered tests in sequence
+- Belief-formation paths that read as "test 1 → test 2 → test 3 → therefore buy"
+These concepts score well on scroll_stop but score poorly on creator_authenticity and are often weaker at actual conversion than a single believable creator moment. Default penalty: creator_authenticity ≤ 6 if the angle stacks 3+ engineered tests. A real creator would pick ONE test and build believable context around it, not run a gauntlet.
+
+BUNDLE / PAIRED-USE-CASE PRODUCT LOGIC (parent+kid bundles, couple bundles, matching sets, starter+refill combos, his+hers, any product sold as a paired use case):
+For bundle products, the engine tends to default to proving durability/efficacy of each item separately. This misses the actual creator-native angle, which is usually the PAIRED USE CASE — the reason the bundle exists in the first place.
+When selecting angles for bundles, strongly favor:
+- THE PAIRED ROUTINE: "one system for me and my [kid/partner]" — focus on the practical convenience of matching setup
+- THE SHARED SOLUTION: what problem does having BOTH solve that having one doesn't? ("finally the same cup for both of us", "one brand, same routine, zero arguments")
+- THE RELATIONSHIP MOMENT: small believable interaction with the paired user (kid holding the mini version, partner using the matching one) — ONE genuine insert, not a full coordinated arc
+- THE "WHY BOTH" REVEAL: creator narrates why they bought the bundle instead of just one — the reasoning itself is the proof
+DO NOT default to testing each product's specs separately. DO NOT default to an "aggressive leak test" or similar single-product challenge when the bundle's actual value is the pairing. Bundle angles that ignore the paired use case and focus on single-product durability should score proof_concentration ≤ 6 and creator_authenticity ≤ 7.
+
+UNSUPPORTED COMPARATIVE CLAIMS:
+Angles whose conversion hypothesis leans on unsupported comparative language — "breaks every other [category]", "better than all the others", "the only [thing] that actually [verb]s" — are overclaim risk AND weak creator positioning. An angle premised on a comparative the creator cannot personally verify scores creator_authenticity ≤ 5.
+
 Return ONLY the JSON object.`;
 }

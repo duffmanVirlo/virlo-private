@@ -295,6 +295,37 @@ If the script leans on staged social proof, REWRITE toward creator-native altern
 GROUP / SOCIAL / PARTY PRODUCT RULES:
 For products that require a group to use (card games, party games, drinking games, social experiences), default the creator role to SOLO narrator, not host of a staged gathering. The creator talks about the product, shows the product, reads a prompt from a card, or tells a short story about playing it — WITHOUT requiring on-camera friends performing reactions. If any group footage is needed, limit it to ONE short, low-fidelity insert (a snippet of genuine laughter, a phone-captured moment, a single screenshot) rather than a full staged arc.
 
+BUNDLE / PAIRED-USE-CASE PRODUCT RULES:
+For bundle products (parent+kid, his+hers, starter+refill, couple sets, matching sets), the strongest creator-native angle is usually the PAIRED USE CASE — why the creator bought BOTH, not the individual specs of each item. DO NOT structure the script as separate proof segments for each bundle component. Instead:
+- Lead with the PAIRING reason: "one system for me and my kid", "finally the same setup for both of us", "we use these at the same time every morning"
+- Show both items in ONE natural moment of paired use (creator with theirs, partner/kid with matching one) — ONE genuine insert, not coordinated side-by-side challenge footage
+- Let the convenience of the matching setup be the proof, not durability tests
+- The bundle CTA should reference the pairing value ("if you and your [kid/partner] would use these together", "if you want one system for both of you"), not stacked single-product claims
+Bundle scripts that treat each item as independent products being tested separately read as commercial catalogues — rewrite toward the paired use case.
+
+COMPARATIVE OVERCLAIM BAN:
+The following phrases are BANNED in spoken lines, hooks, text overlays, captions, and CTAs unless the script contains direct side-by-side proof with a specifically named competing product:
+- "every other [category]" / "better than every other"
+- "all the other [category]" / "better than all the others"
+- "the only [thing] that actually [verb]s"
+- "breaks every other [category]"
+- "works when nothing else does"
+- "no other [category] does this"
+These are unsupported comparative claims that read as infomercial copy. If a creator cannot personally verify the comparison against every alternative, the line is overclaim. Replace with believable creator positioning:
+- "holds up way better than the last [thing] I had" (specific personal comparison)
+- "the first [thing] I've tried that actually [verb]s for me" (personal scope only)
+- "way better than the one I had before" (specific prior experience)
+- "handled [test] better than I expected" (subjective observation)
+
+HIGH-FRICTION / RISKY FILMING BEATS — penalize or rewrite:
+The following filming setups are risky, awkward, or production-heavy and should be avoided when a simpler creator-native proof exists:
+- Aggressive upside-down shake tests (leakproof proof can be shown with a tilt, a pour, or a closed-lid demo on a counter instead)
+- Filming while driving (safety risk, feels staged — use a parked car or creator walking to car with cup in hand)
+- Drop tests from height (looks manufactured — use a normal everyday bump or a kid's natural handling instead)
+- Overnight / multi-hour "wait and see" beats without a time-compression cue (use timelapse or jump cut — see TIME COMPRESSION rules)
+- Tests that require specialized equipment, multiple attempts, or careful staging to look right
+When a simpler proof path exists (one real-use moment, one believable tilt, one natural drop during use), default to that. Engineered tests should only appear when they are genuinely the strongest proof AND the product's mechanism is not visible in normal use.
+
 IMPOSSIBLE SHOT DETECTION:
 Before finalizing any beat, check: is the visual actually filmable with a phone?
 - Cannot show liquid level INSIDE an opaque/tinted bottle — instead show pouring out, drops falling, liquid on a spoon or dropper, or a transparent measuring cup

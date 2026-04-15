@@ -147,6 +147,22 @@ PRODUCTION AUTHENTICITY CHECK:
 
 GROUP / SOCIAL PRODUCT CHECK:
 - If the product is a card game, party game, drinking game, social experience, or any group-dependent product AND the script requires filming friends reacting on cue, flag as warning with component "authenticity" and issue "group-product staging risk — default creator role should be solo narrator, not host of a staged gathering. Let the product content (cards, prompts, packaging) be the proof vehicle."
+
+COMPARATIVE OVERCLAIM CHECK:
+- If any spoken line, hook, text overlay, caption, or CTA contains unsupported comparative language — "every other [category]", "all the others", "better than every other", "breaks every other", "the only [thing] that actually [verb]s", "works when nothing else does", "no other [category] does this" — flag as BLOCKING with component "overclaim" and issue "unsupported comparative claim — the creator cannot personally verify against every alternative. Replace with personal-scope comparison ('holds up way better than the last one I had', 'the first one I've tried that actually works for me', 'way better than the one I had before')."
+
+INFOMERCIAL / CHALLENGE-TEST CHECK:
+- If the script stacks 3+ engineered tests in sequence (upside-down shake + overnight ice + cup-holder drive + drop test + usability test, etc.), flag as warning with component "authenticity" and issue "infomercial-style proof stacking — script reads as product-lab demo rather than creator content. Pick ONE dominant proof and build believable context around it rather than running a gauntlet."
+- If any hook, angle name, or overlay uses "Challenge", "Torture Test", "Ultimate Test", "X-Step Proof", or similar engineered-test branding, flag as warning with component "authenticity" and issue "challenge-test framing — default to creator-native proof unless this is genuinely the strongest path for this product."
+
+HIGH-FRICTION / RISKY FILMING CHECK:
+- If any beat instructs: aggressive upside-down shake test, filming while driving, drop test from height, or overnight/multi-hour continuous capture without a time-compression cue, flag as warning with component "filming_feasibility" and issue "high-friction or risky filming beat — simpler creator-native proof exists. Replace with a natural everyday moment (tilt, pour, normal handling, timelapse with jump cut for extended process)."
+
+BUNDLE REASONING CHECK:
+- If the product is a bundle (parent+kid, his+hers, couple set, starter+refill, matching set) AND the script treats each bundle component as an independent product with separate proof segments (test the parent one, then test the kid one), flag as warning with component "bundle_logic" and issue "bundle script ignores paired use case — rewrite to lead with why the creator bought BOTH (paired routine, shared solution, same setup convenience) rather than treating each item as independent."
+
+PROOF STACKING DISCIPLINE:
+- Count the distinct claims the script tries to prove (leakproof, cold retention, fit, durability, bundle use case, kid usability, etc.). If the script actively demonstrates 4+ distinct claims, flag as warning with component "proof_concentration" and issue "script proves too many things — one dominant proof path should lead, secondary claims can be mentioned but not individually demonstrated. In 30 seconds, viewers remember ONE thing."
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.
