@@ -12,6 +12,7 @@ import { ProcessingShell } from "@/components/processing/ProcessingShell";
 import { UsageBadge } from "@/components/usage/UsageBadge";
 import { UsageGate } from "@/components/usage/UsageGate";
 import { useUsage } from "@/lib/usage/hooks";
+import { isFounderMode } from "@/lib/usage/founderMode";
 
 export default function AnalyzePage() {
   return (
@@ -70,11 +71,16 @@ function AnalyzeContent() {
     if (!url) return;
 
     // ── Usage check: gate BEFORE generation (check only, don't consume) ──
-    const checkResult = usage.check;
-    if (!checkResult.allowed) {
-      usage.refresh();
-      setPhase("usage_blocked");
-      return;
+    // Belt-and-suspenders: directly check founder mode at gate time.
+    // This catches any case where useUsage's state hasn't fully propagated
+    // the founder flag after a route transition.
+    if (!isFounderMode()) {
+      const checkResult = usage.check;
+      if (!checkResult.allowed) {
+        usage.refresh();
+        setPhase("usage_blocked");
+        return;
+      }
     }
     // Check passed — generation will proceed.
     // Usage is consumed AFTER successful completion (not before).
@@ -117,6 +123,8 @@ function AnalyzeContent() {
 
       // ── Usage: consume ONLY after successful generation ────────────
       // Failed runs, parse errors, and pipeline crashes do NOT decrement.
+      // Founder mode is exempt — consumeRun() already returns true without
+      // modifying state when founder mode is active.
       usage.consumeRun();
 
       const completeStatuses: Record<string, PipelineStageStatus> = {};

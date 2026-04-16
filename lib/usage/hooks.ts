@@ -9,6 +9,7 @@ import type { UsageState, UsageCheckResult } from "./types";
 import { checkUsage, recordRun, recordCapHit } from "./engine";
 import { PLANS } from "./plans";
 import { loadUsageState, saveUsageState } from "./storage";
+import { isFounderMode, detectAndActivateFounderMode } from "./founderMode";
 
 export type UseUsageReturn = {
   /** Current usage state */
@@ -30,45 +31,22 @@ export type UseUsageReturn = {
 };
 
 // ── Founder testing bypass ──────────────────────────────────────────────────
-// Two activation paths:
-// 1. NEXT_PUBLIC_FOUNDER_TESTING=true (build-time env var, local .env.local)
-// 2. URL query param ?founder=virlo-calibration (runtime, works on hosted Vercel)
-//    Once activated via URL, persists in sessionStorage for the browser session
-//    so testers don't need to add the param on every navigation.
+// See lib/usage/founderMode.ts for the source of truth. This hook consumes
+// the shared helpers to stay synchronized with FounderModeDetector.
 //
 // The production usage system (plans, engine, storage) is completely untouched.
 // This bypass only affects the hook's return values (display + gating).
-const IS_FOUNDER_TESTING_ENV = process.env.NEXT_PUBLIC_FOUNDER_TESTING === "true";
-const FOUNDER_KEY = "virlo-calibration";
-const FOUNDER_STORAGE_KEY = "virlo_founder_mode";
-
-function checkFounderMode(): boolean {
-  if (IS_FOUNDER_TESTING_ENV) return true;
-  if (typeof window === "undefined") return false;
-
-  // Check URL param (activates and persists)
-  try {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("founder") === FOUNDER_KEY) {
-      sessionStorage.setItem(FOUNDER_STORAGE_KEY, "true");
-      return true;
-    }
-  } catch { /* SSR safety */ }
-
-  // Check persisted session
-  try {
-    return sessionStorage.getItem(FOUNDER_STORAGE_KEY) === "true";
-  } catch { return false; }
-}
 
 export function useUsage(): UseUsageReturn {
   const [state, setState] = useState<UsageState>(() => loadUsageState());
-  const [isFounder, setIsFounder] = useState(IS_FOUNDER_TESTING_ENV);
+  const [isFounder, setIsFounder] = useState(false);
 
-  // Re-load from storage on mount + check founder mode (handles SSR hydration + URL param)
+  // On mount: (1) detect+activate founder mode from URL if present,
+  // (2) re-read persisted state, (3) check founder mode from any source.
   useEffect(() => {
+    detectAndActivateFounderMode(); // capture ?founder= param if this page has it
     setState(loadUsageState());
-    setIsFounder(checkFounderMode());
+    setIsFounder(isFounderMode());
   }, []);
 
   const currentCheck = checkUsage(state);
@@ -76,7 +54,7 @@ export function useUsage(): UseUsageReturn {
 
   const consumeRun = useCallback((): boolean => {
     // ── Founder testing: always allow ────────────────────────────────
-    if (checkFounderMode()) return true;
+    if (isFounderMode()) return true;
 
     // Fresh check against latest state
     const freshState = loadUsageState();
