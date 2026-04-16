@@ -147,6 +147,28 @@ When selecting angles for bundles, strongly favor:
 - THE "WHY BOTH" REVEAL: creator narrates why they bought the bundle instead of just one — the reasoning itself is the proof
 DO NOT default to testing each product's specs separately. DO NOT default to an "aggressive leak test" or similar single-product challenge when the bundle's actual value is the pairing. Bundle angles that ignore the paired use case and focus on single-product durability should score proof_concentration ≤ 6 and creator_authenticity ≤ 7.
 
+UTILITY / POWER-ACCESS / SPATIAL UNLOCK PRODUCT LOGIC (outlet extenders, flat plugs, extension splitters, power strips with flat plugs, under-desk cord organizers, behind-furniture cable solutions, any product that unlocks previously-unusable space or access):
+
+For this product class, the engine tends to over-index on FEATURE FLEX — number of outlets, USB count, device capacity, total wattage — when the strongest real-world conversion driver is usually a SPATIAL UNLOCK breakthrough: recovering a hidden outlet, reaching both sides of a bed, pushing furniture flush against a wall, gaining usable power in a space that has been functionally dead for years.
+
+DO NOT default to "plug 12 things in at once" / "feature-max" / "device-count" angles when a stronger spatial unlock story exists. High outlet count is an IMPRESSIVE SPEC but it is rarely the strongest BUYING TRIGGER for a creator-relatable video.
+
+Strongly favor these spatial unlock angles:
+- HIDDEN OUTLET RECOVERY: "the outlet behind my couch I haven't used in 3 years finally works" — creator-native, instantly relatable, movement-based proof
+- ACCESS EXPANSION: "one outlet, power on both sides of my bed" — reaches previously-unreachable space
+- FURNITURE-FLUSH UNLOCK: "now I can push my couch all the way against the wall" — removes a daily friction
+- DEAD-SPACE REVIVAL: "that awkward outlet behind the bookshelf / under the desk / between the dresser and wall" — names a specific frustration the viewer recognizes
+- REROUTED REACH: physically stretching one cord one way, another cord the other way, reaching outlets that were never usable before
+- PLUG-SHAPE BREAKTHROUGH: "finally a plug that doesn't block the outlet above it" (for flat plugs specifically)
+
+MOVEMENT-BASED PROOF PRINCIPLE:
+For this product class, the strongest proof is NOT static plugging-in. It is VISIBLE MOVEMENT: the creator plugging it in, stretching cords in different directions, pushing furniture back to reveal the hidden outlet is now usable, revealing both bedside tables now have power. The viewer needs to SEE the unlock happen. Angles that rely on a static "here are all the devices I can plug in" shot score retention_arc ≤ 6 and belief_formation ≤ 7 because they show a SPEC, not a BREAKTHROUGH.
+
+FEATURE ORDERING PRINCIPLE:
+For utility / power-access products, the output should structure as: relatable spatial frustration → visible unlock moment (the dominant proof) → then secondary features layered after. Do NOT lead with spec flex. Do NOT lead with "12 outlets and 4 USB ports." Lead with the frustration the viewer is living with RIGHT NOW, then show it disappear.
+
+Feature-flex angles for this product class should score creator_authenticity ≤ 6 unless the product is specifically marketed toward a power-user / workshop / server-rack context where high device count IS the primary use case.
+
 UNSUPPORTED COMPARATIVE CLAIMS:
 Angles whose conversion hypothesis leans on unsupported comparative language — "breaks every other [category]", "better than all the others", "the only [thing] that actually [verb]s" — are overclaim risk AND weak creator positioning. An angle premised on a comparative the creator cannot personally verify scores creator_authenticity ≤ 5.
 

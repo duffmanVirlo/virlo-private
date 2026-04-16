@@ -356,6 +356,22 @@ For bundle products (parent+kid, his+hers, starter+refill, couple sets, matching
 - The bundle CTA should reference the pairing value ("if you and your [kid/partner] would use these together", "if you want one system for both of you"), not stacked single-product claims
 Bundle scripts that treat each item as independent products being tested separately read as commercial catalogues — rewrite toward the paired use case.
 
+UTILITY / POWER-ACCESS / SPATIAL UNLOCK PRODUCT RULES (outlet extenders, flat plugs, extension splitters, under-desk cord solutions, behind-furniture power solutions):
+
+For this product class, the strongest script structure is NOT a feature catalog ("12 outlets and USB-C"). It is a SPATIAL UNLOCK STORY: the creator shows the specific frustration (hidden outlet, unreachable side of the bed, couch pulled forward to reach a plug), then demonstrates the breakthrough moment on camera.
+
+REQUIRED STRUCTURE for spatial-unlock products:
+1. Open with the relatable frustration — name a specific space/scenario the viewer recognizes ("the outlet behind my couch", "the side of the bed without power", "that awkward gap between the dresser and wall")
+2. Dominant proof beat = MOVEMENT, not static reveal: plug it in on camera, stretch one cord one way, stretch the other cord the other way, push the furniture back, reveal the outlet is now reachable. The viewer must SEE the transformation happen.
+3. Layer secondary features AFTER the breakthrough lands — number of outlets, USB-C, per-side capacity — as supporting reasons, not lead arguments
+4. CTA should reference the breakthrough, not the spec ("if you've got a dead outlet behind furniture somewhere, this fixes it")
+
+FEATURE-FLEX SUPPRESSION for this product class:
+Do NOT lead with "I can plug 12 things in at once." Do NOT open with a static shot of all outlets being filled. Do NOT make device-count the hook. These are SPEC demos, not conversion-driving stories. Device-count footage is fine as a secondary supporting beat AFTER the spatial unlock proof has already landed.
+
+MOVEMENT PROOF REQUIREMENT:
+At least ONE beat must show visible physical motion: cord routing, furniture shifting, plug insertion revealing previously-unreachable access. A static "look at all the plugs" shot does NOT count as movement proof. The viewer needs to watch the unlock HAPPEN.
+
 COMPARATIVE OVERCLAIM BAN:
 The following phrases are BANNED in spoken lines, hooks, text overlays, captions, and CTAs unless the script contains direct side-by-side proof with a specifically named competing product the creator actually owns and is showing on camera:
 - "every other [category]" / "better than every other"
