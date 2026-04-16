@@ -47,5 +47,19 @@ When the page has conflicting or ambiguous signals, use this priority order:
 If the page has label-style text that appears unreliable (OCR artifacts, partial extraction, inconsistent formatting), prefer the cleaner description text as the source of truth. Do NOT mix partial label fragments with description content — pick the most reliable single source.
 If no source is clearly reliable, return null for ingredients_or_materials rather than inventing or merging.
 
+NO-MERGE RULE FOR FACTUAL FIELDS:
+For ingredients_or_materials, claims[], and any fact-bearing field:
+- Pick ONE source and extract from it cleanly
+- Do NOT combine partial extractions from multiple sources into a single string
+- Do NOT infer ingredients or materials from product imagery or category assumptions
+- If sources conflict, prefer the more specific, better-formatted source — or return null
+- Never fabricate a spec, measurement, or ingredient that is not explicitly stated on the page
+
+CLAIMS EXTRACTION DISCIPLINE:
+- Extract ONLY claims literally stated on the page. Do NOT infer claims from category norms.
+- If a claim is ambiguous or appears in marketing fluff only, exclude it.
+- Prefer specific numeric claims ("holds 25 lbs", "lasts 8 hours") over vague marketing ("amazing", "revolutionary") — exclude vague marketing entirely.
+- Do NOT extract competitor comparisons from the page (e.g., "better than Brand X") — these belong to the brand's marketing, not the creator's voice.
+
 Return ONLY the JSON object.`;
 }

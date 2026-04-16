@@ -151,6 +151,25 @@ GROUP / SOCIAL PRODUCT CHECK:
 COMPARATIVE OVERCLAIM CHECK:
 - If any spoken line, hook, text overlay, caption, or CTA contains unsupported comparative language — "every other [category]", "all the others", "better than every other", "breaks every other", "the only [thing] that actually [verb]s", "works when nothing else does", "no other [category] does this" — flag as BLOCKING with component "overclaim" and issue "unsupported comparative claim — the creator cannot personally verify against every alternative. Replace with personal-scope comparison ('holds up way better than the last one I had', 'the first one I've tried that actually works for me', 'way better than the one I had before')."
 
+SIDE-BY-SIDE EVIDENCE CHECK:
+- If any beat sets up a visual or spoken comparison with a competitor product, check whether the creator plausibly owns that comparison item. Comparisons that require a competitor's specific product on hand are unsupported. Flag as warning with component "prop_realism" and issue "comparison beat assumes creator owns competitor product — rewrite to use personal prior experience ('my old [category]') or generic household stand-in, or remove the comparison entirely."
+- If any spoken line, hook, overlay, caption, or CTA names a specific competitor BRAND (not a generic category) without that competitor visibly shown in the beats, flag as BLOCKING with component "overclaim" and issue "named competitor brand without on-camera comparison — creates legal, policy, and trust risk. Replace brand name with generic framing ('the one I had before', 'the basic version')."
+
+PROP & SETUP REALISM CHECK:
+- Scan each beat for prop assumptions beyond what a typical creator likely owns. Flag warnings for:
+  * Beats requiring a full collection of competitor products (3+ alternative versions on hand)
+  * Beats requiring specific named competitor brands to be physically present
+  * Beats requiring rare items on demand (specific insects, perfect ripe produce on cue, particular weather, seasonal conditions)
+  * Beats requiring professional equipment (multi-camera, professional lighting, specialized measuring tools)
+  * Beats requiring human subjects (spouse, kid, friend, pet) to perform reactions on cue
+  * Beats requiring access to specific environments (boat, pool, professional kitchen, luxury car)
+  Issue: "unrealistic prop/setup assumption — rewrite to use what a typical creator likely has (their own home, basic household items, phone, themselves, the product being reviewed). Rare captures should be opportunistic, not scheduled."
+- If a beat requires a prop beyond the product itself, check whether the filming_note explicitly names the required prop. If not, flag as warning with component "prop_realism" and issue "beat requires additional props not named in filming_note — creator cannot verify they have what's needed. List required items in filming_note."
+
+CART-NATIVE CTA CHECK:
+- If the product data includes strong conversion signals (high sold_count, low price for category, sale/deal badges, dominant visual proof already landed) AND the CTA uses only soft recommendation language without any cart-native action element, flag as warning with component "cta" and issue "missed cart-native opportunity — strong conversion signals support a more direct TikTok Shop native close. Consider cart-native tail language ('grab it from the cart below', 'pick one up before it goes back up', 'it's in the cart right below this')."
+- Cart-native tail phrases that are SAFE and platform-native (do NOT flag as off-platform): "grab", "pick up", "pick this up", "grab yours", "get yours", "the cart below", "in the cart", "from the cart". These refer to TikTok Shop's native in-video checkout.
+
 INFOMERCIAL / CHALLENGE-TEST CHECK:
 - If the script stacks 3+ engineered tests in sequence (upside-down shake + overnight ice + cup-holder drive + drop test + usability test, etc.), flag as warning with component "authenticity" and issue "infomercial-style proof stacking — script reads as product-lab demo rather than creator content. Pick ONE dominant proof and build believable context around it rather than running a gauntlet."
 - If any hook, angle name, or overlay uses "Challenge", "Torture Test", "Ultimate Test", "X-Step Proof", or similar engineered-test branding, flag as warning with component "authenticity" and issue "challenge-test framing — default to creator-native proof unless this is genuinely the strongest path for this product."
@@ -163,6 +182,45 @@ BUNDLE REASONING CHECK:
 
 PROOF STACKING DISCIPLINE:
 - Count the distinct claims the script tries to prove (leakproof, cold retention, fit, durability, bundle use case, kid usability, etc.). If the script actively demonstrates 4+ distinct claims, flag as warning with component "proof_concentration" and issue "script proves too many things — one dominant proof path should lead, secondary claims can be mentioned but not individually demonstrated. In 30 seconds, viewers remember ONE thing."
+
+PACING / FLUFF SUPPRESSION CHECKS (highest-leverage output quality):
+
+MIRRORED LANGUAGE CHECK:
+- Compare the selected hook (hook_options[0].hook_text) to the first spoken line in the beats. If they express the same core idea in different wording, flag as warning with component "pacing" and issue "hook and first spoken line are mirrored — the viewer hears the same thought twice. Cut or reframe the first spoken line to advance the viewer instead of restating the hook."
+- Scan beats for spoken + text_overlay pairs that say the same thing. If any beat has both a spoken line and a text overlay expressing essentially the same content, flag as warning with component "pacing" and issue "spoken line and text overlay duplicate the same idea — pick ONE layer, remove the other. Each layer must carry different information."
+- Check the caption against the hooks and CTA. If the caption restates the hook or CTA, flag as warning with component "pacing" and issue "caption restates hook/CTA — caption should add new context (creator note, personal POV), not mirror the video's main message."
+
+FLUFF BEAT DETECTION:
+- Scan each beat for these fluff patterns:
+  * Beats that re-demonstrate a result already shown in a prior beat
+  * Beats that explain the mechanism when the visual is self-evident
+  * "Setup" beats that delay payoff without building tension ("before I show you, let me explain...")
+  * Recap beats ("so as you can see...")
+  * Transition narration between clear visuals ("and then...")
+  If any beat matches these patterns, flag as warning with component "pacing" and issue "fluff beat — does not create new proof, tension, relevance, or conversion movement. Cut or merge into adjacent beat."
+
+VISUAL-PROOF DUPLICATION CHECK:
+- For each beat with both a visual action in "content" and a "spoken" line, check whether the spoken line merely narrates what the visual already shows. If the spoken line could be removed and the visual alone would still carry the point, flag as warning with component "pacing" and issue "spoken line narrates obvious visual — rewrite to add context, emotion, stakes, or forward motion that the visual cannot convey, OR remove the spoken line and let the visual carry."
+- Examples to flag: "Now I'm pouring the water", "Watch as I press down", "The water is beading up", "I'm opening the box now"
+- Examples to preserve: spoken lines that add context the visual can't show ("this is where every other bottle leaks", "I did not expect this when I got these in the rain")
+
+FAST PAYOFF CHECK:
+- Identify the dominant proof beat (the beat that delivers the strongest visual evidence for the product's main conversion mechanism). Check its start_seconds. If the dominant proof beat starts AFTER second 10, flag as warning with component "pacing" and issue "slow payoff — the strongest visual does not land until second {X}. Restructure so the first real proof moment arrives by second 6-8. Long setup before payoff is the #1 retention killer."
+- Exception: for products where the hook IS a visual proof moment that lands in the first 3 seconds, this check does not apply.
+
+BEAT COUNT DISCIPLINE:
+- Count total beats. If beats.length > 9 for a 25-45 second script, flag as warning with component "pacing" and issue "too many beats ({count}) — tight scripts have 5-8 beats. Excess beats indicate feature stacking or fluff. Audit and cut."
+
+AI-SOUNDING EXPLANATION CHECK:
+- Scan spoken lines for AI-style phrasings that real creators do not use:
+  * "This ensures that...", "This delivers...", "This provides..."
+  * "You'll notice..." + compound explanation
+  * "I was genuinely impressed by..."
+  * "The first thing you'll notice..."
+  * "Throughout the entire [duration]"
+  * Compound sentences with 2+ dependent clauses
+  If 2+ spoken lines match these patterns, flag as warning with component "language" and issue "AI-sounding explanation — compress to creator cadence. Prefer sharp fragments over complete sentences, specific over abstract, one thought per line."
+
 HOOK QUALITY FLOOR:
 - If any hook uses generic curiosity shells ("watch what happens", "here's what happened", "I had no idea") without strong product-native justification, flag as warning and cap hook_strength at 6.
 - If hook 3 is a weaker restatement of hook 1 or 2 with different wording, flag as warning with component "hooks" — this wastes the hook slot.

@@ -228,7 +228,7 @@ async function executePipeline(
   // Stage 9: Compliance
   try {
     notify("compliance-check");
-    compliance = await runCompliancePass(script, classification.primary_category);
+    compliance = await runCompliancePass(script, classification.primary_category, classification.product_type);
   } catch (error) {
     return { success: false, error: `Compliance check failed: ${errorMessage(error)}`, failedStage: "compliance-check" };
   }
@@ -262,5 +262,19 @@ async function executePipeline(
 }
 
 function errorMessage(error: unknown): string {
-  return error instanceof Error ? error.message : "Unknown error";
+  const msg = error instanceof Error ? error.message : "Unknown error";
+
+  // Clean raw parse noise from creator-facing errors.
+  // "Failed to parse Claude response as JSON: {raw garbage...}" is not useful
+  // to the user. Replace with a clean message.
+  if (msg.includes("Failed to parse")) {
+    return "An internal processing step produced an unexpected result. Please try again.";
+  }
+
+  // Clean other technical errors
+  if (msg.includes("No text response")) {
+    return "The analysis engine did not return a usable response. Please try again.";
+  }
+
+  return msg;
 }

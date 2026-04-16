@@ -69,14 +69,15 @@ function AnalyzeContent() {
     const url = sessionStorage.getItem(`virlo_url_${sessionId}`);
     if (!url) return;
 
-    // ── Usage check: gate BEFORE generation ──────────────────────────
-    const allowed = usage.consumeRun();
-    if (!allowed) {
-      usage.refresh(); // Refresh to get latest check result for the gate UI
+    // ── Usage check: gate BEFORE generation (check only, don't consume) ──
+    const checkResult = usage.check;
+    if (!checkResult.allowed) {
+      usage.refresh();
       setPhase("usage_blocked");
       return;
     }
-    // Run is now consumed. Pipeline starts.
+    // Check passed — generation will proceed.
+    // Usage is consumed AFTER successful completion (not before).
     // ─────────────────────────────────────────────────────────────────
 
     setPhase("generating");
@@ -113,6 +114,10 @@ function AnalyzeContent() {
 
       const output = await res.json();
       sessionStorage.setItem(`virlo_output_${sessionId}`, JSON.stringify(output));
+
+      // ── Usage: consume ONLY after successful generation ────────────
+      // Failed runs, parse errors, and pipeline crashes do NOT decrement.
+      usage.consumeRun();
 
       const completeStatuses: Record<string, PipelineStageStatus> = {};
       STAGE_LABELS.forEach(({ stage }) => {

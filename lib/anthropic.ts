@@ -97,8 +97,54 @@ export async function callClaude<T>(options: CallClaudeOptions): Promise<T> {
   try {
     return JSON.parse(jsonStr) as T;
   } catch {
+    // Attempt basic JSON repair for common Claude formatting issues
+    const repaired = attemptJsonRepair(jsonStr);
+    if (repaired) {
+      try {
+        return JSON.parse(repaired) as T;
+      } catch { /* repair didn't help — fall through */ }
+    }
     throw new Error(`Failed to parse Claude response as JSON: ${jsonStr.slice(0, 200)}`);
   }
+}
+
+/**
+ * Attempt basic repairs for common Claude JSON formatting issues:
+ * - Trailing commas before closing braces/brackets
+ * - Single-quoted strings
+ * - Truncated JSON (try to close open braces/brackets)
+ * - Control characters in string values
+ */
+function attemptJsonRepair(raw: string): string | null {
+  if (!raw || raw.length < 10) return null;
+
+  let fixed = raw;
+
+  // Remove trailing commas before } or ]
+  fixed = fixed.replace(/,\s*([}\]])/g, "$1");
+
+  // Remove control characters (except newlines in strings which are already escaped)
+  fixed = fixed.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "");
+
+  // If the JSON appears truncated (unbalanced braces), try to close it
+  const openBraces = (fixed.match(/{/g) || []).length;
+  const closeBraces = (fixed.match(/}/g) || []).length;
+  const openBrackets = (fixed.match(/\[/g) || []).length;
+  const closeBrackets = (fixed.match(/]/g) || []).length;
+
+  if (openBraces > closeBraces || openBrackets > closeBrackets) {
+    // Truncate to last complete property
+    const lastCompleteComma = fixed.lastIndexOf(",");
+    if (lastCompleteComma > fixed.length * 0.5) {
+      fixed = fixed.substring(0, lastCompleteComma);
+    }
+    // Close remaining open brackets/braces
+    for (let i = 0; i < openBrackets - closeBrackets; i++) fixed += "]";
+    for (let i = 0; i < openBraces - closeBraces; i++) fixed += "}";
+  }
+
+  // Only return if it's different from input (repair was attempted)
+  return fixed !== raw ? fixed : null;
 }
 
 export async function callClaudeWithRetry<T>(
@@ -113,11 +159,9 @@ export async function callClaudeWithRetry<T>(
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
 
-      // Don't retry on parse errors — the prompt needs fixing, not a retry
-      if (lastError.message.includes("Failed to parse")) {
-        throw lastError;
-      }
-
+      // Retry parse errors — Claude occasionally produces malformed JSON that
+      // works on retry. JSON repair in callClaude handles most cases, but
+      // a fresh API call often produces clean JSON on the second attempt.
       // Wait before retry with exponential backoff
       if (attempt < maxRetries) {
         await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));

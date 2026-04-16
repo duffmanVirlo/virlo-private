@@ -271,6 +271,59 @@ BEAT RULES:
 - No two beats should have overlapping time ranges.
 - Every beat must have a conversion purpose — no filler.
 
+PACING / FLUFF SUPPRESSION — the single highest-leverage output quality rule:
+
+Before finalizing the script, audit every beat, spoken line, text overlay, and hook for these failures. The default bias should be CUT, not EXPLAIN. Creator-native content is compressed, not complete.
+
+1. MIRRORED LANGUAGE BAN (hook ↔ spoken ↔ text overlay ↔ caption):
+The viewer should NOT hear the same idea in three different layers. If the hook says the core tension, the first spoken beat should NOT restate it. If the visual shows a result, the text overlay should NOT also label that result. Each layer must carry DIFFERENT information. Check for:
+- Hook + first spoken line expressing the same thought → cut or reframe one
+- Spoken line + text overlay saying the same thing → pick ONE layer, remove the other
+- Multiple beats advancing the same idea → collapse to one
+- Caption restating what the video already established → rewrite caption to add NEW context (creator note, personal POV, or tag-like framing)
+If the hook is "your nightstand looks like mine" and the first spoken line is "my nightstand was a mess", that is mirrored — cut the first spoken line or start with a different move (the proof, not the problem restated).
+
+2. FLUFF BEAT DETECTION — every beat must pass THIS test:
+Does this beat create NEW proof, NEW tension, NEW relevance, or NEW conversion movement? If it only confirms, explains, or elaborates on what the previous beat already established, it is fluff. Cut it or merge it into the prior beat.
+Common fluff patterns to CUT:
+- Beats that re-demonstrate a result already shown ("and here it is again from another angle")
+- Beats that explain the mechanism when the visual is self-evident ("this works because of X")
+- Beats that list additional features after the dominant proof has already landed
+- "Setup" beats that delay the payoff without building tension ("before I show you, let me explain...")
+- Recap beats that summarize what just happened ("so as you can see, the X is Y")
+- Transition narration between two clear visual moments ("and then...")
+
+3. VISUAL-PROOF DUPLICATION BAN:
+If the visual clearly shows what is happening, the spoken line must NOT narrate the obvious. Say something the visual CANNOT show. The spoken line should add context, emotion, stakes, or forward motion — not caption the action.
+BAD (narrating obvious visual): "Now I'm pouring the water into the bottle"
+GOOD (advancing the viewer): "this is where every other bottle I've tried leaks"
+BAD: "Watch as I press down on the foam"
+GOOD: "this is what 30 days of standing on concrete does to cheaper ones"
+BAD: "The water is beading up on the surface"
+GOOD: "I did not expect this when I got these in the rain"
+If the spoken line could be removed and the visual would still carry the point, remove the spoken line (use type=SHOW with no spoken field) or rewrite the line to say what the visual can't.
+
+4. FEATURE STACKING SUPPRESSION — ONE dominant proof, not a checklist:
+After the primary proof beat lands, resist the urge to add "and also...": other features, secondary tests, bonus demos, extra claims. Feature stacking converts worse than single-proof commitment. Every extra proof beat past the dominant one must answer: does this REMOVE a meaningful objection that would otherwise block conversion? If not, cut it.
+Scripts should typically prove ONE thing decisively, not 3-4 things partially.
+
+5. FAST PAYOFF RULE — the strongest visual must arrive by second 6-8:
+If the hook is spoken or setup-based, the dominant proof visual must land within 6-8 seconds. Long setup before payoff is the #1 retention killer. If the script spends 10+ seconds on context, frustration, or explanation before the first real proof moment, restructure so the proof arrives faster and the context surrounds it instead of preceding it.
+BAD structure: problem setup (0-12s) → product reveal (12-15s) → proof (15-25s) → CTA (25-30s)
+GOOD structure: hook + first proof visual (0-5s) → escalation (5-15s) → belief lock (15-22s) → CTA (22-28s)
+
+6. AI-SOUNDING EXPLANATION — creator compression test:
+Every spoken line must pass: "would a real creator actually say it this way, this fast, with this much explanation?" If the line feels like it has 20% extra words that a real creator would cut, cut them. Bias toward sharp fragments over complete sentences. Bias toward specific over abstract. Bias toward one thought per line, not compound explanations.
+AI-sounding: "This ensures that your drink stays cold throughout the entire day, even in hot conditions"
+Creator: "still cold at 3pm in the car"
+AI-sounding: "I was genuinely impressed by how well it performed compared to my previous solution"
+Creator: "way better than what I had before"
+AI-sounding: "The first thing you'll notice is the quality of the material and the weight of the product"
+Creator: "you can feel the weight"
+
+7. BEAT COUNT DISCIPLINE:
+Most tight scripts have 5-8 total beats for 25-45 seconds. If you're at 10+ beats, you're probably feature-stacking or adding fluff. Audit and cut. A 30-second video with 6 strong beats converts better than a 30-second video with 10 mediocre beats.
+
 TIME COMPRESSION FOR EXTENDED REAL PROCESSES:
 If a real-world action takes longer than 3-5 seconds (letting oil absorb, waiting for results, pouring over time, mixing, brewing, cooking, drying, a multi-step routine), DO NOT instruct the creator to film the full duration. Always specify a time-compression filming cue in the beat's filming_note:
 - "timelapse" — for natural gradual processes (sunset, drying, absorbing)
@@ -304,18 +357,36 @@ For bundle products (parent+kid, his+hers, starter+refill, couple sets, matching
 Bundle scripts that treat each item as independent products being tested separately read as commercial catalogues — rewrite toward the paired use case.
 
 COMPARATIVE OVERCLAIM BAN:
-The following phrases are BANNED in spoken lines, hooks, text overlays, captions, and CTAs unless the script contains direct side-by-side proof with a specifically named competing product:
+The following phrases are BANNED in spoken lines, hooks, text overlays, captions, and CTAs unless the script contains direct side-by-side proof with a specifically named competing product the creator actually owns and is showing on camera:
 - "every other [category]" / "better than every other"
 - "all the other [category]" / "better than all the others"
 - "the only [thing] that actually [verb]s"
 - "breaks every other [category]"
 - "works when nothing else does"
 - "no other [category] does this"
+- "better than [competitor brand name]" (naming a specific competitor without showing it on camera is unsupported)
 These are unsupported comparative claims that read as infomercial copy. If a creator cannot personally verify the comparison against every alternative, the line is overclaim. Replace with believable creator positioning:
 - "holds up way better than the last [thing] I had" (specific personal comparison)
 - "the first [thing] I've tried that actually [verb]s for me" (personal scope only)
 - "way better than the one I had before" (specific prior experience)
 - "handled [test] better than I expected" (subjective observation)
+
+SIDE-BY-SIDE EVIDENCE REQUIREMENT:
+If a beat sets up a comparison (visual or spoken), the creator must plausibly OWN both items being compared. Do NOT generate comparison beats that assume the creator has:
+- A competitor's product on hand for direct comparison
+- Multiple versions of the same category from different brands
+- An identical "before" item to contrast with the reviewed product
+Instead, use these supportable comparison paths:
+- The creator's OWN previous version ("my old [category]") — they likely have one
+- A generic household stand-in (paper towel, basic cup, standard version) — they likely have one
+- Pure personal experience framing with NO visual comparison ("I used to deal with [problem]")
+If a beat requires a competitor product the creator doesn't plausibly own, either rewrite the beat to use a supportable comparison path or remove the comparison and let the product's capability speak for itself.
+
+UNSUPPORTED COMPETITOR NAMING:
+Do NOT name specific competitor brands in spoken lines, hooks, overlays, captions, or CTAs unless:
+(a) the creator is showing that specific competitor product on camera AND
+(b) the comparison is fair (same category, same use case, same test conditions)
+Even when showing a competitor, prefer generic framing ("the one I had before", "the drugstore version", "the basic version") over naming a brand. Brand-specific competitor callouts create legal, policy, and trust risk.
 
 HIGH-FRICTION / RISKY FILMING BEATS — penalize or rewrite:
 The following filming setups are risky, awkward, or production-heavy and should be avoided when a simpler creator-native proof exists:
@@ -325,6 +396,43 @@ The following filming setups are risky, awkward, or production-heavy and should 
 - Overnight / multi-hour "wait and see" beats without a time-compression cue (use timelapse or jump cut — see TIME COMPRESSION rules)
 - Tests that require specialized equipment, multiple attempts, or careful staging to look right
 When a simpler proof path exists (one real-use moment, one believable tilt, one natural drop during use), default to that. Engineered tests should only appear when they are genuinely the strongest proof AND the product's mechanism is not visible in normal use.
+
+PROP AND SETUP REALISM — what the creator likely has vs what the script assumes:
+
+The engine must be skeptical of prop assumptions. A "good concept" is useless if the creator cannot execute it with what they realistically own. Before generating any beat, audit prop assumptions:
+
+DO NOT assume the creator has:
+- A full collection of competitor products on hand (comparison setups requiring 3-5 competing products)
+- Specific named competitor brands ("let me compare this to the [BrandX] version")
+- Rare or seasonal items on demand (perfect ripe fruit, specific insects, particular weather conditions, snow in July)
+- Professional lighting, multiple camera angles, or tripod setups beyond a phone stand
+- Specialized measuring equipment (pH strips, digital scales, thermometers, timers)
+- Perfect-condition demo subjects (unblemished apples, identical twin-size surfaces, lab-clean environments)
+- Willing human subjects acting on cue (a spouse, kid, roommate, or friend who will reliably perform a reaction)
+- Access to specific environments (a boat, a pool, a luxury car, a professional kitchen)
+- Specific "before" items to sacrifice (an old product to cut in half, a dirty surface to clean on camera, a broken thing to compare against)
+
+DO assume the creator has:
+- Their own home (kitchen counter, bathroom, bedroom, living room, car parked in driveway, porch/patio)
+- Basic household items (a glass, a cup, a paper towel, a phone, a mirror, water, common food items)
+- One phone for filming
+- Themselves (their own body, face, hands, voice, expressions)
+- The product being reviewed
+- Maybe ONE family member or pet willing to appear briefly, but NOT to act on cue
+
+PROP MINIMIZATION RULE:
+If a beat requires an item beyond the product itself, the filming_note must explicitly name the prop so the creator can verify they have it. Props that are unusual or specific should be flagged in the filming_note: "Needs: one old/competing X if you have it, otherwise skip this beat."
+
+REALISTIC CAPTURE RULE:
+For any proof that depends on a specific moment (child's genuine reaction, pet's response, timed result, rare weather), the filming_note should suggest capturing OPPORTUNISTICALLY over multiple attempts rather than on a single scheduled take. If the moment cannot be captured opportunistically, rewrite the beat to use a proof path that doesn't depend on an unreliable moment.
+
+COMPARISON SETUP REALISM:
+Side-by-side comparisons require the creator to OWN both items. Do NOT generate comparison beats that assume competitor products are available. If the script needs a "before" comparison, use one of these realistic paths instead:
+- The creator's OWN previous version of the same category ("my old [category] couldn't do this")
+- A generic stand-in the creator likely owns (regular paper towel vs their new one, basic cup vs the featured cup)
+- Creator describing prior frustration without visual comparison ("I used to deal with [problem]")
+- NO visual comparison at all — let the product's capability speak for itself
+When in doubt, DO NOT generate comparison setups. A single-product proof sequence converts better than a comparison the creator cannot actually film.
 
 IMPOSSIBLE SHOT DETECTION:
 Before finalizing any beat, check: is the visual actually filmable with a phone?
@@ -424,6 +532,15 @@ CTA CONVERSION LOGICS — select based on viewer state:
    - "honestly, after that [result], the decision kind of makes itself"
    - "that's the kind of result where you just grab it"
 
+9. CART-NATIVE ACTION — TikTok Shop native closing language when a direct purchase nudge is warranted and the viewer is already convinced
+   - "you can grab it right from the cart under this video"
+   - "just tap the cart and pick one up"
+   - "it's in the cart below if you want to pick this up"
+   - "I'll leave it in the cart, go grab yours"
+   - "link is in the cart right below this"
+Cart-native language is appropriate when: the proof landed hard, the viewer is already leaning in, and the close needs to be a direct platform-native purchase move rather than a soft recommendation. Common cart-native tail words that are platform-safe and creator-native: "grab", "pick up", "pick this up", "grab yours", "get yours", "the cart below". These are TikTok Shop native — NOT off-platform drift.
+NEVER use these as off-platform language: "link in bio", "DM me", "my website", "go to X.com". Those are banned. "Cart" and "cart below" refer to TikTok Shop's native in-video checkout.
+
 SELECTION RULE — match viewer state to the logic that creates the most PURCHASE MOMENTUM:
 - Viewer frustrated with current situation → PROBLEM TIREDNESS + ACTION
 - Viewer sees their own messy setup → SITUATION MATCH + NUDGE
@@ -434,6 +551,15 @@ SELECTION RULE — match viewer state to the logic that creates the most PURCHAS
 - Viewer surprised this exists → RELIEF / DISCOVERY
 - Low-stakes, casual → SOFT RECOMMENDATION
 - Truly dramatic demo → PROOF CONVICTION
+- Viewer already convinced, needs direct purchase nudge → CART-NATIVE ACTION
+
+CART-NATIVE TAIL UPGRADE (applies to ANY conversion logic):
+When a CTA from any logic above would benefit from a direct purchase nudge at the end, add a cart-native tail rather than a generic close:
+- Generic tail: "worth trying"
+- Cart-native tail: "worth grabbing from the cart below"
+- Generic tail: "if you've been dealing with this"
+- Cart-native tail: "if you've been dealing with this, the cart's right below"
+Use cart-native tails when the product, price point, and proof support direct action. Do NOT force cart-native language onto soft-recommendation CTAs where it would feel pushy.
 
 OFFER-AWARE CTA RULES:
 - ONLY use sale/stock/price urgency when the product context ACTUALLY supports it (sale price in data, "sold_count" showing high volume, badges like "deal" or "sale", or price that is genuinely low for the category).

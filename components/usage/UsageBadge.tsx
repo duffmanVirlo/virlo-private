@@ -9,14 +9,13 @@ type UsageBadgeProps = {
   dailyLimit: number;
 };
 
-const IS_FOUNDER_TESTING = process.env.NEXT_PUBLIC_FOUNDER_TESTING === "true";
-
 export function UsageBadge({ planName, planId, runsRemaining, dailyLimit }: UsageBadgeProps) {
+  const isFounder = planName === "Founder Testing";
   const isLow = runsRemaining <= 1 && runsRemaining > 0;
   const isEmpty = runsRemaining === 0;
 
   // Founder testing: clean internal badge, no usage counts
-  if (IS_FOUNDER_TESTING) {
+  if (isFounder) {
     return (
       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface border border-border-subtle text-xs">
         <span className="font-medium text-accent">Founder Testing Mode</span>
