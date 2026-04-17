@@ -41,15 +41,19 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     name: "Virlo Pro",
     display_name: "Pro",
     price_monthly_cents: 7900,
-    daily_run_limit: 8,
+    daily_run_limit: 6,
     topups_enabled: true,
     trial_duration_days: null,
   },
 } as const;
 
 // ============================================================================
-// Top-Up Definitions
+// Additional Strategy Runs
 // ============================================================================
+// Available to Core/Pro users after they hit their included daily cap.
+// Flat per-run pricing. Simple, creator-friendly.
+// Internal field names (topup_*) preserved for backward-compat with engine;
+// user-facing label is "Additional Strategy Run".
 
 export type TopUpOption = {
   id: string;
@@ -59,9 +63,7 @@ export type TopUpOption = {
 };
 
 export const TOPUP_OPTIONS: TopUpOption[] = [
-  { id: "topup_1", runs: 1, price_cents: 200, label: "+1 Run — $2" },
-  { id: "topup_3", runs: 3, price_cents: 500, label: "+3 Runs — $5" },
-  // Future: { id: "topup_5", runs: 5, price_cents: 800, label: "+5 Runs — $8" },
+  { id: "additional_run", runs: 1, price_cents: 99, label: "+1 Strategy — $0.99" },
 ];
 
 // ============================================================================

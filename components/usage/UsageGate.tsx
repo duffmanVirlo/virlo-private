@@ -25,7 +25,7 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
             Your free trial has ended
           </h2>
           <p className="text-sm text-text-secondary max-w-xs mx-auto leading-relaxed">
-            Choose a plan to keep generating filming-ready strategies with ConvertIQ.
+            Keep generating filming-ready strategies. Your plan continues automatically unless you cancel before the trial ends.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
           <PlanCard
             name="Pro"
             price="$79/mo"
-            runs="8 runs/day"
+            runs="6 runs/day"
             highlighted
           />
         </div>
@@ -64,10 +64,10 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
       <div className="max-w-md w-full text-center space-y-8 animate-fade-in">
         <div className="space-y-3">
           <h2 className="font-display text-2xl font-bold text-text-primary">
-            You&rsquo;ve used today&rsquo;s strategies
+            You&rsquo;ve used your trial runs
           </h2>
           <p className="text-sm text-text-secondary max-w-xs mx-auto leading-relaxed">
-            Come back tomorrow for 3 more, or unlock more daily capacity.
+            Your free trial includes 3 runs over 2 days. Upgrade to keep generating — your plan continues unless you cancel before the trial ends.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
           <PlanCard
             name="Pro"
             price="$79/mo"
-            runs="8 runs/day"
+            runs="6 runs/day"
             highlighted
           />
         </div>
@@ -113,24 +113,24 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
         <p className="text-sm text-text-secondary max-w-xs mx-auto leading-relaxed">
           You&rsquo;ve used all {plan.daily_run_limit} of today&rsquo;s {plan.display_name} strategies.
           {showUpgradeNudge
-            ? " Upgrade to Pro for 8 runs per day."
-            : " Top up for more today, or come back tomorrow."}
+            ? " Upgrade to Pro for 6 runs per day, or add an Additional Strategy Run."
+            : " Add an Additional Strategy Run, or come back tomorrow."}
         </p>
       </div>
 
-      {/* Top-up placeholders */}
+      {/* Additional Strategy Runs */}
       {check.should_show_topup_offer && (
         <div className="space-y-3">
-          <p className="text-xs text-text-muted uppercase tracking-wider">Need more today?</p>
+          <p className="text-xs text-text-muted uppercase tracking-wider">Need one more today?</p>
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
             {TOPUP_OPTIONS.map((opt) => (
               <button
                 key={opt.id}
                 disabled
                 className="px-5 py-2.5 rounded-xl bg-elevated border border-border text-sm text-text-secondary cursor-not-allowed opacity-60"
-                title="Top-ups coming soon"
+                title="Additional Strategy Runs coming soon"
               >
-                {opt.label}
+                Additional Strategy Run — $0.99
                 <span className="block text-[10px] text-text-faint mt-0.5">Coming soon</span>
               </button>
             ))}
@@ -145,7 +145,7 @@ export function UsageGate({ check, onStartOver }: UsageGateProps) {
             Upgrade to Pro
           </p>
           <p className="text-xs text-text-secondary">
-            8 runs per day for $79/mo — more cost-effective than frequent top-ups.
+            6 runs per day for $79/mo — more room when you&rsquo;re testing a lot of products.
           </p>
           <button
             disabled

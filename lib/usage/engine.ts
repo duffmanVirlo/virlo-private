@@ -53,6 +53,11 @@ export function createInitialUsageState(): UsageState {
 /**
  * If the day has changed since last activity, reset daily counters.
  * Returns the (possibly reset) state. Does NOT mutate the input.
+ *
+ * TRIAL EXCEPTION: Trial plans do NOT reset the run counter across days.
+ * The trial is "3 runs total over 2 days" — not "3 per day". The
+ * runs_used_today field acts as a cumulative trial-run counter for trial
+ * users. (Other daily state like topups still resets.)
  */
 export function applyDailyReset(state: UsageState): UsageState {
   const today = getTodayString();
@@ -63,7 +68,9 @@ export function applyDailyReset(state: UsageState): UsageState {
   return {
     ...state,
     current_day: today,
-    runs_used_today: 0,
+    // Trial users: preserve cumulative run count across days (3 total, not 3/day).
+    // Paid plans: reset daily counter as normal.
+    runs_used_today: state.plan_id === "trial" ? state.runs_used_today : 0,
     topup_runs_available: 0, // Top-ups are same-day only — they expire at reset
     topup_runs_used_today: 0,
   };
